@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_auth_profile_basic">
+    <sys_auth_profile_basic action="INSERT_OR_UPDATE">
+        <name>ATF Basic Auth</name>
+        <password>﷞﷟﷒23890cf71b42511062e50ed2cd4bcbed﷬﷔1﷬﷭o6tO3neLJj0HCq7RopIfIg==ERvHnwS5l6CjG2g3VPmDmuaHSb_jqxFBWqlVMgbI7VOECRpaBc4Z-wnE﷮﷯</password>
+        <sys_class_name>sys_auth_profile_basic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-02 15:53:13</sys_created_on>
+        <sys_id>44b900161b55251062e50ed2cd4bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ATF Basic Auth</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_auth_profile_basic_44b900161b55251062e50ed2cd4bcb3d</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-02 15:53:13</sys_updated_on>
+        <username>atf.user</username>
+    </sys_auth_profile_basic>
+</record_update>

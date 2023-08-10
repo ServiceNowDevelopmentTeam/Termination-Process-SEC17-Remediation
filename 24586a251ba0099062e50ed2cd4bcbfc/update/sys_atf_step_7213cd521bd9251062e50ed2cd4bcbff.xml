@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from display_value="Order a Catalog Item (SP)">5b7ef7ce1bd1251062e50ed2cd4bcbf9</copied_from>
+        <description>Order item and confirm that ordering is successful</description>
+        <display_name>Order a Catalog Item (SP)</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>9</order>
+        <step_config display_value="Order a Catalog Item (SP)">c0fede515f23030076861f9f2f7313db</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-02 20:03:22</sys_created_on>
+        <sys_id>7213cd521bd9251062e50ed2cd4bcbff</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Order a Catalog Item (SP)</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_atf_step_7213cd521bd9251062e50ed2cd4bcbff</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-02 20:53:26</sys_updated_on>
+        <table/>
+        <test display_value="TC - 320 - SEC17 - On leave, needs access - IT">6613c1521bd9251062e50ed2cd4bcb18</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=7213cd521bd9251062e50ed2cd4bcbff"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>7213cd521bd9251062e50ed2cd4bcbff</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-02 20:03:22</sys_created_on>
+        <sys_id>3e13cd521bd9251062e50ed2cd4bcbff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-02 20:03:22</sys_updated_on>
+        <value>form_submitted_to_server</value>
+        <variable display_value="Assert Type">b27f92915f23030076861f9f2f731356</variable>
+    </sys_variable_value>
+</record_update>

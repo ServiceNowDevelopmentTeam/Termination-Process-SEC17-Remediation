@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="DELETE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>100</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-04-12 13:17:54</sys_created_on>
+        <sys_id>f8130bb51bfe85108c5143f3cc4bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sc_req_item</sys_name>
+        <sys_package display_value="SOx Record Generators" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SOx Record Generators">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_db_view_table_f8130bb51bfe85108c5143f3cc4bcbf7</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-12 13:17:54</sys_updated_on>
+        <table>sc_req_item</table>
+        <variable_prefix>ritm</variable_prefix>
+        <view display_value="x_apig_sox_record_work_notes_on_ritms">25f2c3b51bfe85108c5143f3cc4bcbfb</view>
+        <where_clause/>
+    </sys_db_view_table>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sys_db_view_table_f8130bb51bfe85108c5143f3cc4bcbf7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>100</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2022-04-12 13:17:54</sys_created_on><sys_id>f8130bb51bfe85108c5143f3cc4bcbf7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sc_req_item</sys_name><sys_package display_value="SOx Record Generators" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package><sys_policy/><sys_scope display_value="SOx Record Generators">24586a251ba0099062e50ed2cd4bcbfc</sys_scope><sys_update_name>sys_db_view_table_f8130bb51bfe85108c5143f3cc4bcbf7</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2022-04-12 13:17:54</sys_updated_on><table>sc_req_item</table><variable_prefix>ritm</variable_prefix><view display_value="x_apig_sox_record_work_notes_on_ritms">25f2c3b51bfe85108c5143f3cc4bcbfb</view><where_clause/></sys_db_view_table></record_update>]]></payload>
+        <payload_hash>1237928119</payload_hash>
+        <record_name>sc_req_item</record_name>
+        <reverted_from/>
+        <source>52e1f1251b96859062e50ed2cd4bcbba</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-04-12 13:17:55</sys_created_on>
+        <sys_id>54330fb51bfe85108c5143f3cc4bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1801dec6bc30000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-12 13:17:55</sys_updated_on>
+        <type>View Table</type>
+        <update_guid>5c330fb5d0fe8510e3b6dd4de526fc97</update_guid>
+        <update_guid_history>5c330fb5d0fe8510e3b6dd4de526fc97:1237928119</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-04-12 14:47:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view_table">sys_db_view_table</sys_db_object>
+        <sys_id>0d558290fe6f428dbe8b8e07d77e4569</sys_id>
+        <sys_metadata>f8130bb51bfe85108c5143f3cc4bcbf7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sc_req_item</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_parent display_value="x_apig_sox_record_work_notes_on_ritms">25f2c3b51bfe85108c5143f3cc4bcbfb</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_scope_delete display_value="">2f88ffbf0c2845809e73338e3a3a8400</sys_scope_delete>
+        <sys_update_name>sys_db_view_table_f8130bb51bfe85108c5143f3cc4bcbf7</sys_update_name>
+        <sys_update_version display_value="sys_db_view_table_f8130bb51bfe85108c5143f3cc4bcbf7">54330fb51bfe85108c5143f3cc4bcb98</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-12 14:47:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

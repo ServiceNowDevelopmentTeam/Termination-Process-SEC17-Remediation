@@ -1,0 +1,2386 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>sec05_inactive_employee_review_process__open_task_closer</internal_name>
+        <label_cache>[{"name":"d2352d90-6921-47bb-b68d-dc1e569c55e6.__dont_treat_as_error__","label":"8➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d2352d90-6921-47bb-b68d-dc1e569c55e6.__action_status__","label":"8➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d2352d90-6921-47bb-b68d-dc1e569c55e6.table_name","label":"8➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d2352d90-6921-47bb-b68d-dc1e569c55e6.record","label":"8➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"53410a16-a5a6-439a-ae63-7b41ff2aa769.item","label":"7➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"subflow.ritm","label":"Input➛RITM","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"11b3b6c3-a870-4580-a038-3e84de948449"}},{"name":"f47e5245-784f-4202-aea2-a87e3961c9e5.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f47e5245-784f-4202-aea2-a87e3961c9e5.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f47e5245-784f-4202-aea2-a87e3961c9e5.Count","label":"6➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f47e5245-784f-4202-aea2-a87e3961c9e5.Table","label":"6➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f47e5245-784f-4202-aea2-a87e3961c9e5.Records","label":"6➛Catalog Task Records","reference":"sc_task","reference_display":"Catalog Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.due_date_passed","label":"Flow Variables➛Due Date Passed","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"de19fff1-40b7-4dfa-9b62-ae8fbcbc1042"}},{"name":"6bce319f-27c7-4ea8-8226-7ae7449707e3.due_date_met","label":"3➛Date A Before Date B","reference_display":"Date A Before Date B","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c5a90f02-ac33-46cb-a73c-2dfa3fe477c3"}},{"name":"c781e705-3214-4be1-b31d-c9f2fefd7955.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c781e705-3214-4be1-b31d-c9f2fefd7955.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FD98f2ffcbf55ec5d02870c3c3b36f1bc4","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c781e705-3214-4be1-b31d-c9f2fefd7955.variable","label":"2➛Date Time Value","reference_display":"Date Time Value","type":"glide_date_time","base_type":"glide_date_time","attributes":{"uiType":"glide_date_time","uiTypeLabel":"Date/Time","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f5665f3d-4abe-4fbb-8f84-c8b390ddab40"}},{"name":"subflow.due_date","label":"Input➛Due Date","reference":"","reference_display":"","type":"glide_date_time","base_type":"glide_date_time","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1c71a71d-6f4d-41af-9252-4675401412d5"}},{"name":"6bce319f-27c7-4ea8-8226-7ae7449707e3.context","label":"3➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"2d1c8f58-e709-4e5b-a987-ddc0485549bd.scheduled_end_date_time","label":"10➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"2d1c8f58-e709-4e5b-a987-ddc0485549bd.total_duration","label":"10➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"bfde4777-b0c1-4e55-8e68-399cbaad63db.scheduled_end_date_time","label":"1➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"bfde4777-b0c1-4e55-8e68-399cbaad63db.total_duration","label":"1➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"0c600d00-50eb-4e1b-b3fc-de3b73e2245d.__status__","label":"11➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"66b257d9-f7d2-4007-8632-65e20c14a5af.context","label":"12➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"0c600d00-50eb-4e1b-b3fc-de3b73e2245d.__status__.message","label":"12➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"0c600d00-50eb-4e1b-b3fc-de3b73e2245d.__status__.code","label":"12➛Error Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"subflow.ritm.number","label":"Input➛RITM➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sc_req_item","column_name":"number"}]</label_cache>
+        <master_snapshot>4f2632991b2609d08c5143f3cc4bcbd0</master_snapshot>
+        <name>SEC17 - Open Task Closer</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:40:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0864fe551b2609d08c5143f3cc4bcb4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SEC17 - Open Task Closer</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_hub_flow_0864fe551b2609d08c5143f3cc4bcb4a</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-08-23 13:55:25</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=0864fe551b2609d08c5143f3cc4bcb4a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=0864fe551b2609d08c5143f3cc4bcb4a"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=0864fe551b2609d08c5143f3cc4bcb4a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=0864fe551b2609d08c5143f3cc4bcb4a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=0864fe551b2609d08c5143f3cc4bcb4a^sys_idNOT IN006432951b2609d08c5143f3cc4bcbda"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>0864fe551b2609d08c5143f3cc4bcb4a</id>
+        <name>SEC05 Inactive Employee Review Process - Open Task Closer</name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:40:31</sys_created_on>
+        <sys_id>006432951b2609d08c5143f3cc4bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:40:31</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=006432951b2609d08c5143f3cc4bcbda"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=0864fe551b2609d08c5143f3cc4bcb4a^sys_idNOT IN7926be591b2609d08c5143f3cc4bcb8a,ce26be591b2609d08c5143f3cc4bcbaa"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date_time,uiTypeLabel=Date/Time,uiUniqueId=1c71a71d-6f4d-41af-9252-4675401412d5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>due_date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date_time</internal_type>
+        <label>Due Date</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</model>
+        <model_id>0864fe551b2609d08c5143f3cc4bcb4a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0864fe551b2609d08c5143f3cc4bcb4a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:18</sys_created_on>
+        <sys_id>7926be591b2609d08c5143f3cc4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=11b3b6c3-a870-4580-a038-3e84de948449</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_req_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ritm</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>RITM</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</model>
+        <model_id>0864fe551b2609d08c5143f3cc4bcb4a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0864fe551b2609d08c5143f3cc4bcb4a</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:18</sys_created_on>
+        <sys_id>ce26be591b2609d08c5143f3cc4bcbaa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=0864fe551b2609d08c5143f3cc4bcb4a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0864fe551b2609d08c5143f3cc4bcb4a"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=0864fe551b2609d08c5143f3cc4bcb4a^sys_idNOT IN2626fe591b2609d08c5143f3cc4bcbc1,8a26be591b2609d08c5143f3cc4bcbe9,aa26fe591b2609d08c5143f3cc4bcbe5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</flow>
+        <order>6</order>
+        <parent_ui_id>a7f597b4-f75b-476a-83bb-e4e58dd57852</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>2626fe591b2609d08c5143f3cc4bcbc1</sys_id>
+        <sys_mod_count>58</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-05-11 19:26:30</sys_updated_on>
+        <ui_id>f47e5245-784f-4202-aea2-a87e3961c9e5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2626fe591b2609d08c5143f3cc4bcbc1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2626fe591b2609d08c5143f3cc4bcbc1</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>6626fe591b2609d08c5143f3cc4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2626fe591b2609d08c5143f3cc4bcbc1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>2626fe591b2609d08c5143f3cc4bcbc1</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>2226fe591b2609d08c5143f3cc4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>request_item={{subflow.ritm}}^active=true</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>2626fe591b2609d08c5143f3cc4bcbc1</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>e226fe591b2609d08c5143f3cc4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2626fe591b2609d08c5143f3cc4bcbc1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2626fe591b2609d08c5143f3cc4bcbc1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Get Current DateTime">80f2ffcb1b5ec5d062e50ed2cd4bcba4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</flow>
+        <order>2</order>
+        <parent_ui_id>c3a7e6fb-c32f-442e-b5e8-745dd8f2087f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:19</sys_created_on>
+        <sys_id>8a26be591b2609d08c5143f3cc4bcbe9</sys_id>
+        <sys_mod_count>58</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-05-11 19:26:30</sys_updated_on>
+        <ui_id>c781e705-3214-4be1-b31d-c9f2fefd7955</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8a26be591b2609d08c5143f3cc4bcbe9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8a26be591b2609d08c5143f3cc4bcbe9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8a26be591b2609d08c5143f3cc4bcbe9"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</flow>
+        <order>8</order>
+        <parent_ui_id>53410a16-a5a6-439a-ae63-7b41ff2aa769</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>aa26fe591b2609d08c5143f3cc4bcbe5</sys_id>
+        <sys_mod_count>58</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-05-11 19:26:30</sys_updated_on>
+        <ui_id>d2352d90-6921-47bb-b68d-dc1e569c55e6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=aa26fe591b2609d08c5143f3cc4bcbe5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>aa26fe591b2609d08c5143f3cc4bcbe5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>2a26fe591b2609d08c5143f3cc4bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <value>state=3^work_notes=Auto-closed by SEC05 task closer. Due date has passed.^active=false</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>aa26fe591b2609d08c5143f3cc4bcbe5</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>ea26fe591b2609d08c5143f3cc4bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=aa26fe591b2609d08c5143f3cc4bcbe5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>aa26fe591b2609d08c5143f3cc4bcbe5</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>e226fe591b2609d08c5143f3cc4bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{53410a16-a5a6-439a-ae63-7b41ff2aa769.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>aa26fe591b2609d08c5143f3cc4bcbe5</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>2226fe591b2609d08c5143f3cc4bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>aa26fe591b2609d08c5143f3cc4bcbe5</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>a626fe591b2609d08c5143f3cc4bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=aa26fe591b2609d08c5143f3cc4bcbe5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=aa26fe591b2609d08c5143f3cc4bcbe5"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=0864fe551b2609d08c5143f3cc4bcb4a"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=0864fe551b2609d08c5143f3cc4bcb4a^sys_idNOT IN0626be591b2609d08c5143f3cc4bcbd3,2a26fe591b2609d08c5143f3cc4bcbe8,a226fe591b2609d08c5143f3cc4bcbc4,c226be591b2609d08c5143f3cc4bcbeb,d037761d1b2609d08c5143f3cc4bcb18,da26fe591b2609d08c5143f3cc4bcba5,de26fe591b2609d08c5143f3cc4bcba9"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">4a26be591b2609d08c5143f3cc4bcbd2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:19</sys_created_on>
+        <sys_id>0626be591b2609d08c5143f3cc4bcbd3</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:55</sys_updated_on>
+        <ui_id>c3a7e6fb-c32f-442e-b5e8-745dd8f2087f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0626be591b2609d08c5143f3cc4bcbd3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>0626be591b2609d08c5143f3cc4bcbd3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:19</sys_created_on>
+        <sys_id>c626be591b2609d08c5143f3cc4bcbd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:19</sys_updated_on>
+        <value>Due date passed</value>
+        <variable display_value="Condition Label">bda2cb0473031300612c273ffff6a750</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0864fe551b2609d08c5143f3cc4bcb4a^id=0626be591b2609d08c5143f3cc4bcbd3"/>
+    <sys_element_mapping action="delete_multiple" query="id=0626be591b2609d08c5143f3cc4bcbd3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>0626be591b2609d08c5143f3cc4bcbd3</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:19</sys_created_on>
+        <sys_id>4626be591b2609d08c5143f3cc4bcbd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
+        <value>{{flow_variable.due_date_passed}}=true</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>0626be591b2609d08c5143f3cc4bcbd3</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:19</sys_created_on>
+        <sys_id>8e26be591b2609d08c5143f3cc4bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=0626be591b2609d08c5143f3cc4bcbd3"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0626be591b2609d08c5143f3cc4bcbd3"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">6226fe591b2609d08c5143f3cc4bcbe8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>c3a7e6fb-c32f-442e-b5e8-745dd8f2087f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>2a26fe591b2609d08c5143f3cc4bcbe8</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:56</sys_updated_on>
+        <ui_id>2d1c8f58-e709-4e5b-a987-ddc0485549bd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2a26fe591b2609d08c5143f3cc4bcbe8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>2a26fe591b2609d08c5143f3cc4bcbe8</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:21</sys_created_on>
+        <sys_id>2626fe591b2609d08c5143f3cc4bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:21</sys_updated_on>
+        <value>38fa64edc0a8016400f4a5724b0434b8</value>
+        <variable display_value="During the following schedule">fb55145473031300b61e66476bf6a762</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>2a26fe591b2609d08c5143f3cc4bcbe8</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:21</sys_created_on>
+        <sys_id>6226fe591b2609d08c5143f3cc4bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:21</sys_updated_on>
+        <value>1970-01-01 01:00:00</value>
+        <variable display_value="Duration">ef145c1473031300b61e66476bf6a7be</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>2a26fe591b2609d08c5143f3cc4bcbe8</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:21</sys_created_on>
+        <sys_id>ae26fe591b2609d08c5143f3cc4bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:21</sys_updated_on>
+        <value/>
+        <variable display_value="Timer relative duration operator">dca4105473031300b61e66476bf6a726</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0864fe551b2609d08c5143f3cc4bcb4a^id=2a26fe591b2609d08c5143f3cc4bcbe8"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_fdb2541473031300b61e66476bf6a70e^id=2a26fe591b2609d08c5143f3cc4bcbe8"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2a26fe591b2609d08c5143f3cc4bcbe8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2a26fe591b2609d08c5143f3cc4bcbe8"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ea26fe591b2609d08c5143f3cc4bcbc3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a7f597b4-f75b-476a-83bb-e4e58dd57852</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>a226fe591b2609d08c5143f3cc4bcbc4</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:56</sys_updated_on>
+        <ui_id>53410a16-a5a6-439a-ae63-7b41ff2aa769</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a226fe591b2609d08c5143f3cc4bcbc4"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0864fe551b2609d08c5143f3cc4bcb4a^id=a226fe591b2609d08c5143f3cc4bcbc4"/>
+    <sys_element_mapping action="delete_multiple" query="id=a226fe591b2609d08c5143f3cc4bcbc4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>a226fe591b2609d08c5143f3cc4bcbc4</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>6226fe591b2609d08c5143f3cc4bcbe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{f47e5245-784f-4202-aea2-a87e3961c9e5.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a226fe591b2609d08c5143f3cc4bcbc4"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a226fe591b2609d08c5143f3cc4bcbc4"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0e26be591b2609d08c5143f3cc4bcbea</block>
+        <comment>Has Due Date Passed?</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Dynamic Flow">5ede711653223300414eddeeff7b1256</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>c3a7e6fb-c32f-442e-b5e8-745dd8f2087f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:19</sys_created_on>
+        <sys_id>c226be591b2609d08c5143f3cc4bcbeb</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:56</sys_updated_on>
+        <ui_id>6bce319f-27c7-4ea8-8226-7ae7449707e3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c226be591b2609d08c5143f3cc4bcbeb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c226be591b2609d08c5143f3cc4bcbeb</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>1a26fe591b2609d08c5143f3cc4bcba4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <value/>
+        <variable display_value="Date A">0a26be591b2609d08c5143f3cc4bcbed</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c226be591b2609d08c5143f3cc4bcbeb</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>1e26fe591b2609d08c5143f3cc4bcba2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait for completion">5c16523a733233008dcbedcc5ef6a778</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c226be591b2609d08c5143f3cc4bcbeb</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>5626fe591b2609d08c5143f3cc4bcba4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <value/>
+        <variable display_value="Date B">1a26fe591b2609d08c5143f3cc4bcb96</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c226be591b2609d08c5143f3cc4bcbeb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>5a26fe591b2609d08c5143f3cc4bcba2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <value>ea5113c71b92c5d062e50ed2cd4bcbf6</value>
+        <variable display_value="Flow Template">6320ce1653223300414eddeeff7b1292</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c226be591b2609d08c5143f3cc4bcbeb</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>de26fe591b2609d08c5143f3cc4bcba2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <value>ea5113c71b92c5d062e50ed2cd4bcbf6</value>
+        <variable display_value="Flow">0a68167f733233008dcbedcc5ef6a7b9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c226be591b2609d08c5143f3cc4bcbeb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>date_a</field>
+        <id>c226be591b2609d08c5143f3cc4bcbeb</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>d226fe591b2609d08c5143f3cc4bcba4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_ext_input_c226be591b2609d08c5143f3cc4bcbeb</table>
+        <value>{{subflow.due_date}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>date_b</field>
+        <id>c226be591b2609d08c5143f3cc4bcbeb</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>1226fe591b2609d08c5143f3cc4bcba4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_ext_input_c226be591b2609d08c5143f3cc4bcbeb</table>
+        <value>{{c781e705-3214-4be1-b31d-c9f2fefd7955.variable}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0864fe551b2609d08c5143f3cc4bcb4a^id=c226be591b2609d08c5143f3cc4bcbeb"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_5ede711653223300414eddeeff7b1256^id=c226be591b2609d08c5143f3cc4bcbeb"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c226be591b2609d08c5143f3cc4bcbeb^sys_idNOT IN0a26be591b2609d08c5143f3cc4bcbed,1a26fe591b2609d08c5143f3cc4bcb96"/>
+    <sys_hub_flow_logic_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date_time,uiTypeLabel=Date/Time,uiUniqueId=8afa94c3-b618-4b96-8354-51403688029c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>date_a</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date_time</internal_type>
+        <label>Date A</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">c226be591b2609d08c5143f3cc4bcbeb</model>
+        <model_id>c226be591b2609d08c5143f3cc4bcbeb</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_flow_logic_ext_input_c226be591b2609d08c5143f3cc4bcbeb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_logic_ext_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:19</sys_created_on>
+        <sys_id>0a26be591b2609d08c5143f3cc4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_logic_ext_input>
+    <sys_hub_flow_logic_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date_time,uiTypeLabel=Date/Time,uiUniqueId=7aa5dc1e-a150-4a01-a10f-1b3e6685f7d5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>date_b</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date_time</internal_type>
+        <label>Date B</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">c226be591b2609d08c5143f3cc4bcbeb</model>
+        <model_id>c226be591b2609d08c5143f3cc4bcbeb</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_flow_logic_ext_input_c226be591b2609d08c5143f3cc4bcbeb</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_logic_ext_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:19</sys_created_on>
+        <sys_id>1a26fe591b2609d08c5143f3cc4bcb96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_logic_ext_input>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c226be591b2609d08c5143f3cc4bcbeb"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1c37761d1b2609d08c5143f3cc4bcb17</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a7f597b4-f75b-476a-83bb-e4e58dd57852</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:52:50</sys_created_on>
+        <sys_id>d037761d1b2609d08c5143f3cc4bcb18</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:56</sys_updated_on>
+        <ui_id>37e82e44-b45e-4eb7-a4ec-60abd0cf9e1e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d037761d1b2609d08c5143f3cc4bcb18"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0864fe551b2609d08c5143f3cc4bcb4a^id=d037761d1b2609d08c5143f3cc4bcb18"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d037761d1b2609d08c5143f3cc4bcb18"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d037761d1b2609d08c5143f3cc4bcb18"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1626fe591b2609d08c5143f3cc4bcba5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>c3a7e6fb-c32f-442e-b5e8-745dd8f2087f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>da26fe591b2609d08c5143f3cc4bcba5</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:56</sys_updated_on>
+        <ui_id>a7f597b4-f75b-476a-83bb-e4e58dd57852</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=da26fe591b2609d08c5143f3cc4bcba5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>da26fe591b2609d08c5143f3cc4bcba5</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>9226fe591b2609d08c5143f3cc4bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <value>Due date has passed</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0864fe551b2609d08c5143f3cc4bcb4a^id=da26fe591b2609d08c5143f3cc4bcba5"/>
+    <sys_element_mapping action="delete_multiple" query="id=da26fe591b2609d08c5143f3cc4bcba5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>da26fe591b2609d08c5143f3cc4bcba5</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>1226fe591b2609d08c5143f3cc4bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{6bce319f-27c7-4ea8-8226-7ae7449707e3.due_date_met}}=true</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>da26fe591b2609d08c5143f3cc4bcba5</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>5e26fe591b2609d08c5143f3cc4bcba8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=da26fe591b2609d08c5143f3cc4bcba5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=da26fe591b2609d08c5143f3cc4bcba5"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1a26fe591b2609d08c5143f3cc4bcba9</block>
+        <comment>Due date passed = true</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</flow>
+        <flow_variable/>
+        <flow_variables_assigned>due_date_passed</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a7f597b4-f75b-476a-83bb-e4e58dd57852</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>de26fe591b2609d08c5143f3cc4bcba9</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:56</sys_updated_on>
+        <ui_id>eb57d6ea-e4fc-48e5-a651-9d83f7a0115b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=de26fe591b2609d08c5143f3cc4bcba9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>de26fe591b2609d08c5143f3cc4bcba9</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:20</sys_created_on>
+        <sys_id>e626fe591b2609d08c5143f3cc4bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:20</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Due Date Passed">4e26be591b2609d08c5143f3cc4bcbb9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0864fe551b2609d08c5143f3cc4bcb4a^id=de26fe591b2609d08c5143f3cc4bcba9"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=de26fe591b2609d08c5143f3cc4bcba9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=de26fe591b2609d08c5143f3cc4bcba9"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=0864fe551b2609d08c5143f3cc4bcb4a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=0864fe551b2609d08c5143f3cc4bcb4a^sys_idNOT IN4e26be591b2609d08c5143f3cc4bcbb9"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=de19fff1-40b7-4dfa-9b62-ae8fbcbc1042</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>due_date_passed</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Due Date Passed</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</model>
+        <model_id>0864fe551b2609d08c5143f3cc4bcb4a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_0864fe551b2609d08c5143f3cc4bcb4a</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:18</sys_created_on>
+        <sys_id>4e26be591b2609d08c5143f3cc4bcbb9</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Due Date Passed</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_4e26be591b2609d08c5143f3cc4bcbb9</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_0864fe551b2609d08c5143f3cc4bcb4a^sys_idNOT IN0226be591b2609d08c5143f3cc4bcbb5,0a26be591b2609d08c5143f3cc4bcba9"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ritm</element>
+        <help/>
+        <hint/>
+        <label>RITM</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0864fe551b2609d08c5143f3cc4bcb4a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:18</sys_created_on>
+        <sys_id>0226be591b2609d08c5143f3cc4bcbb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RITM</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>due_date</element>
+        <help/>
+        <hint/>
+        <label>Due Date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0864fe551b2609d08c5143f3cc4bcb4a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:18</sys_created_on>
+        <sys_id>0a26be591b2609d08c5143f3cc4bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Due Date</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_0864fe551b2609d08c5143f3cc4bcb4a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_0864fe551b2609d08c5143f3cc4bcb4a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_0864fe551b2609d08c5143f3cc4bcb4a"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=0864fe551b2609d08c5143f3cc4bcb4a"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=0864fe551b2609d08c5143f3cc4bcb4a^sys_idNOT IN8c36b2991b2609d08c5143f3cc4bcb5d"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"8c36b2991b2609d08c5143f3cc4bcb5d","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</plan_id>
+        <snapshot>89f955b01b7ea51062e50ed2cd4bcbb0</snapshot>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8c36b2991b2609d08c5143f3cc4bcb5d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:55</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>sec05_inactive_employee_review_process__open_task_closer</internal_name>
+        <label_cache>[{"name":"d2352d90-6921-47bb-b68d-dc1e569c55e6.__dont_treat_as_error__","label":"8➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d2352d90-6921-47bb-b68d-dc1e569c55e6.__action_status__","label":"8➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d2352d90-6921-47bb-b68d-dc1e569c55e6.table_name","label":"8➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d2352d90-6921-47bb-b68d-dc1e569c55e6.record","label":"8➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"53410a16-a5a6-439a-ae63-7b41ff2aa769.item","label":"7➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"subflow.ritm","label":"Input➛RITM","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"11b3b6c3-a870-4580-a038-3e84de948449"}},{"name":"f47e5245-784f-4202-aea2-a87e3961c9e5.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f47e5245-784f-4202-aea2-a87e3961c9e5.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f47e5245-784f-4202-aea2-a87e3961c9e5.Count","label":"6➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f47e5245-784f-4202-aea2-a87e3961c9e5.Table","label":"6➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f47e5245-784f-4202-aea2-a87e3961c9e5.Records","label":"6➛Catalog Task Records","reference":"sc_task","reference_display":"Catalog Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.due_date_passed","label":"Flow Variables➛Due Date Passed","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"de19fff1-40b7-4dfa-9b62-ae8fbcbc1042"}},{"name":"6bce319f-27c7-4ea8-8226-7ae7449707e3.due_date_met","label":"3➛Date A Before Date B","reference_display":"Date A Before Date B","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c5a90f02-ac33-46cb-a73c-2dfa3fe477c3"}},{"name":"c781e705-3214-4be1-b31d-c9f2fefd7955.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c781e705-3214-4be1-b31d-c9f2fefd7955.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FD98f2ffcbf55ec5d02870c3c3b36f1bc4","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c781e705-3214-4be1-b31d-c9f2fefd7955.variable","label":"2➛Date Time Value","reference_display":"Date Time Value","type":"glide_date_time","base_type":"glide_date_time","attributes":{"uiType":"glide_date_time","uiTypeLabel":"Date/Time","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f5665f3d-4abe-4fbb-8f84-c8b390ddab40"}},{"name":"subflow.due_date","label":"Input➛Due Date","reference":"","reference_display":"","type":"glide_date_time","base_type":"glide_date_time","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1c71a71d-6f4d-41af-9252-4675401412d5"}},{"name":"6bce319f-27c7-4ea8-8226-7ae7449707e3.context","label":"3➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"2d1c8f58-e709-4e5b-a987-ddc0485549bd.scheduled_end_date_time","label":"10➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"2d1c8f58-e709-4e5b-a987-ddc0485549bd.total_duration","label":"10➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"bfde4777-b0c1-4e55-8e68-399cbaad63db.scheduled_end_date_time","label":"1➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"bfde4777-b0c1-4e55-8e68-399cbaad63db.total_duration","label":"1➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"0c600d00-50eb-4e1b-b3fc-de3b73e2245d.__status__","label":"11➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"66b257d9-f7d2-4007-8632-65e20c14a5af.context","label":"12➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"0c600d00-50eb-4e1b-b3fc-de3b73e2245d.__status__.message","label":"12➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"0c600d00-50eb-4e1b-b3fc-de3b73e2245d.__status__.code","label":"12➛Error Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"subflow.ritm.number","label":"Input➛RITM➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sc_req_item","column_name":"number"}]</label_cache>
+        <master>true</master>
+        <name>SEC17 - Open Task Closer</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4f2632991b2609d08c5143f3cc4bcbd0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:53</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=4f2632991b2609d08c5143f3cc4bcbd0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4f2632991b2609d08c5143f3cc4bcbd0"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=4f2632991b2609d08c5143f3cc4bcbd0"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=4f2632991b2609d08c5143f3cc4bcbd0"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=4f2632991b2609d08c5143f3cc4bcbd0^sys_idNOT IN432632991b2609d08c5143f3cc4bcbd2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>4f2632991b2609d08c5143f3cc4bcbd0</id>
+        <name>SEC05 Inactive Employee Review Process - Open Task Closer</name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:23</sys_created_on>
+        <sys_id>432632991b2609d08c5143f3cc4bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:23</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=432632991b2609d08c5143f3cc4bcbd2"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=4f2632991b2609d08c5143f3cc4bcbd0^sys_idNOT IN532672991b2609d08c5143f3cc4bcb0d,872632991b2609d08c5143f3cc4bcbd3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=11b3b6c3-a870-4580-a038-3e84de948449</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_req_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ritm</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>RITM</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="SEC17 - Open Task Closer">4f2632991b2609d08c5143f3cc4bcbd0</model>
+        <model_id>4f2632991b2609d08c5143f3cc4bcbd0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_4f2632991b2609d08c5143f3cc4bcbd0</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:23</sys_created_on>
+        <sys_id>532672991b2609d08c5143f3cc4bcb0d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date_time,uiTypeLabel=Date/Time,uiUniqueId=1c71a71d-6f4d-41af-9252-4675401412d5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>due_date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date_time</internal_type>
+        <label>Due Date</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="SEC17 - Open Task Closer">4f2632991b2609d08c5143f3cc4bcbd0</model>
+        <model_id>4f2632991b2609d08c5143f3cc4bcbd0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_4f2632991b2609d08c5143f3cc4bcbd0</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:23</sys_created_on>
+        <sys_id>872632991b2609d08c5143f3cc4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=4f2632991b2609d08c5143f3cc4bcbd0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4f2632991b2609d08c5143f3cc4bcbd0"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=4f2632991b2609d08c5143f3cc4bcbd0^sys_idNOT IN2b2672991b2609d08c5143f3cc4bcb90,672672991b2609d08c5143f3cc4bcbbd,e32672991b2609d08c5143f3cc4bcb88"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="SEC17 - Open Task Closer">4f2632991b2609d08c5143f3cc4bcbd0</flow>
+        <order>6</order>
+        <parent_ui_id>a7f597b4-f75b-476a-83bb-e4e58dd57852</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:25</sys_created_on>
+        <sys_id>2b2672991b2609d08c5143f3cc4bcb90</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:53</sys_updated_on>
+        <ui_id>f47e5245-784f-4202-aea2-a87e3961c9e5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2b2672991b2609d08c5143f3cc4bcb90"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2b2672991b2609d08c5143f3cc4bcb90</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:25</sys_created_on>
+        <sys_id>e72672991b2609d08c5143f3cc4bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:25</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2b2672991b2609d08c5143f3cc4bcb90"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>2b2672991b2609d08c5143f3cc4bcb90</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:25</sys_created_on>
+        <sys_id>a32672991b2609d08c5143f3cc4bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>request_item={{subflow.ritm}}^active=true</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>2b2672991b2609d08c5143f3cc4bcb90</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:25</sys_created_on>
+        <sys_id>672672991b2609d08c5143f3cc4bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2b2672991b2609d08c5143f3cc4bcb90"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2b2672991b2609d08c5143f3cc4bcb90"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="SEC17 - Open Task Closer">4f2632991b2609d08c5143f3cc4bcbd0</flow>
+        <order>8</order>
+        <parent_ui_id>53410a16-a5a6-439a-ae63-7b41ff2aa769</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:25</sys_created_on>
+        <sys_id>672672991b2609d08c5143f3cc4bcbbd</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:53</sys_updated_on>
+        <ui_id>d2352d90-6921-47bb-b68d-dc1e569c55e6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=672672991b2609d08c5143f3cc4bcbbd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>672672991b2609d08c5143f3cc4bcbbd</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:25</sys_created_on>
+        <sys_id>632672991b2609d08c5143f3cc4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:25</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>672672991b2609d08c5143f3cc4bcbbd</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:25</sys_created_on>
+        <sys_id>af2672991b2609d08c5143f3cc4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:25</sys_updated_on>
+        <value>state=3^work_notes=Auto-closed by SEC05 task closer. Due date has passed.^active=false</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=672672991b2609d08c5143f3cc4bcbbd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>672672991b2609d08c5143f3cc4bcbbd</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:25</sys_created_on>
+        <sys_id>6b2672991b2609d08c5143f3cc4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{53410a16-a5a6-439a-ae63-7b41ff2aa769.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>672672991b2609d08c5143f3cc4bcbbd</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:25</sys_created_on>
+        <sys_id>a72672991b2609d08c5143f3cc4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>672672991b2609d08c5143f3cc4bcbbd</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:25</sys_created_on>
+        <sys_id>2f2672991b2609d08c5143f3cc4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=672672991b2609d08c5143f3cc4bcbbd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=672672991b2609d08c5143f3cc4bcbbd"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Get Current DateTime">80f2ffcb1b5ec5d062e50ed2cd4bcba4</action_type>
+        <action_type_parent display_value="Get Current DateTime">d9a2f7cb1b5ec5d062e50ed2cd4bcb8d</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="SEC17 - Open Task Closer">4f2632991b2609d08c5143f3cc4bcbd0</flow>
+        <order>2</order>
+        <parent_ui_id>c3a7e6fb-c32f-442e-b5e8-745dd8f2087f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:25</sys_created_on>
+        <sys_id>e32672991b2609d08c5143f3cc4bcb88</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:52</sys_updated_on>
+        <ui_id>c781e705-3214-4be1-b31d-c9f2fefd7955</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e32672991b2609d08c5143f3cc4bcb88"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e32672991b2609d08c5143f3cc4bcb88"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e32672991b2609d08c5143f3cc4bcb88"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=4f2632991b2609d08c5143f3cc4bcbd0"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=4f2632991b2609d08c5143f3cc4bcbd0^sys_idNOT IN2b2672991b2609d08c5143f3cc4bcb6e,572672991b2609d08c5143f3cc4bcb41,5b2672991b2609d08c5143f3cc4bcb45,672672991b2609d08c5143f3cc4bcb67,7d37f61d1b2609d08c5143f3cc4bcb28,a72672991b2609d08c5143f3cc4bcb63,e32672991b2609d08c5143f3cc4bcb6b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">6226fe591b2609d08c5143f3cc4bcbe8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Open Task Closer">4f2632991b2609d08c5143f3cc4bcbd0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>c3a7e6fb-c32f-442e-b5e8-745dd8f2087f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>2b2672991b2609d08c5143f3cc4bcb6e</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:53</sys_updated_on>
+        <ui_id>2d1c8f58-e709-4e5b-a987-ddc0485549bd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2b2672991b2609d08c5143f3cc4bcb6e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>2b2672991b2609d08c5143f3cc4bcb6e</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>232672991b2609d08c5143f3cc4bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <value/>
+        <variable display_value="Timer relative duration operator">dca4105473031300b61e66476bf6a726</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>2b2672991b2609d08c5143f3cc4bcb6e</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>a72672991b2609d08c5143f3cc4bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <value>38fa64edc0a8016400f4a5724b0434b8</value>
+        <variable display_value="During the following schedule">fb55145473031300b61e66476bf6a762</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>2b2672991b2609d08c5143f3cc4bcb6e</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>e32672991b2609d08c5143f3cc4bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <value>1970-01-01 01:00:00</value>
+        <variable display_value="Duration">ef145c1473031300b61e66476bf6a7be</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_4f2632991b2609d08c5143f3cc4bcbd0^id=2b2672991b2609d08c5143f3cc4bcb6e"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_fdb2541473031300b61e66476bf6a70e^id=2b2672991b2609d08c5143f3cc4bcb6e"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2b2672991b2609d08c5143f3cc4bcb6e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2b2672991b2609d08c5143f3cc4bcb6e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">4a26be591b2609d08c5143f3cc4bcbd2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Open Task Closer">4f2632991b2609d08c5143f3cc4bcbd0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>572672991b2609d08c5143f3cc4bcb41</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:52</sys_updated_on>
+        <ui_id>c3a7e6fb-c32f-442e-b5e8-745dd8f2087f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=572672991b2609d08c5143f3cc4bcb41"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>572672991b2609d08c5143f3cc4bcb41</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>5f2672991b2609d08c5143f3cc4bcb44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <value>Due date passed</value>
+        <variable display_value="Condition Label">bda2cb0473031300612c273ffff6a750</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_4f2632991b2609d08c5143f3cc4bcbd0^id=572672991b2609d08c5143f3cc4bcb41"/>
+    <sys_element_mapping action="delete_multiple" query="id=572672991b2609d08c5143f3cc4bcb41"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>572672991b2609d08c5143f3cc4bcb41</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>db2672991b2609d08c5143f3cc4bcb44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
+        <value>{{flow_variable.due_date_passed}}=true</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>572672991b2609d08c5143f3cc4bcb41</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>1b2672991b2609d08c5143f3cc4bcb44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=572672991b2609d08c5143f3cc4bcb41"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=572672991b2609d08c5143f3cc4bcb41"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0e26be591b2609d08c5143f3cc4bcbea</block>
+        <comment>Has Due Date Passed?</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Open Task Closer">4f2632991b2609d08c5143f3cc4bcbd0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Dynamic Flow">5ede711653223300414eddeeff7b1256</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>c3a7e6fb-c32f-442e-b5e8-745dd8f2087f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>5b2672991b2609d08c5143f3cc4bcb45</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:52</sys_updated_on>
+        <ui_id>6bce319f-27c7-4ea8-8226-7ae7449707e3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5b2672991b2609d08c5143f3cc4bcb45"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5b2672991b2609d08c5143f3cc4bcb45</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>1b2672991b2609d08c5143f3cc4bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait for completion">5c16523a733233008dcbedcc5ef6a778</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5b2672991b2609d08c5143f3cc4bcb45</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>572672991b2609d08c5143f3cc4bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <value>ea5113c71b92c5d062e50ed2cd4bcbf6</value>
+        <variable display_value="Flow Template">6320ce1653223300414eddeeff7b1292</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5b2672991b2609d08c5143f3cc4bcb45</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>a32672991b2609d08c5143f3cc4bcb62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <value/>
+        <variable display_value="Date A">1b2672991b2609d08c5143f3cc4bcb54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5b2672991b2609d08c5143f3cc4bcb45</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>db2672991b2609d08c5143f3cc4bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <value>ea5113c71b92c5d062e50ed2cd4bcbf6</value>
+        <variable display_value="Flow">0a68167f733233008dcbedcc5ef6a7b9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5b2672991b2609d08c5143f3cc4bcb45</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>ef2672991b2609d08c5143f3cc4bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <value/>
+        <variable display_value="Date B">d32672991b2609d08c5143f3cc4bcb48</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5b2672991b2609d08c5143f3cc4bcb45"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>date_a</field>
+        <id>5b2672991b2609d08c5143f3cc4bcb45</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>6f2672991b2609d08c5143f3cc4bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_ext_input_5b2672991b2609d08c5143f3cc4bcb45</table>
+        <value>{{subflow.due_date}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>date_b</field>
+        <id>5b2672991b2609d08c5143f3cc4bcb45</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>ab2672991b2609d08c5143f3cc4bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_ext_input_5b2672991b2609d08c5143f3cc4bcb45</table>
+        <value>{{c781e705-3214-4be1-b31d-c9f2fefd7955.variable}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_4f2632991b2609d08c5143f3cc4bcbd0^id=5b2672991b2609d08c5143f3cc4bcb45"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_5ede711653223300414eddeeff7b1256^id=5b2672991b2609d08c5143f3cc4bcb45"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5b2672991b2609d08c5143f3cc4bcb45^sys_idNOT IN1b2672991b2609d08c5143f3cc4bcb54,d32672991b2609d08c5143f3cc4bcb48"/>
+    <sys_hub_flow_logic_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date_time,uiTypeLabel=Date/Time,uiUniqueId=8afa94c3-b618-4b96-8354-51403688029c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>date_a</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date_time</internal_type>
+        <label>Date A</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">5b2672991b2609d08c5143f3cc4bcb45</model>
+        <model_id>5b2672991b2609d08c5143f3cc4bcb45</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_flow_logic_ext_input_5b2672991b2609d08c5143f3cc4bcb45</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_logic_ext_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>1b2672991b2609d08c5143f3cc4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_logic_ext_input>
+    <sys_hub_flow_logic_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date_time,uiTypeLabel=Date/Time,uiUniqueId=7aa5dc1e-a150-4a01-a10f-1b3e6685f7d5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>date_b</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date_time</internal_type>
+        <label>Date B</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">5b2672991b2609d08c5143f3cc4bcb45</model>
+        <model_id>5b2672991b2609d08c5143f3cc4bcb45</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_flow_logic_ext_input_5b2672991b2609d08c5143f3cc4bcb45</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_logic_ext_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>d32672991b2609d08c5143f3cc4bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_logic_ext_input>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5b2672991b2609d08c5143f3cc4bcb45"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1a26fe591b2609d08c5143f3cc4bcba9</block>
+        <comment>Due date passed = true</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Open Task Closer">4f2632991b2609d08c5143f3cc4bcbd0</flow>
+        <flow_variable/>
+        <flow_variables_assigned>due_date_passed</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a7f597b4-f75b-476a-83bb-e4e58dd57852</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>672672991b2609d08c5143f3cc4bcb67</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:53</sys_updated_on>
+        <ui_id>eb57d6ea-e4fc-48e5-a651-9d83f7a0115b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=672672991b2609d08c5143f3cc4bcb67"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>672672991b2609d08c5143f3cc4bcb67</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>672672991b2609d08c5143f3cc4bcb6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Due Date Passed">132672991b2609d08c5143f3cc4bcb39</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_4f2632991b2609d08c5143f3cc4bcbd0^id=672672991b2609d08c5143f3cc4bcb67"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=672672991b2609d08c5143f3cc4bcb67"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=672672991b2609d08c5143f3cc4bcb67"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1c37761d1b2609d08c5143f3cc4bcb17</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Open Task Closer">4f2632991b2609d08c5143f3cc4bcbd0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a7f597b4-f75b-476a-83bb-e4e58dd57852</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:52:56</sys_created_on>
+        <sys_id>7d37f61d1b2609d08c5143f3cc4bcb28</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:53</sys_updated_on>
+        <ui_id>37e82e44-b45e-4eb7-a4ec-60abd0cf9e1e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7d37f61d1b2609d08c5143f3cc4bcb28"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_4f2632991b2609d08c5143f3cc4bcbd0^id=7d37f61d1b2609d08c5143f3cc4bcb28"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7d37f61d1b2609d08c5143f3cc4bcb28"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7d37f61d1b2609d08c5143f3cc4bcb28"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1626fe591b2609d08c5143f3cc4bcba5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Open Task Closer">4f2632991b2609d08c5143f3cc4bcbd0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>c3a7e6fb-c32f-442e-b5e8-745dd8f2087f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>a72672991b2609d08c5143f3cc4bcb63</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:52</sys_updated_on>
+        <ui_id>a7f597b4-f75b-476a-83bb-e4e58dd57852</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a72672991b2609d08c5143f3cc4bcb63"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a72672991b2609d08c5143f3cc4bcb63</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>6b2672991b2609d08c5143f3cc4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <value>Due date has passed</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_4f2632991b2609d08c5143f3cc4bcbd0^id=a72672991b2609d08c5143f3cc4bcb63"/>
+    <sys_element_mapping action="delete_multiple" query="id=a72672991b2609d08c5143f3cc4bcb63"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>a72672991b2609d08c5143f3cc4bcb63</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>e72672991b2609d08c5143f3cc4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{6bce319f-27c7-4ea8-8226-7ae7449707e3.due_date_met}}=true</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>a72672991b2609d08c5143f3cc4bcb63</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>272672991b2609d08c5143f3cc4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a72672991b2609d08c5143f3cc4bcb63"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a72672991b2609d08c5143f3cc4bcb63"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ea26fe591b2609d08c5143f3cc4bcbc3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Open Task Closer">4f2632991b2609d08c5143f3cc4bcbd0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a7f597b4-f75b-476a-83bb-e4e58dd57852</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>e32672991b2609d08c5143f3cc4bcb6b</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:53</sys_updated_on>
+        <ui_id>53410a16-a5a6-439a-ae63-7b41ff2aa769</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e32672991b2609d08c5143f3cc4bcb6b"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_4f2632991b2609d08c5143f3cc4bcbd0^id=e32672991b2609d08c5143f3cc4bcb6b"/>
+    <sys_element_mapping action="delete_multiple" query="id=e32672991b2609d08c5143f3cc4bcb6b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>e32672991b2609d08c5143f3cc4bcb6b</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:24</sys_created_on>
+        <sys_id>6f2672991b2609d08c5143f3cc4bcb6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{f47e5245-784f-4202-aea2-a87e3961c9e5.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e32672991b2609d08c5143f3cc4bcb6b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e32672991b2609d08c5143f3cc4bcb6b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4f2632991b2609d08c5143f3cc4bcbd0"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=4f2632991b2609d08c5143f3cc4bcbd0^sys_idNOT IN132672991b2609d08c5143f3cc4bcb39"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=de19fff1-40b7-4dfa-9b62-ae8fbcbc1042</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>due_date_passed</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Due Date Passed</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="SEC17 - Open Task Closer">4f2632991b2609d08c5143f3cc4bcbd0</model>
+        <model_id>4f2632991b2609d08c5143f3cc4bcbd0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_4f2632991b2609d08c5143f3cc4bcbd0</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:23</sys_created_on>
+        <sys_id>132672991b2609d08c5143f3cc4bcb39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Due Date Passed</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_132672991b2609d08c5143f3cc4bcb39</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_4f2632991b2609d08c5143f3cc4bcbd0^sys_idNOT IN1f2672991b2609d08c5143f3cc4bcb1a,db2672991b2609d08c5143f3cc4bcb08"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ritm</element>
+        <help/>
+        <hint/>
+        <label>RITM</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4f2632991b2609d08c5143f3cc4bcbd0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:23</sys_created_on>
+        <sys_id>1f2672991b2609d08c5143f3cc4bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RITM</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>due_date</element>
+        <help/>
+        <hint/>
+        <label>Due Date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4f2632991b2609d08c5143f3cc4bcbd0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:23</sys_created_on>
+        <sys_id>db2672991b2609d08c5143f3cc4bcb08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Due Date</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-29 12:48:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4f2632991b2609d08c5143f3cc4bcbd0"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_4f2632991b2609d08c5143f3cc4bcbd0"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_4f2632991b2609d08c5143f3cc4bcbd0"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>0864fe551b2609d08c5143f3cc4bcb4a</sys_id>
+        <latest_snapshot>4f2632991b2609d08c5143f3cc4bcbd0</latest_snapshot>
+        <compiler_build>glide-tokyo-07-08-2022__patch7a-03-27-2023_04-04-2023_1511.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>

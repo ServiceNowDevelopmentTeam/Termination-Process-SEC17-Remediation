@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Copy of SEC05 Inactive Employee Review Process">cafefd761bd6c1d062e50ed2cd4bcb3b</catalog_item>
+        <catalog_variable>IO:d2fe35be1bd6c1d062e50ed2cd4bcb98</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-21 14:22:24</sys_created_on>
+        <sys_id>eafe35be1bd6c1d062e50ed2cd4bcbde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>manager</sys_name>
+        <sys_package display_value="SOx Record Generators" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SOx Record Generators">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_eafe35be1bd6c1d062e50ed2cd4bcbde</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-21 14:22:24</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide Manager and Response in Catalog Item">eafe35be1bd6c1d062e50ed2cd4bcbdb</ui_policy>
+        <variable>manager</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>catalog_ui_policy_action_eafe35be1bd6c1d062e50ed2cd4bcbde</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Copy of SEC05 Inactive Employee Review Process">cafefd761bd6c1d062e50ed2cd4bcb3b</catalog_item><catalog_variable>IO:d2fe35be1bd6c1d062e50ed2cd4bcb98</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>false</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2022-03-21 14:22:24</sys_created_on><sys_id>eafe35be1bd6c1d062e50ed2cd4bcbde</sys_id><sys_mod_count>0</sys_mod_count><sys_name>manager</sys_name><sys_package display_value="SOx Record Generators" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package><sys_policy/><sys_scope display_value="SOx Record Generators">24586a251ba0099062e50ed2cd4bcbfc</sys_scope><sys_update_name>catalog_ui_policy_action_eafe35be1bd6c1d062e50ed2cd4bcbde</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2022-03-21 14:22:24</sys_updated_on><table/><ui_policy display_value="Hide Manager and Response in Catalog Item">eafe35be1bd6c1d062e50ed2cd4bcbdb</ui_policy><variable>manager</variable><variable_set/><visible>false</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-1803173856</payload_hash>
+        <record_name>manager</record_name>
+        <reverted_from/>
+        <source>52e1f1251b96859062e50ed2cd4bcbba</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-21 14:22:24</sys_created_on>
+        <sys_id>2afe35be1bd6c1d062e50ed2cd4bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17facdb8ed20000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-21 14:22:24</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>22fe35bedbd6c1d0c3779fa489cb8ae1</update_guid>
+        <update_guid_history>22fe35bedbd6c1d0c3779fa489cb8ae1:-1803173856</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">e35ffdfe1bd6c1d062e50ed2cd4bcb5e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-21 14:24:06</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>3c08f744b3564c009e666decc7900000</sys_id>
+        <sys_metadata>eafe35be1bd6c1d062e50ed2cd4bcbde</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>manager</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_scope_delete display_value="">2f88ffbf0c2845809e73338e3a3a8400</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_eafe35be1bd6c1d062e50ed2cd4bcbde</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_eafe35be1bd6c1d062e50ed2cd4bcbde">2afe35be1bd6c1d062e50ed2cd4bcbe1</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-21 14:24:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

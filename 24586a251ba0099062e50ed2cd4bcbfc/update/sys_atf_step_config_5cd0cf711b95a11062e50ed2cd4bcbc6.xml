@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step_config">
+    <sys_atf_step_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <batch_order_constraint/>
+        <can_mutate_page>false</can_mutate_page>
+        <category display_value="Server">317c4dc20b202200a8d7a12cf6673aa8</category>
+        <class_name/>
+        <class_type>script</class_type>
+        <deprecated>false</deprecated>
+        <description_generator><![CDATA[function generateDescription() {
+	// the global variable 'step' represents the current glide record
+	var description = "This ATF step generates the current date/time and adds or subtracts a specified duration from it. The operation input determines whether to add or subtract from the current date/time. The duration input should be in the format 'x[d|h|m|s] y[d|h|m|s] ...', where 'x', 'y', etc. are the number of days, hours, minutes, or seconds to add or subtract from the current date/time. The output of this step is the new date/time as a string.";
+
+	// your code here
+	return description;
+}
+generateDescription();
+]]></description_generator>
+        <html_description><![CDATA[<p>This ATF step generates the current date/time and adds or subtracts a specified duration from it. The operation input determines whether to add or subtract from the current date/time. The duration input should be in the format &#39;x[d|h|m|s] y[d|h|m|s] ...&#39;, where &#39;x&#39;, &#39;y&#39;, etc. are the number of days, hours, minutes, or seconds to add or subtract from the current date/time. The output of this step is the new date/time as a string.</p>
+<p>Operation &#61; add or subtract</p>
+<p>Duration &#61; amount to add or subtract</p>]]></html_description>
+        <icon>icon-article-document</icon>
+        <inputs/>
+        <name>Add/Subtract from current date/time</name>
+        <order>0</order>
+        <outputs/>
+        <step_env display_value="Server - Independent">6c2bcea1870312009dccc9ded0e3ecca</step_env>
+        <step_execution_generator><![CDATA[// Get the input values from the test step
+var inputDuration = inputs.u_duration.toString();
+var durationInput = new GlideDuration();
+    durationInput.setValue(inputDuration);
+var operationInput = inputs.u_operation.toString();
+
+// Create a new GlideDateTime object for the current date/time
+var currentDate = new GlideDateTime();
+
+// Determine whether to add or subtract based on the operation input
+if (operationInput === 'add') {
+	currentDate.add(durationInput);
+} else if (operationInput === 'subtract') {
+	currentDate.subtract(durationInput);
+}
+
+// Create a step result object with the new date/time as the output value
+outputs.u_newdatetime = currentDate.getDisplayValue();
+
+// Create a step result object with a status of "success"
+stepResult.setSuccess();
+]]></step_execution_generator>
+        <sys_class_name>sys_atf_step_config</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-01 16:16:59</sys_created_on>
+        <sys_id>5cd0cf711b95a11062e50ed2cd4bcbc6</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Add/Subtract from current date/time</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_atf_step_config_5cd0cf711b95a11062e50ed2cd4bcbc6</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-01 17:08:22</sys_updated_on>
+        <template_reminder>Add/Subtract from current date/time</template_reminder>
+        <type display_value="Test Step" name="sys_atf_step">e6f9282f1b251010e7004229bc4bcb70</type>
+        <wizard_redirect/>
+    </sys_atf_step_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=5cd0cf711b95a11062e50ed2cd4bcbc6"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5cd0cf711b95a11062e50ed2cd4bcbc6"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_5cd0cf711b95a11062e50ed2cd4bcbc6^id=5cd0cf711b95a11062e50ed2cd4bcbc6"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_output_variable_5cd0cf711b95a11062e50ed2cd4bcbc6^id=5cd0cf711b95a11062e50ed2cd4bcbc6"/>
+</record_update>

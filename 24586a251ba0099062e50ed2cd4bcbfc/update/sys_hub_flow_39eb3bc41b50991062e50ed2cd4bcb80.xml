@@ -1,0 +1,2122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>d6b8af4c1bdc591062e50ed2cd4bcb44</copied_from>
+        <copied_from_name>SEC17 - Is 90 Day or Normal Revi</copied_from_name>
+        <description/>
+        <internal_name>sec17__is_reactivated_sec17_term</internal_name>
+        <label_cache>[{"name":"58a897bf-2fb7-43f5-8458-fa27977006d6.item.request_item.sys_id","label":"3➛Variable Ownership Record➛Parent Item➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_req_item","column_name":"sys_id"},{"name":"71dc82c5-f496-4d6e-9627-489470a28d76.Record.active","label":"8➛User Record➛Active","reference":"","reference_display":"Active","type":"boolean","base_type":"boolean","parent_table_name":"sys_user","column_name":"active"},{"name":"71dc82c5-f496-4d6e-9627-489470a28d76.__dont_treat_as_error__","label":"8➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"71dc82c5-f496-4d6e-9627-489470a28d76.__action_status__","label":"8➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"71dc82c5-f496-4d6e-9627-489470a28d76.error_message","label":"8➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"71dc82c5-f496-4d6e-9627-489470a28d76.status","label":"8➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"71dc82c5-f496-4d6e-9627-489470a28d76.Table","label":"8➛User Table","reference":"sys_user","reference_display":"User","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"71dc82c5-f496-4d6e-9627-489470a28d76.Record","label":"8➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1002d912-9a84-4785-8fff-14ea54c2c14d.Record.sys_id","label":"4➛Requested Item Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_req_item","column_name":"sys_id"},{"name":"a569554d-3620-4100-b98d-65ebd59349b6.value","label":"6➛Value","reference_display":"Value","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"1b1d0464-9a07-4995-abad-4f801d65fbda"}},{"name":"a569554d-3620-4100-b98d-65ebd59349b6.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"86378912-91bf-426b-9c8a-2fbdd312b39c"}},{"name":"a569554d-3620-4100-b98d-65ebd59349b6.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDd2956a5812db45d067f836f1fd1847bd","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"e540815b-d836-4144-977a-25880ae204fd"}},{"name":"58a897bf-2fb7-43f5-8458-fa27977006d6.item.sys_id","label":"3➛Variable Ownership Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_item_option_mtom","column_name":"sys_id"},{"name":"b778fa4d-caaa-4da0-85ac-55e33d5fe5ea.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"b778fa4d-caaa-4da0-85ac-55e33d5fe5ea.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"b778fa4d-caaa-4da0-85ac-55e33d5fe5ea.Count","label":"3➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b778fa4d-caaa-4da0-85ac-55e33d5fe5ea.Table","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b778fa4d-caaa-4da0-85ac-55e33d5fe5ea.Records","label":"3➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24748883-6165-4541-80e3-b17737a5d3b8.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"24748883-6165-4541-80e3-b17737a5d3b8.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"24748883-6165-4541-80e3-b17737a5d3b8.Count","label":"3➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24748883-6165-4541-80e3-b17737a5d3b8.Table","label":"3➛Variable Ownership Table","reference":"sc_item_option_mtom","reference_display":"Variable Ownership","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24748883-6165-4541-80e3-b17737a5d3b8.Records","label":"3➛Variable Ownership Records","reference":"sc_item_option_mtom","reference_display":"Variable Ownership","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7e74afc6-841f-425b-80c1-d2fa85604101.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7e74afc6-841f-425b-80c1-d2fa85604101.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7e74afc6-841f-425b-80c1-d2fa85604101.Count","label":"2➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7e74afc6-841f-425b-80c1-d2fa85604101.Table","label":"2➛Variable Ownership Table","reference":"sc_item_option_mtom","reference_display":"Variable Ownership","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7e74afc6-841f-425b-80c1-d2fa85604101.Records","label":"2➛Variable Ownership Records","reference":"sc_item_option_mtom","reference_display":"Variable Ownership","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"45e8aed1-b994-40c0-8f63-489b3cf149e8.Record","label":"2➛Variable Ownership Record","reference":"sc_item_option_mtom","reference_display":"Variable Ownership","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"45e8aed1-b994-40c0-8f63-489b3cf149e8.Table","label":"2➛Variable Ownership Table","reference":"sc_item_option_mtom","reference_display":"Variable Ownership","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"45e8aed1-b994-40c0-8f63-489b3cf149e8.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"45e8aed1-b994-40c0-8f63-489b3cf149e8.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"45e8aed1-b994-40c0-8f63-489b3cf149e8.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"45e8aed1-b994-40c0-8f63-489b3cf149e8.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad39465d-f586-4443-bb08-1d0962817f1f.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDd2956a5812db45d067f836f1fd1847bd","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"e540815b-d836-4144-977a-25880ae204fd"}},{"name":"ad39465d-f586-4443-bb08-1d0962817f1f.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"86378912-91bf-426b-9c8a-2fbdd312b39c"}},{"name":"ad39465d-f586-4443-bb08-1d0962817f1f.value","label":"1➛Value","reference_display":"Value","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"1b1d0464-9a07-4995-abad-4f801d65fbda"}},{"name":"subflow.ritm_record.sys_id","label":"Input➛RITM Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_req_item","column_name":"sys_id"},{"name":"58a897bf-2fb7-43f5-8458-fa27977006d6.item","label":"3➛Variable Ownership Record","reference":"sc_item_option_mtom","reference_display":"Variable Ownership","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"9c7f6d55-cd4f-4a7c-b05f-798a5dea4501.Records","label":"4➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c7f6d55-cd4f-4a7c-b05f-798a5dea4501.Table","label":"4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c7f6d55-cd4f-4a7c-b05f-798a5dea4501.Count","label":"4➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c7f6d55-cd4f-4a7c-b05f-798a5dea4501.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"9c7f6d55-cd4f-4a7c-b05f-798a5dea4501.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"1002d912-9a84-4785-8fff-14ea54c2c14d.Record","label":"4➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1002d912-9a84-4785-8fff-14ea54c2c14d.Table","label":"4➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1002d912-9a84-4785-8fff-14ea54c2c14d.status","label":"4➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"1002d912-9a84-4785-8fff-14ea54c2c14d.error_message","label":"4➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"1002d912-9a84-4785-8fff-14ea54c2c14d.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1002d912-9a84-4785-8fff-14ea54c2c14d.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>9cbd33881b50991062e50ed2cd4bcbcb</master_snapshot>
+        <name>SEC17 - Is Reactivated SEC17 Term</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>39eb3bc41b50991062e50ed2cd4bcb80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SEC17 - Is Reactivated SEC17 Term</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_hub_flow_39eb3bc41b50991062e50ed2cd4bcb80</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-08-23 13:55:48</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=39eb3bc41b50991062e50ed2cd4bcb80"/>
+    <sys_variable_value action="delete_multiple" query="document_key=39eb3bc41b50991062e50ed2cd4bcb80"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_39eb3bc41b50991062e50ed2cd4bcb80^id=39eb3bc41b50991062e50ed2cd4bcb80"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=39eb3bc41b50991062e50ed2cd4bcb80"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=39eb3bc41b50991062e50ed2cd4bcb80"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=39eb3bc41b50991062e50ed2cd4bcb80^sys_idNOT INb1eb3bc41b50991062e50ed2cd4bcb82"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>39eb3bc41b50991062e50ed2cd4bcb80</id>
+        <name>SEC17 - Is Reactivated SEC17 Term</name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:31</sys_created_on>
+        <sys_id>b1eb3bc41b50991062e50ed2cd4bcb82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:31</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b1eb3bc41b50991062e50ed2cd4bcb82"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=39eb3bc41b50991062e50ed2cd4bcb80^sys_idNOT INc6eb3bc41b50991062e50ed2cd4bcb87"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=17739ce5-b6c2-476d-b2ac-59bdf22cdf29</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_req_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ritm_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>RITM Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="SEC17 - Is Reactivated SEC17 Term">39eb3bc41b50991062e50ed2cd4bcb80</model>
+        <model_id>39eb3bc41b50991062e50ed2cd4bcb80</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_39eb3bc41b50991062e50ed2cd4bcb80</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:31</sys_created_on>
+        <sys_id>c6eb3bc41b50991062e50ed2cd4bcb87</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=39eb3bc41b50991062e50ed2cd4bcb80^sys_idNOT IN199c7b081b50991062e50ed2cd4bcb7f"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=70d52db6-9632-4e6e-8f59-7715c860fd65</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Is Reactivated</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="SEC17 - Is Reactivated SEC17 Term">39eb3bc41b50991062e50ed2cd4bcb80</model>
+        <model_id>39eb3bc41b50991062e50ed2cd4bcb80</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_39eb3bc41b50991062e50ed2cd4bcb80</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:33:28</sys_created_on>
+        <sys_id>199c7b081b50991062e50ed2cd4bcb7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:33:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=39eb3bc41b50991062e50ed2cd4bcb80"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=39eb3bc41b50991062e50ed2cd4bcb80^sys_idNOT IN52eb3bc41b50991062e50ed2cd4bcbe1,5aeb3bc41b50991062e50ed2cd4bcbc2,7bad33881b50991062e50ed2cd4bcb2a,9aeb3bc41b50991062e50ed2cd4bcbd8,d6eb3bc41b50991062e50ed2cd4bcbcc"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get RITM Variable Value">c6956a581bdb45d08c5143f3cc4bcb4a</action_type>
+        <action_type_parent display_value="Get RITM Variable Value">ae2562181bdb45d08c5143f3cc4bcba6</action_type_parent>
+        <comment>Get manager's response</comment>
+        <display_text/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">39eb3bc41b50991062e50ed2cd4bcb80</flow>
+        <order>6</order>
+        <parent_ui_id>d5fcaa7e-ea31-4e03-a5d6-9afd982c7f62</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>52eb3bc41b50991062e50ed2cd4bcbe1</sys_id>
+        <sys_mod_count>50</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-05-11 19:29:00</sys_updated_on>
+        <ui_id>a569554d-3620-4100-b98d-65ebd59349b6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=52eb3bc41b50991062e50ed2cd4bcbe1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>52eb3bc41b50991062e50ed2cd4bcbe1</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>56eb3bc41b50991062e50ed2cd4bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:32</sys_updated_on>
+        <value>response</value>
+        <variable display_value="Variable Name">42956a581bdb45d08c5143f3cc4bcb63</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=52eb3bc41b50991062e50ed2cd4bcbe1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ritm_document_id</field>
+        <id>52eb3bc41b50991062e50ed2cd4bcbe1</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>12eb3bc41b50991062e50ed2cd4bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c6956a581bdb45d08c5143f3cc4bcb4a</table>
+        <value>{{1002d912-9a84-4785-8fff-14ea54c2c14d.Record.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable_name</field>
+        <id>52eb3bc41b50991062e50ed2cd4bcbe1</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>d2eb3bc41b50991062e50ed2cd4bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c6956a581bdb45d08c5143f3cc4bcb4a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=52eb3bc41b50991062e50ed2cd4bcbe1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=52eb3bc41b50991062e50ed2cd4bcbe1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get RITM Variable Value">c6956a581bdb45d08c5143f3cc4bcb4a</action_type>
+        <action_type_parent display_value="Get RITM Variable Value">ae2562181bdb45d08c5143f3cc4bcba6</action_type_parent>
+        <comment>Get person leaving</comment>
+        <display_text/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">39eb3bc41b50991062e50ed2cd4bcb80</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>5aeb3bc41b50991062e50ed2cd4bcbc2</sys_id>
+        <sys_mod_count>50</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-05-11 19:29:00</sys_updated_on>
+        <ui_id>ad39465d-f586-4443-bb08-1d0962817f1f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5aeb3bc41b50991062e50ed2cd4bcbc2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5aeb3bc41b50991062e50ed2cd4bcbc2</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>56eb3bc41b50991062e50ed2cd4bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:32</sys_updated_on>
+        <value>person_leaving</value>
+        <variable display_value="Variable Name">42956a581bdb45d08c5143f3cc4bcb63</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5aeb3bc41b50991062e50ed2cd4bcbc2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ritm_document_id</field>
+        <id>5aeb3bc41b50991062e50ed2cd4bcbc2</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>12eb3bc41b50991062e50ed2cd4bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c6956a581bdb45d08c5143f3cc4bcb4a</table>
+        <value>{{subflow.ritm_record.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable_name</field>
+        <id>5aeb3bc41b50991062e50ed2cd4bcbc2</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>d2eb3bc41b50991062e50ed2cd4bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c6956a581bdb45d08c5143f3cc4bcb4a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5aeb3bc41b50991062e50ed2cd4bcbc2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5aeb3bc41b50991062e50ed2cd4bcbc2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <comment>Look up person leaving</comment>
+        <display_text/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">39eb3bc41b50991062e50ed2cd4bcb80</flow>
+        <order>8</order>
+        <parent_ui_id>6b6171a7-a843-41b8-aae4-431c96d9654a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:16</sys_created_on>
+        <sys_id>7bad33881b50991062e50ed2cd4bcb2a</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-05-11 19:29:00</sys_updated_on>
+        <ui_id>71dc82c5-f496-4d6e-9627-489470a28d76</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7bad33881b50991062e50ed2cd4bcb2a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7bad33881b50991062e50ed2cd4bcb2a</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:16</sys_created_on>
+        <sys_id>77ad33881b50991062e50ed2cd4bcb2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:16</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7bad33881b50991062e50ed2cd4bcb2a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>7bad33881b50991062e50ed2cd4bcb2a</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:16</sys_created_on>
+        <sys_id>33ad33881b50991062e50ed2cd4bcb2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{ad39465d-f586-4443-bb08-1d0962817f1f.value}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>7bad33881b50991062e50ed2cd4bcb2a</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:16</sys_created_on>
+        <sys_id>f3ad33881b50991062e50ed2cd4bcb2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7bad33881b50991062e50ed2cd4bcb2a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7bad33881b50991062e50ed2cd4bcb2a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment>Look up RITM related to answer</comment>
+        <display_text/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">39eb3bc41b50991062e50ed2cd4bcb80</flow>
+        <order>4</order>
+        <parent_ui_id>58a897bf-2fb7-43f5-8458-fa27977006d6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>9aeb3bc41b50991062e50ed2cd4bcbd8</sys_id>
+        <sys_mod_count>50</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-05-11 19:29:00</sys_updated_on>
+        <ui_id>1002d912-9a84-4785-8fff-14ea54c2c14d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9aeb3bc41b50991062e50ed2cd4bcbd8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9aeb3bc41b50991062e50ed2cd4bcbd8</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-29 20:43:03</sys_created_on>
+        <sys_id>591516831b5c1d5062e50ed2cd4bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:43:03</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9aeb3bc41b50991062e50ed2cd4bcbd8</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>9aeb3bc41b50991062e50ed2cd4bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:32</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9aeb3bc41b50991062e50ed2cd4bcbd8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>9aeb3bc41b50991062e50ed2cd4bcbd8</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>56eb3bc41b50991062e50ed2cd4bcbda</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:44:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{58a897bf-2fb7-43f5-8458-fa27977006d6.item.request_item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>9aeb3bc41b50991062e50ed2cd4bcbd8</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>1aeb3bc41b50991062e50ed2cd4bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__snc_dont_fail_on_error</field>
+        <id>9aeb3bc41b50991062e50ed2cd4bcbd8</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-29 20:43:03</sys_created_on>
+        <sys_id>d11516831b5c1d5062e50ed2cd4bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:43:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9aeb3bc41b50991062e50ed2cd4bcbd8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9aeb3bc41b50991062e50ed2cd4bcbd8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment>Look up 90 day old person leaving variable answers</comment>
+        <display_text/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">39eb3bc41b50991062e50ed2cd4bcb80</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>d6eb3bc41b50991062e50ed2cd4bcbcc</sys_id>
+        <sys_mod_count>50</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-05-11 19:29:00</sys_updated_on>
+        <ui_id>7e74afc6-841f-425b-80c1-d2fa85604101</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d6eb3bc41b50991062e50ed2cd4bcbcc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d6eb3bc41b50991062e50ed2cd4bcbcc</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>52eb3bc41b50991062e50ed2cd4bcbcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:32</sys_updated_on>
+        <value>sc_item_option_mtom</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d6eb3bc41b50991062e50ed2cd4bcbcc</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>9eeb3bc41b50991062e50ed2cd4bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:32</sys_updated_on>
+        <value>sys_created_on</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d6eb3bc41b50991062e50ed2cd4bcbcc</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>daeb3bc41b50991062e50ed2cd4bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:32</sys_updated_on>
+        <value>sort_desc</value>
+        <variable display_value="Sort Type">0f400a1587003300663ca1bb36cb0b59</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d6eb3bc41b50991062e50ed2cd4bcbcc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>d6eb3bc41b50991062e50ed2cd4bcbcc</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>96eb3bc41b50991062e50ed2cd4bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>sc_item_option.item_option_new=2fffc26d1bde859062e50ed2cd4bcbc8^sc_item_option.value={{ad39465d-f586-4443-bb08-1d0962817f1f.value}}^sc_item_option.sys_created_onRELATIVELT@dayofweek@ago@90</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_column</field>
+        <id>d6eb3bc41b50991062e50ed2cd4bcbcc</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>d2eb3bc41b50991062e50ed2cd4bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_type</field>
+        <id>d6eb3bc41b50991062e50ed2cd4bcbcc</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>12eb3bc41b50991062e50ed2cd4bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>d6eb3bc41b50991062e50ed2cd4bcbcc</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:32</sys_created_on>
+        <sys_id>5aeb3bc41b50991062e50ed2cd4bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d6eb3bc41b50991062e50ed2cd4bcbcc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d6eb3bc41b50991062e50ed2cd4bcbcc"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=39eb3bc41b50991062e50ed2cd4bcb80"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=39eb3bc41b50991062e50ed2cd4bcb80^sys_idNOT IN02eb3bc41b50991062e50ed2cd4bcbb6,33ad33881b50991062e50ed2cd4bcb36,37ad33881b50991062e50ed2cd4bcb2d,4aeb3bc41b50991062e50ed2cd4bcbaf,8eeb3bc41b50991062e50ed2cd4bcba4,8eeb3bc41b50991062e50ed2cd4bcbab,c2eb3bc41b50991062e50ed2cd4bcba8"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d42bb7841b50991062e50ed2cd4bcb7a</block>
+        <comment>Set output to not reactivated</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">39eb3bc41b50991062e50ed2cd4bcb80</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>12</order>
+        <outputs_assigned>output</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:31</sys_created_on>
+        <sys_id>02eb3bc41b50991062e50ed2cd4bcbb6</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:25</sys_updated_on>
+        <ui_id>95853362-f90e-4991-9ed7-f8bb802d0f21</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=02eb3bc41b50991062e50ed2cd4bcbb6"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_39eb3bc41b50991062e50ed2cd4bcb80^id=02eb3bc41b50991062e50ed2cd4bcbb6"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=02eb3bc41b50991062e50ed2cd4bcbb6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=02eb3bc41b50991062e50ed2cd4bcbb6"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7bad33881b50991062e50ed2cd4bcb35</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">39eb3bc41b50991062e50ed2cd4bcb80</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>961e474c-4069-47ee-adcb-7fcb88033be6</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:17</sys_created_on>
+        <sys_id>33ad33881b50991062e50ed2cd4bcb36</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:25</sys_updated_on>
+        <ui_id>9512366c-6f09-4e57-a2bd-d4868444aafd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=33ad33881b50991062e50ed2cd4bcb36"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_39eb3bc41b50991062e50ed2cd4bcb80^id=33ad33881b50991062e50ed2cd4bcb36"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=33ad33881b50991062e50ed2cd4bcb36"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=33ad33881b50991062e50ed2cd4bcb36"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7bad33881b50991062e50ed2cd4bcb2c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">39eb3bc41b50991062e50ed2cd4bcb80</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>6b6171a7-a843-41b8-aae4-431c96d9654a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:17</sys_created_on>
+        <sys_id>37ad33881b50991062e50ed2cd4bcb2d</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:25</sys_updated_on>
+        <ui_id>961e474c-4069-47ee-adcb-7fcb88033be6</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=37ad33881b50991062e50ed2cd4bcb2d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>37ad33881b50991062e50ed2cd4bcb2d</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:17</sys_created_on>
+        <sys_id>f3ad33881b50991062e50ed2cd4bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:17</sys_updated_on>
+        <value>person leaving is active</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=37ad33881b50991062e50ed2cd4bcb2d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>37ad33881b50991062e50ed2cd4bcb2d</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:17</sys_created_on>
+        <sys_id>73ad33881b50991062e50ed2cd4bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{71dc82c5-f496-4d6e-9627-489470a28d76.Record.active}}=true</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>37ad33881b50991062e50ed2cd4bcb2d</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:17</sys_created_on>
+        <sys_id>bfad33881b50991062e50ed2cd4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_39eb3bc41b50991062e50ed2cd4bcb80^id=37ad33881b50991062e50ed2cd4bcb2d"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=37ad33881b50991062e50ed2cd4bcb2d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=37ad33881b50991062e50ed2cd4bcb2d"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cc2bb7841b50991062e50ed2cd4bcb73</block>
+        <comment>Set output to reactivated</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">39eb3bc41b50991062e50ed2cd4bcb80</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned>output</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id>961e474c-4069-47ee-adcb-7fcb88033be6</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:31</sys_created_on>
+        <sys_id>4aeb3bc41b50991062e50ed2cd4bcbaf</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:25</sys_updated_on>
+        <ui_id>fa8cd4aa-0857-4804-9d4f-e2efc611076d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4aeb3bc41b50991062e50ed2cd4bcbaf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4aeb3bc41b50991062e50ed2cd4bcbaf</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:33:28</sys_created_on>
+        <sys_id>1d9c7b081b50991062e50ed2cd4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:33:28</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Is Reactivated">199c7b081b50991062e50ed2cd4bcb7f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_39eb3bc41b50991062e50ed2cd4bcb80^id=4aeb3bc41b50991062e50ed2cd4bcbaf"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4aeb3bc41b50991062e50ed2cd4bcbaf"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4aeb3bc41b50991062e50ed2cd4bcbaf"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">9625bb8c1b10991062e50ed2cd4bcb1c</block>
+        <comment>For each variable answer</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">39eb3bc41b50991062e50ed2cd4bcb80</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:31</sys_created_on>
+        <sys_id>8eeb3bc41b50991062e50ed2cd4bcba4</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:25</sys_updated_on>
+        <ui_id>58a897bf-2fb7-43f5-8458-fa27977006d6</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8eeb3bc41b50991062e50ed2cd4bcba4"/>
+    <sys_element_mapping action="delete_multiple" query="id=8eeb3bc41b50991062e50ed2cd4bcba4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>8eeb3bc41b50991062e50ed2cd4bcba4</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:31</sys_created_on>
+        <sys_id>0aeb3bc41b50991062e50ed2cd4bcba7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:31</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{7e74afc6-841f-425b-80c1-d2fa85604101.Records}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_39eb3bc41b50991062e50ed2cd4bcb80^id=8eeb3bc41b50991062e50ed2cd4bcba4"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8eeb3bc41b50991062e50ed2cd4bcba4"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8eeb3bc41b50991062e50ed2cd4bcba4"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">37aafb441b50991062e50ed2cd4bcbb0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">39eb3bc41b50991062e50ed2cd4bcb80</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>d5fcaa7e-ea31-4e03-a5d6-9afd982c7f62</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:31</sys_created_on>
+        <sys_id>8eeb3bc41b50991062e50ed2cd4bcbab</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:25</sys_updated_on>
+        <ui_id>6b6171a7-a843-41b8-aae4-431c96d9654a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8eeb3bc41b50991062e50ed2cd4bcbab"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>8eeb3bc41b50991062e50ed2cd4bcbab</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:31</sys_created_on>
+        <sys_id>4eeb3bc41b50991062e50ed2cd4bcbae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:31:50</sys_updated_on>
+        <value>manager response is to remove access</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8eeb3bc41b50991062e50ed2cd4bcbab"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>8eeb3bc41b50991062e50ed2cd4bcbab</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:31</sys_created_on>
+        <sys_id>caeb3bc41b50991062e50ed2cd4bcbae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:31:50</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{a569554d-3620-4100-b98d-65ebd59349b6.value}}=active_no_access_need^NQ{{a569554d-3620-4100-b98d-65ebd59349b6.value}}=inactive_no_access_need</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>8eeb3bc41b50991062e50ed2cd4bcbab</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:31</sys_created_on>
+        <sys_id>0aeb3bc41b50991062e50ed2cd4bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:31</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_39eb3bc41b50991062e50ed2cd4bcb80^id=8eeb3bc41b50991062e50ed2cd4bcbab"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8eeb3bc41b50991062e50ed2cd4bcbab"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8eeb3bc41b50991062e50ed2cd4bcbab"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">995ab3441b50991062e50ed2cd4bcb8a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">39eb3bc41b50991062e50ed2cd4bcb80</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>58a897bf-2fb7-43f5-8458-fa27977006d6</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:31</sys_created_on>
+        <sys_id>c2eb3bc41b50991062e50ed2cd4bcba8</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:25</sys_updated_on>
+        <ui_id>d5fcaa7e-ea31-4e03-a5d6-9afd982c7f62</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c2eb3bc41b50991062e50ed2cd4bcba8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c2eb3bc41b50991062e50ed2cd4bcba8</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:31</sys_created_on>
+        <sys_id>82eb3bc41b50991062e50ed2cd4bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:31</sys_updated_on>
+        <value>RITM found</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c2eb3bc41b50991062e50ed2cd4bcba8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>c2eb3bc41b50991062e50ed2cd4bcba8</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:31</sys_created_on>
+        <sys_id>02eb3bc41b50991062e50ed2cd4bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:31</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{1002d912-9a84-4785-8fff-14ea54c2c14d.status}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>c2eb3bc41b50991062e50ed2cd4bcba8</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:31</sys_created_on>
+        <sys_id>4eeb3bc41b50991062e50ed2cd4bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:31</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_39eb3bc41b50991062e50ed2cd4bcb80^id=c2eb3bc41b50991062e50ed2cd4bcba8"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c2eb3bc41b50991062e50ed2cd4bcba8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c2eb3bc41b50991062e50ed2cd4bcba8"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=39eb3bc41b50991062e50ed2cd4bcb80"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=39eb3bc41b50991062e50ed2cd4bcb80"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_39eb3bc41b50991062e50ed2cd4bcb80^sys_idNOT IN02eb3bc41b50991062e50ed2cd4bcb92"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ritm_record</element>
+        <help/>
+        <hint/>
+        <label>RITM Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_39eb3bc41b50991062e50ed2cd4bcb80</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:30:31</sys_created_on>
+        <sys_id>02eb3bc41b50991062e50ed2cd4bcb92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RITM Record</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:30:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_39eb3bc41b50991062e50ed2cd4bcb80"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_39eb3bc41b50991062e50ed2cd4bcb80^sys_idNOT IN999c7b081b50991062e50ed2cd4bcb85"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>Is Reactivated</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_39eb3bc41b50991062e50ed2cd4bcb80</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:33:28</sys_created_on>
+        <sys_id>999c7b081b50991062e50ed2cd4bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Is Reactivated</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:33:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_39eb3bc41b50991062e50ed2cd4bcb80"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=39eb3bc41b50991062e50ed2cd4bcb80"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=39eb3bc41b50991062e50ed2cd4bcb80^sys_idNOT IN81bdb3881b50991062e50ed2cd4bcb28"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"81bdb3881b50991062e50ed2cd4bcb28","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="SEC17 - Is Reactivated SEC17 Term">39eb3bc41b50991062e50ed2cd4bcb80</plan_id>
+        <snapshot>698a95341b7ea51062e50ed2cd4bcba5</snapshot>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>81bdb3881b50991062e50ed2cd4bcb28</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:24</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>sec17__is_reactivated_sec17_term</internal_name>
+        <label_cache>[{"name":"58a897bf-2fb7-43f5-8458-fa27977006d6.item.request_item.sys_id","label":"3➛Variable Ownership Record➛Parent Item➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_req_item","column_name":"sys_id"},{"name":"71dc82c5-f496-4d6e-9627-489470a28d76.Record.active","label":"8➛User Record➛Active","reference":"","reference_display":"Active","type":"boolean","base_type":"boolean","parent_table_name":"sys_user","column_name":"active"},{"name":"71dc82c5-f496-4d6e-9627-489470a28d76.__dont_treat_as_error__","label":"8➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"71dc82c5-f496-4d6e-9627-489470a28d76.__action_status__","label":"8➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"71dc82c5-f496-4d6e-9627-489470a28d76.error_message","label":"8➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"71dc82c5-f496-4d6e-9627-489470a28d76.status","label":"8➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"71dc82c5-f496-4d6e-9627-489470a28d76.Table","label":"8➛User Table","reference":"sys_user","reference_display":"User","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"71dc82c5-f496-4d6e-9627-489470a28d76.Record","label":"8➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1002d912-9a84-4785-8fff-14ea54c2c14d.Record.sys_id","label":"4➛Requested Item Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_req_item","column_name":"sys_id"},{"name":"a569554d-3620-4100-b98d-65ebd59349b6.value","label":"6➛Value","reference_display":"Value","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"1b1d0464-9a07-4995-abad-4f801d65fbda"}},{"name":"a569554d-3620-4100-b98d-65ebd59349b6.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"86378912-91bf-426b-9c8a-2fbdd312b39c"}},{"name":"a569554d-3620-4100-b98d-65ebd59349b6.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDd2956a5812db45d067f836f1fd1847bd","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"e540815b-d836-4144-977a-25880ae204fd"}},{"name":"58a897bf-2fb7-43f5-8458-fa27977006d6.item.sys_id","label":"3➛Variable Ownership Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_item_option_mtom","column_name":"sys_id"},{"name":"b778fa4d-caaa-4da0-85ac-55e33d5fe5ea.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"b778fa4d-caaa-4da0-85ac-55e33d5fe5ea.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"b778fa4d-caaa-4da0-85ac-55e33d5fe5ea.Count","label":"3➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b778fa4d-caaa-4da0-85ac-55e33d5fe5ea.Table","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b778fa4d-caaa-4da0-85ac-55e33d5fe5ea.Records","label":"3➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24748883-6165-4541-80e3-b17737a5d3b8.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"24748883-6165-4541-80e3-b17737a5d3b8.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"24748883-6165-4541-80e3-b17737a5d3b8.Count","label":"3➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24748883-6165-4541-80e3-b17737a5d3b8.Table","label":"3➛Variable Ownership Table","reference":"sc_item_option_mtom","reference_display":"Variable Ownership","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"24748883-6165-4541-80e3-b17737a5d3b8.Records","label":"3➛Variable Ownership Records","reference":"sc_item_option_mtom","reference_display":"Variable Ownership","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7e74afc6-841f-425b-80c1-d2fa85604101.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7e74afc6-841f-425b-80c1-d2fa85604101.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7e74afc6-841f-425b-80c1-d2fa85604101.Count","label":"2➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7e74afc6-841f-425b-80c1-d2fa85604101.Table","label":"2➛Variable Ownership Table","reference":"sc_item_option_mtom","reference_display":"Variable Ownership","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7e74afc6-841f-425b-80c1-d2fa85604101.Records","label":"2➛Variable Ownership Records","reference":"sc_item_option_mtom","reference_display":"Variable Ownership","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"45e8aed1-b994-40c0-8f63-489b3cf149e8.Record","label":"2➛Variable Ownership Record","reference":"sc_item_option_mtom","reference_display":"Variable Ownership","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"45e8aed1-b994-40c0-8f63-489b3cf149e8.Table","label":"2➛Variable Ownership Table","reference":"sc_item_option_mtom","reference_display":"Variable Ownership","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"45e8aed1-b994-40c0-8f63-489b3cf149e8.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"45e8aed1-b994-40c0-8f63-489b3cf149e8.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"45e8aed1-b994-40c0-8f63-489b3cf149e8.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"45e8aed1-b994-40c0-8f63-489b3cf149e8.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad39465d-f586-4443-bb08-1d0962817f1f.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDd2956a5812db45d067f836f1fd1847bd","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"e540815b-d836-4144-977a-25880ae204fd"}},{"name":"ad39465d-f586-4443-bb08-1d0962817f1f.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"86378912-91bf-426b-9c8a-2fbdd312b39c"}},{"name":"ad39465d-f586-4443-bb08-1d0962817f1f.value","label":"1➛Value","reference_display":"Value","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"1b1d0464-9a07-4995-abad-4f801d65fbda"}},{"name":"subflow.ritm_record.sys_id","label":"Input➛RITM Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_req_item","column_name":"sys_id"},{"name":"58a897bf-2fb7-43f5-8458-fa27977006d6.item","label":"3➛Variable Ownership Record","reference":"sc_item_option_mtom","reference_display":"Variable Ownership","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"9c7f6d55-cd4f-4a7c-b05f-798a5dea4501.Records","label":"4➛Records","reference_display":"Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c7f6d55-cd4f-4a7c-b05f-798a5dea4501.Table","label":"4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c7f6d55-cd4f-4a7c-b05f-798a5dea4501.Count","label":"4➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c7f6d55-cd4f-4a7c-b05f-798a5dea4501.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"9c7f6d55-cd4f-4a7c-b05f-798a5dea4501.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"1002d912-9a84-4785-8fff-14ea54c2c14d.Record","label":"4➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1002d912-9a84-4785-8fff-14ea54c2c14d.Table","label":"4➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1002d912-9a84-4785-8fff-14ea54c2c14d.status","label":"4➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"1002d912-9a84-4785-8fff-14ea54c2c14d.error_message","label":"4➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"1002d912-9a84-4785-8fff-14ea54c2c14d.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1002d912-9a84-4785-8fff-14ea54c2c14d.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>SEC17 - Is Reactivated SEC17 Term</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="SEC17 - Is Reactivated SEC17 Term">39eb3bc41b50991062e50ed2cd4bcb80</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9cbd33881b50991062e50ed2cd4bcbcb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:22</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=9cbd33881b50991062e50ed2cd4bcbcb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9cbd33881b50991062e50ed2cd4bcbcb"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9cbd33881b50991062e50ed2cd4bcbcb^id=9cbd33881b50991062e50ed2cd4bcbcb"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=9cbd33881b50991062e50ed2cd4bcbcb"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9cbd33881b50991062e50ed2cd4bcbcb"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9cbd33881b50991062e50ed2cd4bcbcb^sys_idNOT IN90bd33881b50991062e50ed2cd4bcbcd"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9cbd33881b50991062e50ed2cd4bcbcb</id>
+        <name>SEC17 - Is Reactivated SEC17 Term</name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>90bd33881b50991062e50ed2cd4bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:19</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=90bd33881b50991062e50ed2cd4bcbcd"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9cbd33881b50991062e50ed2cd4bcbcb^sys_idNOT INd0bd33881b50991062e50ed2cd4bcbce"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=17739ce5-b6c2-476d-b2ac-59bdf22cdf29</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_req_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ritm_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>RITM Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="SEC17 - Is Reactivated SEC17 Term">9cbd33881b50991062e50ed2cd4bcbcb</model>
+        <model_id>9cbd33881b50991062e50ed2cd4bcbcb</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9cbd33881b50991062e50ed2cd4bcbcb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>d0bd33881b50991062e50ed2cd4bcbce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=9cbd33881b50991062e50ed2cd4bcbcb^sys_idNOT IN58bd73881b50991062e50ed2cd4bcb0d"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=70d52db6-9632-4e6e-8f59-7715c860fd65</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Is Reactivated</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="SEC17 - Is Reactivated SEC17 Term">9cbd33881b50991062e50ed2cd4bcbcb</model>
+        <model_id>9cbd33881b50991062e50ed2cd4bcbcb</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_9cbd33881b50991062e50ed2cd4bcbcb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>58bd73881b50991062e50ed2cd4bcb0d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9cbd33881b50991062e50ed2cd4bcbcb"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=9cbd33881b50991062e50ed2cd4bcbcb^sys_idNOT IN20bd73881b50991062e50ed2cd4bcb68,28bd73881b50991062e50ed2cd4bcb41,60bd73881b50991062e50ed2cd4bcb4b,a0bd73881b50991062e50ed2cd4bcb57,e0bd73881b50991062e50ed2cd4bcb5f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment>Look up person leaving</comment>
+        <display_text/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">9cbd33881b50991062e50ed2cd4bcbcb</flow>
+        <order>8</order>
+        <parent_ui_id>6b6171a7-a843-41b8-aae4-431c96d9654a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>20bd73881b50991062e50ed2cd4bcb68</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:22</sys_updated_on>
+        <ui_id>71dc82c5-f496-4d6e-9627-489470a28d76</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=20bd73881b50991062e50ed2cd4bcb68"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>20bd73881b50991062e50ed2cd4bcb68</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>2cbd73881b50991062e50ed2cd4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=20bd73881b50991062e50ed2cd4bcb68"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>20bd73881b50991062e50ed2cd4bcb68</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>e4bd73881b50991062e50ed2cd4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{ad39465d-f586-4443-bb08-1d0962817f1f.value}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>20bd73881b50991062e50ed2cd4bcb68</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>a8bd73881b50991062e50ed2cd4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=20bd73881b50991062e50ed2cd4bcb68"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=20bd73881b50991062e50ed2cd4bcb68"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get RITM Variable Value">c6956a581bdb45d08c5143f3cc4bcb4a</action_type>
+        <action_type_parent display_value="Get RITM Variable Value">ae2562181bdb45d08c5143f3cc4bcba6</action_type_parent>
+        <comment>Get person leaving</comment>
+        <display_text/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">9cbd33881b50991062e50ed2cd4bcbcb</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>28bd73881b50991062e50ed2cd4bcb41</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:21</sys_updated_on>
+        <ui_id>ad39465d-f586-4443-bb08-1d0962817f1f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=28bd73881b50991062e50ed2cd4bcb41"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>28bd73881b50991062e50ed2cd4bcb41</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>2cbd73881b50991062e50ed2cd4bcb42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <value>person_leaving</value>
+        <variable display_value="Variable Name">42956a581bdb45d08c5143f3cc4bcb63</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=28bd73881b50991062e50ed2cd4bcb41"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ritm_document_id</field>
+        <id>28bd73881b50991062e50ed2cd4bcb41</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>e4bd73881b50991062e50ed2cd4bcb42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c6956a581bdb45d08c5143f3cc4bcb4a</table>
+        <value>{{subflow.ritm_record.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable_name</field>
+        <id>28bd73881b50991062e50ed2cd4bcb41</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>a8bd73881b50991062e50ed2cd4bcb42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c6956a581bdb45d08c5143f3cc4bcb4a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=28bd73881b50991062e50ed2cd4bcb41"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=28bd73881b50991062e50ed2cd4bcb41"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment>Look up 90 day old person leaving variable answers</comment>
+        <display_text/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">9cbd33881b50991062e50ed2cd4bcbcb</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>60bd73881b50991062e50ed2cd4bcb4b</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:21</sys_updated_on>
+        <ui_id>7e74afc6-841f-425b-80c1-d2fa85604101</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=60bd73881b50991062e50ed2cd4bcb4b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>60bd73881b50991062e50ed2cd4bcb4b</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>24bd73881b50991062e50ed2cd4bcb4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <value>sys_created_on</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>60bd73881b50991062e50ed2cd4bcb4b</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>60bd73881b50991062e50ed2cd4bcb4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <value>sort_desc</value>
+        <variable display_value="Sort Type">0f400a1587003300663ca1bb36cb0b59</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>60bd73881b50991062e50ed2cd4bcb4b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>e4bd73881b50991062e50ed2cd4bcb4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <value>sc_item_option_mtom</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=60bd73881b50991062e50ed2cd4bcb4b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>60bd73881b50991062e50ed2cd4bcb4b</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>2cbd73881b50991062e50ed2cd4bcb4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>sc_item_option.item_option_new=2fffc26d1bde859062e50ed2cd4bcbc8^sc_item_option.value={{ad39465d-f586-4443-bb08-1d0962817f1f.value}}^sc_item_option.sys_created_onRELATIVELT@dayofweek@ago@90</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_column</field>
+        <id>60bd73881b50991062e50ed2cd4bcb4b</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>68bd73881b50991062e50ed2cd4bcb4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_type</field>
+        <id>60bd73881b50991062e50ed2cd4bcb4b</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>a4bd73881b50991062e50ed2cd4bcb4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>60bd73881b50991062e50ed2cd4bcb4b</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>ecbd73881b50991062e50ed2cd4bcb4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=60bd73881b50991062e50ed2cd4bcb4b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=60bd73881b50991062e50ed2cd4bcb4b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment>Look up RITM related to answer</comment>
+        <display_text/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">9cbd33881b50991062e50ed2cd4bcbcb</flow>
+        <order>4</order>
+        <parent_ui_id>58a897bf-2fb7-43f5-8458-fa27977006d6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>a0bd73881b50991062e50ed2cd4bcb57</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:21</sys_updated_on>
+        <ui_id>1002d912-9a84-4785-8fff-14ea54c2c14d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a0bd73881b50991062e50ed2cd4bcb57"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a0bd73881b50991062e50ed2cd4bcb57</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-29 20:43:07</sys_created_on>
+        <sys_id>161596831b5c1d5062e50ed2cd4bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:43:07</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a0bd73881b50991062e50ed2cd4bcb57</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>acbd73881b50991062e50ed2cd4bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a0bd73881b50991062e50ed2cd4bcb57"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>a0bd73881b50991062e50ed2cd4bcb57</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>68bd73881b50991062e50ed2cd4bcb58</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{58a897bf-2fb7-43f5-8458-fa27977006d6.item.request_item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>a0bd73881b50991062e50ed2cd4bcb57</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>2cbd73881b50991062e50ed2cd4bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__snc_dont_fail_on_error</field>
+        <id>a0bd73881b50991062e50ed2cd4bcb57</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-29 20:43:07</sys_created_on>
+        <sys_id>921596831b5c1d5062e50ed2cd4bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:43:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a0bd73881b50991062e50ed2cd4bcb57"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a0bd73881b50991062e50ed2cd4bcb57"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get RITM Variable Value">c6956a581bdb45d08c5143f3cc4bcb4a</action_type>
+        <action_type_parent display_value="Get RITM Variable Value">ae2562181bdb45d08c5143f3cc4bcba6</action_type_parent>
+        <comment>Get manager's response</comment>
+        <display_text/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">9cbd33881b50991062e50ed2cd4bcbcb</flow>
+        <order>6</order>
+        <parent_ui_id>d5fcaa7e-ea31-4e03-a5d6-9afd982c7f62</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>e0bd73881b50991062e50ed2cd4bcb5f</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:22</sys_updated_on>
+        <ui_id>a569554d-3620-4100-b98d-65ebd59349b6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e0bd73881b50991062e50ed2cd4bcb5f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e0bd73881b50991062e50ed2cd4bcb5f</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>e4bd73881b50991062e50ed2cd4bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <value>response</value>
+        <variable display_value="Variable Name">42956a581bdb45d08c5143f3cc4bcb63</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e0bd73881b50991062e50ed2cd4bcb5f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ritm_document_id</field>
+        <id>e0bd73881b50991062e50ed2cd4bcb5f</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>a0bd73881b50991062e50ed2cd4bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c6956a581bdb45d08c5143f3cc4bcb4a</table>
+        <value>{{1002d912-9a84-4785-8fff-14ea54c2c14d.Record.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable_name</field>
+        <id>e0bd73881b50991062e50ed2cd4bcb5f</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:20</sys_created_on>
+        <sys_id>64bd73881b50991062e50ed2cd4bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c6956a581bdb45d08c5143f3cc4bcb4a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e0bd73881b50991062e50ed2cd4bcb5f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e0bd73881b50991062e50ed2cd4bcb5f"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=9cbd33881b50991062e50ed2cd4bcbcb"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=9cbd33881b50991062e50ed2cd4bcbcb^sys_idNOT IN10bd73881b50991062e50ed2cd4bcb30,54bd73881b50991062e50ed2cd4bcb2c,5cbd73881b50991062e50ed2cd4bcb36,98bd73881b50991062e50ed2cd4bcb28,9cbd73881b50991062e50ed2cd4bcb20,9cbd73881b50991062e50ed2cd4bcb33,d8bd73881b50991062e50ed2cd4bcb24"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cc2bb7841b50991062e50ed2cd4bcb73</block>
+        <comment>Set output to reactivated</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">9cbd33881b50991062e50ed2cd4bcbcb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned>output</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id>961e474c-4069-47ee-adcb-7fcb88033be6</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>10bd73881b50991062e50ed2cd4bcb30</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:22</sys_updated_on>
+        <ui_id>fa8cd4aa-0857-4804-9d4f-e2efc611076d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=10bd73881b50991062e50ed2cd4bcb30"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>10bd73881b50991062e50ed2cd4bcb30</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>10bd73881b50991062e50ed2cd4bcb33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:19</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Is Reactivated">58bd73881b50991062e50ed2cd4bcb0d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9cbd33881b50991062e50ed2cd4bcbcb^id=10bd73881b50991062e50ed2cd4bcb30"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=10bd73881b50991062e50ed2cd4bcb30"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=10bd73881b50991062e50ed2cd4bcb30"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7bad33881b50991062e50ed2cd4bcb2c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">9cbd33881b50991062e50ed2cd4bcbcb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>6b6171a7-a843-41b8-aae4-431c96d9654a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>54bd73881b50991062e50ed2cd4bcb2c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:22</sys_updated_on>
+        <ui_id>961e474c-4069-47ee-adcb-7fcb88033be6</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=54bd73881b50991062e50ed2cd4bcb2c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>54bd73881b50991062e50ed2cd4bcb2c</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>14bd73881b50991062e50ed2cd4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:19</sys_updated_on>
+        <value>person leaving is active</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=54bd73881b50991062e50ed2cd4bcb2c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>54bd73881b50991062e50ed2cd4bcb2c</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>90bd73881b50991062e50ed2cd4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{71dc82c5-f496-4d6e-9627-489470a28d76.Record.active}}=true</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>54bd73881b50991062e50ed2cd4bcb2c</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>dcbd73881b50991062e50ed2cd4bcb2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9cbd33881b50991062e50ed2cd4bcbcb^id=54bd73881b50991062e50ed2cd4bcb2c"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=54bd73881b50991062e50ed2cd4bcb2c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=54bd73881b50991062e50ed2cd4bcb2c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d42bb7841b50991062e50ed2cd4bcb7a</block>
+        <comment>Set output to not reactivated</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">9cbd33881b50991062e50ed2cd4bcbcb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>12</order>
+        <outputs_assigned>output</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>5cbd73881b50991062e50ed2cd4bcb36</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:22</sys_updated_on>
+        <ui_id>95853362-f90e-4991-9ed7-f8bb802d0f21</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5cbd73881b50991062e50ed2cd4bcb36"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9cbd33881b50991062e50ed2cd4bcbcb^id=5cbd73881b50991062e50ed2cd4bcb36"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5cbd73881b50991062e50ed2cd4bcb36"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5cbd73881b50991062e50ed2cd4bcb36"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">37aafb441b50991062e50ed2cd4bcbb0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">9cbd33881b50991062e50ed2cd4bcbcb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>d5fcaa7e-ea31-4e03-a5d6-9afd982c7f62</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>98bd73881b50991062e50ed2cd4bcb28</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:22</sys_updated_on>
+        <ui_id>6b6171a7-a843-41b8-aae4-431c96d9654a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=98bd73881b50991062e50ed2cd4bcb28"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>98bd73881b50991062e50ed2cd4bcb28</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>58bd73881b50991062e50ed2cd4bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:19</sys_updated_on>
+        <value>manager response is to remove access</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=98bd73881b50991062e50ed2cd4bcb28"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>98bd73881b50991062e50ed2cd4bcb28</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>d4bd73881b50991062e50ed2cd4bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{a569554d-3620-4100-b98d-65ebd59349b6.value}}=active_no_access_need^NQ{{a569554d-3620-4100-b98d-65ebd59349b6.value}}=inactive_no_access_need</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>98bd73881b50991062e50ed2cd4bcb28</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>14bd73881b50991062e50ed2cd4bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9cbd33881b50991062e50ed2cd4bcbcb^id=98bd73881b50991062e50ed2cd4bcb28"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=98bd73881b50991062e50ed2cd4bcb28"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=98bd73881b50991062e50ed2cd4bcb28"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">9625bb8c1b10991062e50ed2cd4bcb1c</block>
+        <comment>For each variable answer</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">9cbd33881b50991062e50ed2cd4bcbcb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>9cbd73881b50991062e50ed2cd4bcb20</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:21</sys_updated_on>
+        <ui_id>58a897bf-2fb7-43f5-8458-fa27977006d6</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9cbd73881b50991062e50ed2cd4bcb20"/>
+    <sys_element_mapping action="delete_multiple" query="id=9cbd73881b50991062e50ed2cd4bcb20"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>9cbd73881b50991062e50ed2cd4bcb20</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>10bd73881b50991062e50ed2cd4bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{7e74afc6-841f-425b-80c1-d2fa85604101.Records}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9cbd33881b50991062e50ed2cd4bcbcb^id=9cbd73881b50991062e50ed2cd4bcb20"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9cbd73881b50991062e50ed2cd4bcb20"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9cbd73881b50991062e50ed2cd4bcb20"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7bad33881b50991062e50ed2cd4bcb35</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">9cbd33881b50991062e50ed2cd4bcbcb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>961e474c-4069-47ee-adcb-7fcb88033be6</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>9cbd73881b50991062e50ed2cd4bcb33</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:22</sys_updated_on>
+        <ui_id>9512366c-6f09-4e57-a2bd-d4868444aafd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9cbd73881b50991062e50ed2cd4bcb33"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9cbd33881b50991062e50ed2cd4bcbcb^id=9cbd73881b50991062e50ed2cd4bcb33"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9cbd73881b50991062e50ed2cd4bcb33"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9cbd73881b50991062e50ed2cd4bcb33"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">995ab3441b50991062e50ed2cd4bcb8a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SEC17 - Is Reactivated SEC17 Term">9cbd33881b50991062e50ed2cd4bcbcb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>58a897bf-2fb7-43f5-8458-fa27977006d6</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>d8bd73881b50991062e50ed2cd4bcb24</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-29 20:45:22</sys_updated_on>
+        <ui_id>d5fcaa7e-ea31-4e03-a5d6-9afd982c7f62</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d8bd73881b50991062e50ed2cd4bcb24"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>d8bd73881b50991062e50ed2cd4bcb24</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>9cbd73881b50991062e50ed2cd4bcb27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:19</sys_updated_on>
+        <value>RITM found</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d8bd73881b50991062e50ed2cd4bcb24"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>d8bd73881b50991062e50ed2cd4bcb24</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>1cbd73881b50991062e50ed2cd4bcb27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{1002d912-9a84-4785-8fff-14ea54c2c14d.status}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>d8bd73881b50991062e50ed2cd4bcb24</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>58bd73881b50991062e50ed2cd4bcb27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9cbd33881b50991062e50ed2cd4bcbcb^id=d8bd73881b50991062e50ed2cd4bcb24"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d8bd73881b50991062e50ed2cd4bcb24"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d8bd73881b50991062e50ed2cd4bcb24"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9cbd33881b50991062e50ed2cd4bcbcb"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9cbd33881b50991062e50ed2cd4bcbcb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9cbd33881b50991062e50ed2cd4bcbcb^sys_idNOT IN54bd73881b50991062e50ed2cd4bcb08"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ritm_record</element>
+        <help/>
+        <hint/>
+        <label>RITM Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9cbd33881b50991062e50ed2cd4bcbcb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>54bd73881b50991062e50ed2cd4bcb08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RITM Record</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9cbd33881b50991062e50ed2cd4bcbcb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_9cbd33881b50991062e50ed2cd4bcbcb^sys_idNOT INdcbd73881b50991062e50ed2cd4bcb1a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>Is Reactivated</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_9cbd33881b50991062e50ed2cd4bcbcb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-20 20:38:19</sys_created_on>
+        <sys_id>dcbd73881b50991062e50ed2cd4bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Is Reactivated</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-20 20:38:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9cbd33881b50991062e50ed2cd4bcbcb"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>39eb3bc41b50991062e50ed2cd4bcb80</sys_id>
+        <latest_snapshot>9cbd33881b50991062e50ed2cd4bcbcb</latest_snapshot>
+        <compiler_build>glide-tokyo-07-08-2022__patch7a-03-27-2023_04-04-2023_1511.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>

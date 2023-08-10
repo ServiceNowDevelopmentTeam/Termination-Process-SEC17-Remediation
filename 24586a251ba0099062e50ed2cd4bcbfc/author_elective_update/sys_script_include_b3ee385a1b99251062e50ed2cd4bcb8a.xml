@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_apig_sox_record.SleepForScopedApp</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>SleepForScopedApp</name>
+        <script><![CDATA[var SleepForScopedApp = Class.create();
+SleepForScopedApp.prototype = {
+    initialize: function() {},
+    sleep: function(time) {
+        gs.sleep(time);
+    },
+    type: 'SleepForScopedApp'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-02 19:45:46</sys_created_on>
+        <sys_id>b3ee385a1b99251062e50ed2cd4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SleepForScopedApp</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_script_include_b3ee385a1b99251062e50ed2cd4bcb8a</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-02 19:45:46</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sys_script_include_b3ee385a1b99251062e50ed2cd4bcb8a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_apig_sox_record.SleepForScopedApp&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;SleepForScopedApp&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var SleepForScopedApp = Class.create();
+SleepForScopedApp.prototype = {
+    initialize: function() {},
+    sleep: function(time) {
+        gs.sleep(time);
+    },
+    type: 'SleepForScopedApp'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-02 19:45:46&lt;/sys_created_on&gt;&lt;sys_id&gt;b3ee385a1b99251062e50ed2cd4bcb8a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;SleepForScopedApp&lt;/sys_name&gt;&lt;sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record"&gt;24586a251ba0099062e50ed2cd4bcbfc&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Termination Process SEC17 Remediation"&gt;24586a251ba0099062e50ed2cd4bcbfc&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_b3ee385a1b99251062e50ed2cd4bcb8a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-02 19:45:46&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-180736202</payload_hash>
+        <record_name>SleepForScopedApp</record_name>
+        <reverted_from/>
+        <source>84635baf1bce911062e50ed2cd4bcb91</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-02 19:45:46</sys_created_on>
+        <sys_id>f01f745a1b99251062e50ed2cd4bcbef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186a3dbf3c90000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-02 19:45:46</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>f81f745a8a99251026b30014d1e0a6ee</update_guid>
+        <update_guid_history>f81f745a8a99251026b30014d1e0a6ee:-180736202</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-02 19:55:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>784c76d68c9443299910e531c40451b1</sys_id>
+        <sys_metadata>b3ee385a1b99251062e50ed2cd4bcb8a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SleepForScopedApp</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_scope_delete display_value="">2f88ffbf0c2845809e73338e3a3a8400</sys_scope_delete>
+        <sys_update_name>sys_script_include_b3ee385a1b99251062e50ed2cd4bcb8a</sys_update_name>
+        <sys_update_version display_value="sys_script_include_b3ee385a1b99251062e50ed2cd4bcb8a">f01f745a1b99251062e50ed2cd4bcbef</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-02 19:55:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

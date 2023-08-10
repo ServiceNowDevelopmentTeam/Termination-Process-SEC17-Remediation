@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>300</order>
+        <published_ref/>
+        <question display_value="Employee type">4aec1d771be485d08c5143f3cc4bcbd0</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-12-27 14:37:48</sys_created_on>
+        <sys_id>c5fc51b71be485d08c5143f3cc4bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Contractor</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>question_choice_c5fc51b71be485d08c5143f3cc4bcb0d</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-12-27 14:37:48</sys_updated_on>
+        <text>Contractor</text>
+        <value>Contractor</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=c5fc51b71be485d08c5143f3cc4bcb0d"/>
+</record_update>

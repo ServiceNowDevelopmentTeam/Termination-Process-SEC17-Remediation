@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step_config">
+    <sys_atf_step_config action="DELETE">
+        <active>true</active>
+        <batch_order_constraint/>
+        <can_mutate_page>false</can_mutate_page>
+        <category display_value="Server">317c4dc20b202200a8d7a12cf6673aa8</category>
+        <class_name/>
+        <class_type>script</class_type>
+        <deprecated>false</deprecated>
+        <description_generator><![CDATA[(function() {
+})();
+]]></description_generator>
+        <html_description><![CDATA[<p>Set user password</p>]]></html_description>
+        <icon>icon-article-document</icon>
+        <inputs/>
+        <name>Set user password</name>
+        <order>0</order>
+        <outputs/>
+        <step_env display_value="Server - Independent">6c2bcea1870312009dccc9ded0e3ecca</step_env>
+        <step_execution_generator><![CDATA[var newPass = inputs.u_password.toString(); // Password input from the test step
+var targetUser = inputs.u_user.sys_id.toString(); // User input from the test step
+
+// Get the user object for the user
+var user = new GlideUser();
+user.get(targetUser);
+
+// Set the password for the user
+user.updatePassword(newPass);]]></step_execution_generator>
+        <sys_class_name>sys_atf_step_config</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-02 17:50:41</sys_created_on>
+        <sys_id>0fb46c1e1bd5251062e50ed2cd4bcb07</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Set user password</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_atf_step_config_0fb46c1e1bd5251062e50ed2cd4bcb07</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-02 18:28:15</sys_updated_on>
+        <template_reminder>Set user password</template_reminder>
+        <type display_value="Test Step" name="sys_atf_step">e6f9282f1b251010e7004229bc4bcb70</type>
+        <wizard_redirect/>
+    </sys_atf_step_config>
+    <sys_translated_text action="DELETE" query="documentkey=0fb46c1e1bd5251062e50ed2cd4bcb07"/>
+    <sys_variable_value action="DELETE" query="document_key=0fb46c1e1bd5251062e50ed2cd4bcb07"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_atf_input_variable_0fb46c1e1bd5251062e50ed2cd4bcb07^id=0fb46c1e1bd5251062e50ed2cd4bcb07"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sys_atf_step_config_0fb46c1e1bd5251062e50ed2cd4bcb07</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_atf_step_config"&gt;&lt;sys_atf_step_config action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;batch_order_constraint/&gt;&lt;can_mutate_page&gt;false&lt;/can_mutate_page&gt;&lt;category display_value="Server"&gt;317c4dc20b202200a8d7a12cf6673aa8&lt;/category&gt;&lt;class_name/&gt;&lt;class_type&gt;script&lt;/class_type&gt;&lt;deprecated&gt;false&lt;/deprecated&gt;&lt;description_generator&gt;&lt;![CDATA[(function() {
+})();
+]]&gt;&lt;/description_generator&gt;&lt;html_description&gt;&lt;![CDATA[&lt;p&gt;Set user password&lt;/p&gt;]]&gt;&lt;/html_description&gt;&lt;icon&gt;icon-article-document&lt;/icon&gt;&lt;inputs/&gt;&lt;name&gt;Set user password&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;outputs/&gt;&lt;step_env display_value="Server - Independent"&gt;6c2bcea1870312009dccc9ded0e3ecca&lt;/step_env&gt;&lt;step_execution_generator&gt;&lt;![CDATA[var newPass = inputs.u_password.toString(); // Password input from the test step
+var targetUser = inputs.u_user.sys_id.toString(); // User input from the test step
+
+// Get the user object for the user
+var user = new GlideUser();
+user.get(targetUser);
+
+// Set the password for the user
+user.updatePassword(newPass);]]&gt;&lt;/step_execution_generator&gt;&lt;sys_class_name&gt;sys_atf_step_config&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-02 17:50:41&lt;/sys_created_on&gt;&lt;sys_id&gt;0fb46c1e1bd5251062e50ed2cd4bcb07&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set user password&lt;/sys_name&gt;&lt;sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record"&gt;24586a251ba0099062e50ed2cd4bcbfc&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Termination Process SEC17 Remediation"&gt;24586a251ba0099062e50ed2cd4bcbfc&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_atf_step_config_0fb46c1e1bd5251062e50ed2cd4bcb07&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-02 18:28:15&lt;/sys_updated_on&gt;&lt;template_reminder&gt;Set user password&lt;/template_reminder&gt;&lt;type display_value="Test Step" name="sys_atf_step"&gt;e6f9282f1b251010e7004229bc4bcb70&lt;/type&gt;&lt;wizard_redirect/&gt;&lt;/sys_atf_step_config&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=0fb46c1e1bd5251062e50ed2cd4bcb07"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=0fb46c1e1bd5251062e50ed2cd4bcb07"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_0fb46c1e1bd5251062e50ed2cd4bcb07^id=0fb46c1e1bd5251062e50ed2cd4bcb07"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1377900805</payload_hash>
+        <record_name>Set user password</record_name>
+        <reverted_from/>
+        <source>84635baf1bce911062e50ed2cd4bcb91</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-02 18:28:15</sys_created_on>
+        <sys_id>255de01e1b19251062e50ed2cd4bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186a394fdf80000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-02 18:28:15</sys_updated_on>
+        <type>Test Step Config</type>
+        <update_guid>e95de01e32192510ad5ac5d18b065ceb</update_guid>
+        <update_guid_history>e95de01e32192510ad5ac5d18b065ceb:-1377900805,e23da81e72192510f89617c77d66989c:-1441506929,7febac9aa4192510dc7ffb8e4e07d861:-1459412324,8eaba49a801925103d4a883f43042fe0:-1817810727,0d4bac5a39192510f00e03dc4e453ade:182403828,b26aa41ac3192510487eef40319a41f6:-1192217195,7c1a64d62419251073b8d81ca08ab7a1:-1332017322,79892c965c192510382ec3e7d67fe771:-1116819571,02092c56c219251000e1c7c75cc87a29:750322165,64c860160a1925104a28dd3913b7bb5d:1534935428,5908acd26b192510c6492c838ec2c416:150834063,59a520de0cd525102e3ada6a67d6582b:-1833835969,d3f4605eb4d52510528680a821f20cdf:-2012430404,c7b46c1ebfd5251005a332c5d1d3b70c:-1334384574</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-02 19:36:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step_config">sys_atf_step_config</sys_db_object>
+        <sys_id>83310191becf4bbc9910939928fbe310</sys_id>
+        <sys_metadata>0fb46c1e1bd5251062e50ed2cd4bcb07</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set user password</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_scope_delete display_value="">2f88ffbf0c2845809e73338e3a3a8400</sys_scope_delete>
+        <sys_update_name>sys_atf_step_config_0fb46c1e1bd5251062e50ed2cd4bcb07</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_config_0fb46c1e1bd5251062e50ed2cd4bcb07">255de01e1b19251062e50ed2cd4bcbec</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-02 19:36:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

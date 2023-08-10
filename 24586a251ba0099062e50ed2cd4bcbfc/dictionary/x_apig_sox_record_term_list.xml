@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c029cc921b608990df31da49cc4bcb97" extends="sys_import_set_row" label="Term List" max_length="40" name="x_apig_sox_record_term_list" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=AADLastNonInteractiveSinginDateTime" label="AADLastNonInteractiveSinginDateTime" max_length="40" name="u_aadlastnonin_singindatetime" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=AADLastSignInDateTime" label="AADLastSignInDateTime" max_length="40" name="u_aadlastsignindatetime" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ADLastLogonDate" label="ADLastLogonDate" max_length="40" name="u_adlastlogondate" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Company" label="Company" max_length="40" name="u_company" type="string"/>
+        <element label="Created" max_length="100" name="u_created" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=DisplayName" label="DisplayName" max_length="40" name="u_displayname" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Disposition" label="Disposition" max_length="40" name="u_disposition" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=IsLicensed" label="IsLicensed" max_length="40" name="u_islicensed" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Manager" label="Manager" max_length="42" name="u_manager" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=OnPremisesDistinguishedName" label="OnPremisesDistinguishedName" max_length="166" name="u_onpremisesdistinguishedname" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Parent Company" label="Parent Company" max_length="40" name="u_parent_company" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=UserPrincipalName" label="UserPrincipalName" max_length="45" name="u_userprincipalname" type="string"/>
+    </element>
+</database>

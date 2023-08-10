@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Refresh</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	var payload = request.body.data;
+	var documentId = payload.recordSysId.toString();
+	var ritmGr = new GlideRecord('sc_req_item');
+	ritmGr.get(documentId);
+	var currentResponse = ritmGr.variables.response.toString();
+	refreshCard = getDefaultRefreshCard();
+
+	if(currentResponse === ''){
+		var managerEmailVar = ritmGr.variables.manager.email.toString();
+		var personLeavingManagerEmailVar = ritmGr.variables.person_leaving.manager.email.toString();
+		var managerEmail = managerEmailVar !== '' ? managerEmailVar : personLeavingManagerEmailVar;
+		
+		var managerFirstNameVar = ritmGr.variables.manager.first_name.toString();
+		var personLeavingmanagerFirstNameVar = ritmGr.variables.person_leaving.manager.first_name.toString();
+		var managerFirstName = managerFirstNameVar !== '' ? managerFirstNameVar : personLeavingmanagerFirstNameVar;
+		
+		var personLeaving = ritmGr.variables.person_leaving.name.toString();
+		var dueDateString = ritmGr.variables.due_date.toString();
+		var instanceName = gs.getProperty('instance_name');
+		refreshCard = getResponseNeededCard(ritmGr);
+	}
+
+	response.setStatus(200);
+	response.setContentType("application/json");
+	response.setHeader("CARD-UPDATE-IN-BODY", "true");
+	response.getStreamWriter().writeString(JSON.stringify(refreshCard));
+
+	function getDefaultRefreshCard(){
+		var instanceName = gs.getProperty('instance_name');
+		var defaultRefreshCard = {
+			"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+			"type": "AdaptiveCard",
+			"version": "1.0",
+			"hideOriginalBody": true,
+			"expectedActors": [
+				""
+			],
+			"padding": "None",
+			"originator": "130e10fd-f029-4b15-9afe-080d08b1b932",
+			"body": [
+				{
+					"type": "Container",
+					"id": "60c4a88a-e79d-780e-f6db-716b1a8eb12a",
+					"padding": {
+						"top": "Default",
+						"bottom": "None",
+						"left": "Default",
+						"right": "None"
+					},
+					"items": [
+						{
+							"size": "Medium",
+							"width": "150px",
+							"url": "https://" + instanceName + ".service-now.com/images/image-5.png",
+							"type": "Image"
+						}
+					]
+				},
+				{
+					"type": "Container",
+					"padding": {
+						"top": "Default",
+						"bottom": "None",
+						"left": "Default",
+						"right": "None"
+					},
+					"items": [
+						{
+							"type": "TextBlock",
+							"text": "Your response has been received.",
+							"weight": "Bolder",
+							"size": "Medium",
+							"wrap": true
+						},
+						{
+							"type": "TextBlock",
+							"text": "Please contact support at 651-925-8511 if you need to change your response.",
+							"weight": "Bolder",
+							"size": "Medium",
+							"wrap": true
+						}
+					]
+				},
+				{
+					"type": "Container",
+					"bleed": true,
+					"backgroundImage": "https://" + instanceName + ".service-now.com/APiBlue.png",
+					"items": [
+						{
+							"type": "ColumnSet",
+							"columns": [
+								{
+									"type": "Column",
+									"width": 50,
+									"items": [
+										{
+											"type": "Image",
+											"url": "https://" + instanceName + ".service-now.com/BGL_Footer.png",
+											"horizontalAlignment": "Left",
+											"width": "400px"
+										}
+									],
+									"bleed": true,
+									"horizontalAlignment": "Left",
+									"padding": "None"
+								},
+								{
+									"type": "Column",
+									"width": 10,
+									"items": [
+										{
+											"type": "Image",
+											"url": "https://" + instanceName + ".service-now.com/images/image-6.png",
+											"horizontalAlignment": "Right",
+											"width": "50px",
+											"size": "Medium"
+										}
+									],
+									"padding": "None"
+								}
+							],
+							"spacing": "None",
+							"horizontalAlignment": "Left",
+							"bleed": true,
+							"padding": "None"
+						}
+					],
+					"horizontalAlignment": "Left",
+					"padding": "None"
+				}
+			]
+		};
+		return defaultRefreshCard;
+	}
+	
+		function getExpiredRefreshCard(){
+		var instanceName = gs.getProperty('instance_name');
+		var defaultRefreshCard = {
+			"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+			"type": "AdaptiveCard",
+			"version": "1.0",
+			"hideOriginalBody": true,
+			"expectedActors": [
+				""
+			],
+			"padding": "None",
+			"originator": "130e10fd-f029-4b15-9afe-080d08b1b932",
+			"body": [
+				{
+					"type": "Container",
+					"id": "60c4a88a-e79d-780e-f6db-716b1a8eb12a",
+					"padding": {
+						"top": "Default",
+						"bottom": "None",
+						"left": "Default",
+						"right": "None"
+					},
+					"items": [
+						{
+							"size": "Medium",
+							"width": "150px",
+							"url": "https://" + instanceName + ".service-now.com/images/image-5.png",
+							"type": "Image"
+						}
+					]
+				},
+				{
+					"type": "Container",
+					"padding": {
+						"top": "Default",
+						"bottom": "None",
+						"left": "Default",
+						"right": "None"
+					},
+					"items": [
+						{
+							"type": "TextBlock",
+							"text": "The account review period has expired.",
+							"weight": "Bolder",
+							"size": "Medium",
+							"wrap": true
+						},
+						{
+							"type": "TextBlock",
+							"text": "Please wait for the next inactive employee review process(30 days).",
+							"weight": "Bolder",
+							"size": "Medium",
+							"wrap": true
+						}
+					]
+				},
+				{
+					"type": "Container",
+					"bleed": true,
+					"backgroundImage": "https://" + instanceName + ".service-now.com/APiBlue.png",
+					"items": [
+						{
+							"type": "ColumnSet",
+							"columns": [
+								{
+									"type": "Column",
+									"width": 50,
+									"items": [
+										{
+											"type": "Image",
+											"url": "https://" + instanceName + ".service-now.com/BGL_Footer.png",
+											"horizontalAlignment": "Left",
+											"width": "400px"
+										}
+									],
+									"bleed": true,
+									"horizontalAlignment": "Left",
+									"padding": "None"
+								},
+								{
+									"type": "Column",
+									"width": 10,
+									"items": [
+										{
+											"type": "Image",
+											"url": "https://" + instanceName + ".service-now.com/images/image-6.png",
+											"horizontalAlignment": "Right",
+											"width": "50px",
+											"size": "Medium"
+										}
+									],
+									"padding": "None"
+								}
+							],
+							"spacing": "None",
+							"horizontalAlignment": "Left",
+							"bleed": true,
+							"padding": "None"
+						}
+					],
+					"horizontalAlignment": "Left",
+					"padding": "None"
+				}
+			]
+		};
+		return defaultRefreshCard;
+	}
+	
+	function getResponseNeededCard(ritmGr){
+		
+				var inputs = {};
+		inputs['ritm_record'] = ritmGr; // GlideRecord of table: sc_req_item 
+		var result = sn_fd.FlowAPI.getRunner().subflow('x_apig_sox_record.sec17__build_email_body').inForeground().withInputs(inputs).run();
+		var outputs = result.getOutputs();
+
+		// Get Outputs:
+		var output_oam = outputs['output_oam']; // String
+		
+		var itemsVar = '[{"type": "TextBlock","text": "Dear "' + managerFirstName + '",","weight": "Bolder","size": "Medium","wrap": true},{"type": "TextBlock","text": "Your response is required for this request to be processed.","weight": "Bolder","size": "Medium","wrap": true},'+output_oam;
+		
+		var responseCard = {
+			"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+			"type": "AdaptiveCard",
+			"version": "1.0",
+			"hideOriginalBody": true,
+			"expectedActors": [
+				managerEmail,'terry.lillo@apigroupinc.us'
+			],
+			"padding": "None",
+			"originator": "130e10fd-f029-4b15-9afe-080d08b1b932",
+			"body": [
+				{
+					"type": "Container",
+					"id": "60c4a88a-e79d-780e-f6db-716b1a8eb12a",
+					"padding": {
+						"top": "Default",
+						"bottom": "None",
+						"left": "Default",
+						"right": "None"
+					},
+					"items": [
+						{
+							"size": "Medium",
+							"width": "150px",
+							"url": "https://" + instanceName + ".service-now.com/images/image-5.png",
+							"type": "Image"
+						}
+					]
+				},
+				{
+					"type": "Container",
+					"padding": {
+						"top": "Default",
+						"bottom": "None",
+						"left": "Default",
+						"right": "None"
+					},
+					"items": JSON.parse(itemsVar)
+				},
+				{
+					"type": "Container",
+					"padding": "Default",
+					"spacing": "None",
+					"items": [
+						{
+							"type": "Input.ChoiceSet",
+							"id": "67f2a4f6-9679-0342-73bb-66ced0eaec29",
+							"placeholder": "Placeholder text",
+							"choices": [
+								{
+									"title": personLeaving + " is still an active employee and requires network access.",
+									"value": "active_need_access"
+								},
+								{
+									"title": personLeaving + " is still an active employee but does NOT require network access.",
+									"value": "active_no_access_need"
+								},
+								{
+									"title": personLeaving + " is on leave, or is a seasonal employee, and will require access upon return.",
+									"value": "inactive_need_access"
+								},
+								{
+									"title": personLeaving + " is no longer with the company.  Please terminate access.",
+									"value": "inactive_no_access_need"
+								},
+								{
+									"title": "I am not " + personLeaving + "'s supervisor.",
+									"value": "reassign"
+								}
+							],
+							"isRequired": true,
+							"style": "expanded",
+							"wrap": true
+						},
+						{
+							"type": "ActionSet",
+							"actions": [
+								{
+									"type": "Action.Http",
+									"method": "POST",
+									"title": "Submit",
+									"url": "https://" + instanceName + ".service-now.com/api/x_apig_sox_record/sec05_inactive_employee_review_process/respond",
+									"body": "{\"sys_id\":\" " + documentId + "\",\"action\":\"{{67f2a4f6-9679-0342-73bb-66ced0eaec29.value}}\"}",
+									"headers": [
+										{
+											"name": "Content-Type",
+											"value": "application/json"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "TextBlock",
+					"text": "Thank you for your prompt attention to this request."
+				},
+				{
+					"type": "Container",
+					"bleed": true,
+					"backgroundImage": "https://" + instanceName + ".service-now.com/APiBlue.png",
+					"items": [
+						{
+							"type": "ColumnSet",
+							"columns": [
+								{
+									"type": "Column",
+									"width": 50,
+									"items": [
+										{
+											"type": "Image",
+											"url": "https://" + instanceName + ".service-now.com/BGL_Footer.png",
+											"horizontalAlignment": "Left",
+											"width": "400px"
+										}
+									],
+									"bleed": true,
+									"horizontalAlignment": "Left",
+									"padding": "None"
+								},
+								{
+									"type": "Column",
+									"width": 10,
+									"items": [
+										{
+											"type": "Image",
+											"url": "https://" + instanceName + ".service-now.com/images/image-6.png",
+											"horizontalAlignment": "Right",
+											"width": "50px",
+											"size": "Medium"
+										}
+									],
+									"padding": "None"
+								}
+							],
+							"spacing": "None",
+							"horizontalAlignment": "Left",
+							"bleed": true,
+							"padding": "None"
+						}
+					],
+					"horizontalAlignment": "Left",
+					"padding": "None"
+				}
+			]
+		};
+		return responseCard;
+	}
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_apig_sox_record/sec05_inactive_employee_review_process/refresh</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/refresh</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-10 19:51:21</sys_created_on>
+        <sys_id>d7e218451b0c59108c5143f3cc4bcbe6</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Refresh</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_ws_operation_d7e218451b0c59108c5143f3cc4bcbe6</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-07-29 14:47:10</sys_updated_on>
+        <web_service_definition display_value="SEC17 Inactive Employee Review Process">1a972ea91bd6c59062e50ed2cd4bcb57</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

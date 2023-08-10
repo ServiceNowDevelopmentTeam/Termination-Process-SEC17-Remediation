@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Respond</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	var payload = request.body.data;
+
+	isValidUser = function(current) {		
+		return (current.variables.person_leaving.manager == gs.getUserID() || gs.hasRole('admin') || current.variables.manager == gs.getUserID());
+	};
+
+	if(!payload.sys_id && !(payload.action ==='active_need_access' || payload.action === 'active_no_access_need' || payload.action === 'inactive_need_access' || payload.action === 'inactive_no_access_need' || payload.action === 'reassign')) {
+		gs.info("OAM: Not a valid request");
+		response.setStatus(400);
+		response.setHeader("CARD-ACTION-STATUS", "Not a valid request");
+		return;
+	}
+
+	var gr = new GlideRecord('sc_req_item');
+	if(!gr.get(payload.sys_id)) {
+		gs.info("OAM: Request Item record is invalid");
+		response.setStatus(404);
+		response.setHeader("CARD-ACTION-STATUS", "Invalid Request Item Record");
+		return;
+	}
+
+	if(!isValidUser(gr)) {
+		//not a valid user for approving this record
+		gs.info("OAM: Not a valid user for modifying the record. sys_id="+gr.getUniqueValue()+", userid="+gs.getUserID());
+		response.setStatus(401);
+		response.setHeader("CARD-ACTION-STATUS", "You are not authorized to modify this request");
+		return;
+	}
+
+	if(gr.state.toString() === 'cancelled') {
+		gs.info("OAM: Record has already been cancelled");
+		response.setStatus(200);
+		response.setHeader("CARD-ACTION-STATUS", "The record has been cancelled");
+		return;
+	}
+
+	if(gr.variables.response.toString() !== '') {
+		gs.info("OAM: Response already recorded");
+		response.setStatus(409);
+		response.setHeader("CARD-ACTION-STATUS", "Response already recorded - Please contact support at 651-925-8511 if you need to change your response.");
+		return;
+	}
+
+	if(payload.sys_id && (payload.action ==='active_need_access' || payload.action === 'active_no_access_need' || payload.action === 'inactive_need_access' || payload.action === 'inactive_no_access_need' || payload.action === 'reassign')) {
+		gr.variables.response = payload.action;
+
+		try {
+			var inputs = {};
+			inputs['title'] = 'Manager responded via SEC17 Inactive Employee actionable email'; // String
+			inputs['body'] = 'Manager Response: ' + payload.action; // HTML 
+			var result = sn_fd.FlowAPI.getRunner().action('global.comment_on_record').inForeground().withInputs(inputs).run();
+			var outputs = result.getOutputs();
+
+			// Get Outputs:
+			var html = outputs['html']; // String
+
+		} catch (ex) {
+			var message = ex.getMessage();
+			gs.error(message);
+		}
+
+	}
+	gr.work_notes = '[code]' + html + '[/code]';
+	gr.update();		
+	var dueDate = new GlideDateTime(gr.variables.due_date.toString());
+	var now = new GlideDateTime();
+	var isafter = now.after(dueDate);
+	if (isafter && payload.sys_id && (payload.action === 'active_no_access_need' || payload.action === 'inactive_no_access_need')){
+		var employeeEmail = gr.variables.person_leaving.email.toString();
+		var employeeFullName = gr.variables.person_leaving.name.toString();
+		var managerEmail = gr.variables.manager.email.toString();
+		var companyName = gr.variables.person_leaving.company.name.toString();
+		if(employeeEmail && employeeFullName && managerEmail && companyName && gr){
+			try {
+				var termInputs = {};
+				termInputs['employee_email'] = employeeEmail; // String 
+				termInputs['manager_email'] = managerEmail; // String 
+				termInputs['employee_full_name'] = employeeFullName; // String 
+				termInputs['company_name'] = companyName; // String 
+				termInputs['original_ritm'] = gr; // GlideRecord of table: sc_req_item 
+
+				// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+				sn_fd.FlowAPI.getRunner().subflow('x_apig_sox_record.generate_term_request_null').inBackground().withInputs(termInputs).run();
+
+				// Current subflow has no outputs defined.		
+			} catch (ex) {
+				var termMessage = ex.getMessage();
+				gs.error(termMessage);
+			}
+		}
+	}
+
+	refreshCard = {
+		"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+		"type": "AdaptiveCard",
+		"version": "1.0",
+		"hideOriginalBody": true,
+		"expectedActors": [
+			""
+		],
+		"padding": "None",
+		"originator": "130e10fd-f029-4b15-9afe-080d08b1b932",
+		"body": [
+			{
+				"type": "Container",
+				"id": "60c4a88a-e79d-780e-f6db-716b1a8eb12a",
+				"padding": {
+					"top": "Default",
+					"bottom": "None",
+					"left": "Default",
+					"right": "None"
+				},
+				"items": [
+					{
+						"size": "Medium",
+						"width": "150px",
+						"url": "https://apigroup.service-now.com/images/image-5.png",
+						"type": "Image"
+					}
+				]
+			},
+			{
+				"type": "Container",
+				"padding": {
+					"top": "Default",
+					"bottom": "None",
+					"left": "Default",
+					"right": "None"
+				},
+				"items": [
+					{
+						"type": "TextBlock",
+						"text": "Your response has been received.",
+						"weight": "Bolder",
+						"size": "Medium",
+						"wrap": true
+					},
+					{
+						"type": "TextBlock",
+						"text": "Please contact support at 651-925-8511 if you need to change your response.",
+						"weight": "Bolder",
+						"size": "Medium",
+						"wrap": true
+					}
+				]
+			},
+			{
+				"type": "Container",
+				"bleed": true,
+				"backgroundImage": "https://apigroup.service-now.com/APiBlue.png",
+				"items": [
+					{
+						"type": "ColumnSet",
+						"columns": [
+							{
+								"type": "Column",
+								"width": 50,
+								"items": [
+									{
+										"type": "Image",
+										"url": "https://apigroupdev.service-now.com/BGL_Footer.png",
+										"horizontalAlignment": "Left",
+										"width": "400px"
+									}
+								],
+								"bleed": true,
+								"horizontalAlignment": "Left",
+								"padding": "None"
+							},
+							{
+								"type": "Column",
+								"width": 10,
+								"items": [
+									{
+										"type": "Image",
+										"url": "https://apigroupdev.service-now.com/images/image-6.png",
+										"horizontalAlignment": "Right",
+										"width": "50px",
+										"size": "Medium"
+									}
+								],
+								"padding": "None"
+							}
+						],
+						"spacing": "None",
+						"horizontalAlignment": "Left",
+						"bleed": true,
+						"padding": "None"
+					}
+				],
+				"horizontalAlignment": "Left",
+				"padding": "None"
+			}
+		]
+	};
+
+	response.setStatus(200);
+	response.setContentType("application/json");
+	response.setHeader("CARD-UPDATE-IN-BODY", "true");
+	response.getStreamWriter().writeString(JSON.stringify(refreshCard));
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_apig_sox_record/sec05_inactive_employee_review_process/respond</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/respond</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>false</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-17 20:25:23</sys_created_on>
+        <sys_id>2fc72ae91bd6c59062e50ed2cd4bcb9a</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>Respond</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_ws_operation_2fc72ae91bd6c59062e50ed2cd4bcb9a</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-24 13:23:54</sys_updated_on>
+        <web_service_definition display_value="SEC17 Inactive Employee Review Process">1a972ea91bd6c59062e50ed2cd4bcb57</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

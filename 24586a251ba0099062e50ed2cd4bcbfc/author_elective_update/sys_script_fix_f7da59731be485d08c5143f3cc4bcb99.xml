@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="DELETE">
+        <before>false</before>
+        <description/>
+        <name>Generate Terms From Import Set(NULL)</name>
+        <record_for_rollback>false</record_for_rollback>
+        <script><![CDATA[(function() {
+	var i=0;
+	try {
+		var importGR = new GlideRecord('x_apig_sox_record_term_list');
+		importGR.addEncodedQuery('u_disposition=NULL');
+		importGR.query();
+		while(importGR.next()){
+		var inputs = {};
+		inputs['employee_email'] = importGR.getValue('u_userprincipalname'); // String 
+		inputs['manager_email'] = importGR.getValue('u_manager'); // String 
+		inputs['employee_full_name'] = importGR.getValue('u_displayname'); // String
+		inputs['company_name'] = importGR.getValue('u_company'); // String 
+
+sn_fd.FlowAPI.getRunner().subflow('x_apig_sox_record.generate_term_request_null').inBackground().withInputs(inputs).run();	
+			i++;
+		}
+		gs.error("Terminations Run: " + i);
+	} catch (ex) {
+		var message = ex.getMessage();
+		gs.error("Creating Terminations Failed: " + message);
+		gs.error("Terminations Run Before Failure: " + i);
+	}
+	
+})();]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-12-27 14:28:42</sys_created_on>
+        <sys_id>f7da59731be485d08c5143f3cc4bcb99</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Generate Terms From Import Set(NULL)</sys_name>
+        <sys_package display_value="SOx Record Generators" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SOx Record Generators">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_script_fix_f7da59731be485d08c5143f3cc4bcb99</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-12-27 14:31:41</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sys_script_fix_f7da59731be485d08c5143f3cc4bcb99</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_fix"&gt;
+    &lt;sys_script_fix action="INSERT_OR_UPDATE"&gt;
+        &lt;before&gt;false&lt;/before&gt;
+        &lt;description/&gt;
+        &lt;name&gt;Generate Terms From Import Set(NULL)&lt;/name&gt;
+        &lt;record_for_rollback&gt;false&lt;/record_for_rollback&gt;
+        &lt;script&gt;&lt;![CDATA[(function() {
+	var i=0;
+	try {
+		var importGR = new GlideRecord('x_apig_sox_record_term_list');
+		importGR.addEncodedQuery('u_disposition=NULL');
+		importGR.query();
+		while(importGR.next()){
+		var inputs = {};
+		inputs['employee_email'] = importGR.getValue('u_userprincipalname'); // String 
+		inputs['manager_email'] = importGR.getValue('u_manager'); // String 
+		inputs['employee_full_name'] = importGR.getValue('u_displayname'); // String
+		inputs['company_name'] = importGR.getValue('u_company'); // String 
+
+sn_fd.FlowAPI.getRunner().subflow('x_apig_sox_record.generate_term_request_null').inBackground().withInputs(inputs).run();	
+			i++;
+		}
+		gs.error("Terminations Run: " + i);
+	} catch (ex) {
+		var message = ex.getMessage();
+		gs.error("Creating Terminations Failed: " + message);
+		gs.error("Terminations Run Before Failure: " + i);
+	}
+	
+})();]]&gt;&lt;/script&gt;
+        &lt;sys_class_name&gt;sys_script_fix&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-12-27 14:28:42&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;f7da59731be485d08c5143f3cc4bcb99&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;Generate Terms From Import Set(NULL)&lt;/sys_name&gt;
+        &lt;sys_package display_value="SOx Record Generators" source="x_apig_sox_record"&gt;24586a251ba0099062e50ed2cd4bcbfc&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="SOx Record Generators"&gt;24586a251ba0099062e50ed2cd4bcbfc&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sys_script_fix_f7da59731be485d08c5143f3cc4bcb99&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-12-27 14:31:41&lt;/sys_updated_on&gt;
+        &lt;unloadable&gt;false&lt;/unloadable&gt;
+    &lt;/sys_script_fix&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>-1609927956</payload_hash>
+        <record_name>Generate Terms From Import Set(NULL)</record_name>
+        <reverted_from/>
+        <source>31a175e51b96859062e50ed2cd4bcb1a</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-17 16:12:27</sys_created_on>
+        <sys_id>5bc1b9291b96859062e50ed2cd4bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f98a6de680000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-17 16:12:27</sys_updated_on>
+        <type>Fix Script</type>
+        <update_guid>97c1b929ad968590c7675d05aa80b168</update_guid>
+        <update_guid_history>97c1b929ad968590c7675d05aa80b168:0,4a968b4cce8609907d4ec6bb6b18e640:-75777957,d78b1df380e485d02f6fe89949db6666:1455673408,bfda5973eee485d02b759cb6c983da9a:256811716</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-05-27 16:31:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_fix">sys_script_fix</sys_db_object>
+        <sys_id>17097e4fc29b4d7797c3a2391b5ae769</sys_id>
+        <sys_metadata>f7da59731be485d08c5143f3cc4bcb99</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Generate Terms From Import Set(NULL)</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_scope_delete display_value="">2f88ffbf0c2845809e73338e3a3a8400</sys_scope_delete>
+        <sys_update_name>sys_script_fix_f7da59731be485d08c5143f3cc4bcb99</sys_update_name>
+        <sys_update_version display_value="sys_script_fix_f7da59731be485d08c5143f3cc4bcb99">5bc1b9291b96859062e50ed2cd4bcb68</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-27 16:31:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

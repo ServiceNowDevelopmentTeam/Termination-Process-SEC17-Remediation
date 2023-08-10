@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Validate there is at least one record in 'sys_email' matching query:
+Recipients contains Test.Manager2@apigroupinc.us
+and Created &gt; {{Step 2: Create a User.User.Created}}
+With a failure timeout of 60 Seconds</description>
+        <display_name>Record Query</display_name>
+        <inputs/>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>19</order>
+        <step_config display_value="Record Query">2d82e3c7531400109e02ddeeff7b12a7</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-15 19:03:45</sys_created_on>
+        <sys_id>8c027f5a1b61a19062e50ed2cd4bcb87</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Record Query</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_atf_step_8c027f5a1b61a19062e50ed2cd4bcb87</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-16 13:33:46</sys_updated_on>
+        <table>sys_email</table>
+        <test display_value="TC - 324 - SEC17 - Wrong Manager - IT">e5cfeb561b61a19062e50ed2cd4bcb8f</test>
+        <timeout>1970-01-01 00:01:00</timeout>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=8c027f5a1b61a19062e50ed2cd4bcb87"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>8c027f5a1b61a19062e50ed2cd4bcb87</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-15 19:03:45</sys_created_on>
+        <sys_id>0422ff9a1b61a19062e50ed2cd4bcb3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-15 19:03:45</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Enforce security">02fb0027531000109e02ddeeff7b120b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>8c027f5a1b61a19062e50ed2cd4bcb87</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-15 19:03:45</sys_created_on>
+        <sys_id>0822bb5a1b61a19062e50ed2cd4bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-15 19:03:45</sys_updated_on>
+        <value>records_match_query</value>
+        <variable display_value="Assert type">b86c0427531000109e02ddeeff7b1227</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>8c027f5a1b61a19062e50ed2cd4bcb87</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-15 19:03:45</sys_created_on>
+        <sys_id>9822ff9a1b61a19062e50ed2cd4bcb3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-15 19:03:45</sys_updated_on>
+        <value>recipientsLIKETest.Manager2@apigroupinc.us^sys_created_on&gt;{{step['e9cf2f561b61a19062e50ed2cd4bcb60'].user.sys_created_on}}^EQ</value>
+        <variable display_value="Conditions">915990ab531000109e02ddeeff7b12f8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>8c027f5a1b61a19062e50ed2cd4bcb87</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-15 19:03:45</sys_created_on>
+        <sys_id>c422ff9a1b61a19062e50ed2cd4bcb3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-15 19:03:45</sys_updated_on>
+        <value>sys_email</value>
+        <variable display_value="Table">78b8d86b531000109e02ddeeff7b12f3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8c027f5a1b61a19062e50ed2cd4bcb87"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>enforce_security</field>
+        <id>8c027f5a1b61a19062e50ed2cd4bcb87</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-15 19:03:45</sys_created_on>
+        <sys_id>c022bb5a1b61a19062e50ed2cd4bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-15 19:03:45</sys_updated_on>
+        <table>var__m_atf_input_variable_2d82e3c7531400109e02ddeeff7b12a7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>8c027f5a1b61a19062e50ed2cd4bcb87</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-15 19:03:45</sys_created_on>
+        <sys_id>8422bb5a1b61a19062e50ed2cd4bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-15 19:03:45</sys_updated_on>
+        <table>var__m_atf_input_variable_2d82e3c7531400109e02ddeeff7b12a7</table>
+        <value>recipientsLIKETest.Manager2@apigroupinc.us^sys_created_on&gt;{{step['e9cf2f561b61a19062e50ed2cd4bcb60'].user.sys_created_on}}^EQ</value>
+    </sys_element_mapping>
+</record_update>

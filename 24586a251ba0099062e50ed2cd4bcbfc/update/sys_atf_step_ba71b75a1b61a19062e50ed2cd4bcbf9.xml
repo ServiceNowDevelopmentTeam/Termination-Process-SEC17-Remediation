@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from display_value="Set Catalog Item Variable Value (Custom)">43ce01d61b1d251062e50ed2cd4bcbc2</copied_from>
+        <description/>
+        <display_name>Set Catalog Item Variable Value (Custom)</display_name>
+        <inputs/>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>17</order>
+        <step_config display_value="Set Catalog Item Variable Value (Custom)">a497668a1b4e51508c5143f3cc4bcbc8</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-15 19:00:56</sys_created_on>
+        <sys_id>ba71b75a1b61a19062e50ed2cd4bcbf9</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Set Catalog Item Variable Value (Custom)</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_atf_step_ba71b75a1b61a19062e50ed2cd4bcbf9</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-15 21:01:35</sys_updated_on>
+        <table/>
+        <test display_value="TC - 324 - SEC17 - Wrong Manager - IT">e5cfeb561b61a19062e50ed2cd4bcb8f</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=ba71b75a1b61a19062e50ed2cd4bcbf9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>ba71b75a1b61a19062e50ed2cd4bcbf9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-15 19:00:56</sys_created_on>
+        <sys_id>3e71b75a1b61a19062e50ed2cd4bcbfb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-15 19:01:33</sys_updated_on>
+        <value>manager</value>
+        <variable display_value="Variable Name">d1982eca1b4e51508c5143f3cc4bcb0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>ba71b75a1b61a19062e50ed2cd4bcbf9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-15 19:00:56</sys_created_on>
+        <sys_id>7a71b75a1b61a19062e50ed2cd4bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-15 19:00:56</sys_updated_on>
+        <value/>
+        <variable display_value="RITM">60b8eeca1b4e51508c5143f3cc4bcb3f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>ba71b75a1b61a19062e50ed2cd4bcbf9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-15 19:00:56</sys_created_on>
+        <sys_id>b271b75a1b61a19062e50ed2cd4bcbfb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-15 19:02:22</sys_updated_on>
+        <value>{{step['efa1bf5a1b61a19062e50ed2cd4bcb7c'].user}}</value>
+        <variable display_value="New Value">ddd8a20e1b4e51508c5143f3cc4bcbd1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ba71b75a1b61a19062e50ed2cd4bcbf9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>u_new_value</field>
+        <id>ba71b75a1b61a19062e50ed2cd4bcbf9</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-15 19:02:22</sys_created_on>
+        <sys_id>f7c1ff5a1b61a19062e50ed2cd4bcbe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-15 19:02:22</sys_updated_on>
+        <table>var__m_atf_input_variable_a497668a1b4e51508c5143f3cc4bcbc8</table>
+        <value>{{step['efa1bf5a1b61a19062e50ed2cd4bcb7c'].user}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>u_ritm</field>
+        <id>ba71b75a1b61a19062e50ed2cd4bcbf9</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-15 19:00:56</sys_created_on>
+        <sys_id>b271b75a1b61a19062e50ed2cd4bcbfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-15 19:00:56</sys_updated_on>
+        <table>var__m_atf_input_variable_a497668a1b4e51508c5143f3cc4bcbc8</table>
+        <value>{{step['cecf6f561b61a19062e50ed2cd4bcb0b'].first_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>u_variable_name</field>
+        <id>ba71b75a1b61a19062e50ed2cd4bcbf9</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-15 19:01:33</sys_created_on>
+        <sys_id>0ca1bb5a1b61a19062e50ed2cd4bcb84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-15 19:01:33</sys_updated_on>
+        <table>var__m_atf_input_variable_a497668a1b4e51508c5143f3cc4bcbc8</table>
+        <value/>
+    </sys_element_mapping>
+</record_update>

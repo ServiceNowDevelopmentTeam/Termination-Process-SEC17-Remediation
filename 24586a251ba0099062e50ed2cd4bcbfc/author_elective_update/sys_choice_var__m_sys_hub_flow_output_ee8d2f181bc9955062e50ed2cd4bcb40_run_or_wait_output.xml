@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="run_or_wait_output" table="var__m_sys_hub_flow_output_ee8d2f181bc9955062e50ed2cd4bcb40" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>run_or_wait_output</element>
+            <name>var__m_sys_hub_flow_output_ee8d2f181bc9955062e50ed2cd4bcb40</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2022-08-01 15:22:10</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>run_or_wait_output</sys_name>
+            <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+            <sys_update_name>sys_choice_var__m_sys_hub_flow_output_ee8d2f181bc9955062e50ed2cd4bcb40_run_or_wait_output</sys_update_name>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2022-08-01 15:22:10</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>run_or_wait_output</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Run</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_ee8d2f181bc9955062e50ed2cd4bcb40</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2022-07-28 21:23:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2022-07-28 21:23:20</sys_updated_on>
+            <value>Run</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>run_or_wait_output</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wait</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_ee8d2f181bc9955062e50ed2cd4bcb40</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2022-07-28 21:23:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2022-07-28 21:23:20</sys_updated_on>
+            <value>Wait</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

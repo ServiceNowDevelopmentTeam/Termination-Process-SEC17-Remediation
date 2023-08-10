@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new">
+    <item_option_new action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <attributes/>
+        <cat_item display_value="SEC17 Review Deprovisioning">bcec9df31be485d08c5143f3cc4bcb1b</cat_item>
+        <category/>
+        <choice_direction>down</choice_direction>
+        <choice_field/>
+        <choice_table/>
+        <create_roles/>
+        <default_html_value/>
+        <default_value/>
+        <delete_roles/>
+        <delivery_plan/>
+        <description/>
+        <display_title>false</display_title>
+        <do_not_select_first>false</do_not_select_first>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <enable_also_request_for>false</enable_also_request_for>
+        <example_text/>
+        <field/>
+        <global>false</global>
+        <help_tag>More information</help_tag>
+        <help_text>Email and Onedrive/computer data will be made available to the manager of the off boarded individual for 30 days allowing enough time to save any documents needed before the data is deleted. In the event an extension is required it may be requested though the APi Connect service portal or by calling Field Support at 651.925.8511. The manager will receive a link to the separated associate files and email.</help_text>
+        <hidden>false</hidden>
+        <include_none>false</include_none>
+        <instructions/>
+        <layout>normal</layout>
+        <list_table/>
+        <lookup_label/>
+        <lookup_price/>
+        <lookup_table/>
+        <lookup_unique>false</lookup_unique>
+        <lookup_value/>
+        <macro/>
+        <macroponent/>
+        <mandatory>false</mandatory>
+        <map_to_field>false</map_to_field>
+        <mask_use_confirmation>false</mask_use_confirmation>
+        <mask_use_encryption>false</mask_use_encryption>
+        <name>retentionpolicyinfo</name>
+        <order>3123</order>
+        <post_insert_script/>
+        <price_if_checked>0</price_if_checked>
+        <pricing_implications>false</pricing_implications>
+        <published_ref/>
+        <question_text>Data retention guidelines</question_text>
+        <read_only>false</read_only>
+        <read_roles/>
+        <read_script/>
+        <rec_lookup_price/>
+        <rec_price_if_checked>0</rec_price_if_checked>
+        <record/>
+        <record_producer_table/>
+        <reference/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <rich_text><![CDATA[<p>Email and Onedrive/laptop data will be made available to the manager of the off boarded individual for 30 days allowing enough time to save any documents needed before the data is deleted. In the event an extension is required it may be requested though the APi Connect service portal or by calling Field Support at 651.925.8511. </p>
+<p>The manager will receive a link to the separated associate files and email. An out of office message will will be set for 30 days from the separated associate email address simply stating: <br />&#34;(_associate_name), is no longer with the organization. Please contact (associate_manager)/ (_phone) / (_email) if you require additional assistance.  </p>
+<p>Thank you. <br />-Api Group Inc &#34; </p>]]></rich_text>
+        <roles_to_use_also_request_for/>
+        <save_script/>
+        <scale_max>5</scale_max>
+        <scale_min>0</scale_min>
+        <show_help>true</show_help>
+        <show_help_on_load>true</show_help_on_load>
+        <sp_widget/>
+        <summary_macro/>
+        <sys_class_name>item_option_new</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-12-27 14:37:38</sys_created_on>
+        <sys_id>e2ec5d771be485d08c5143f3cc4bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Data retention guidelines</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>item_option_new_e2ec5d771be485d08c5143f3cc4bcb85</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-12-27 14:37:38</sys_updated_on>
+        <table/>
+        <tooltip/>
+        <type>11</type>
+        <ui_page/>
+        <unique>false</unique>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <validate_regex/>
+        <variable_name/>
+        <variable_set/>
+        <variable_width/>
+        <visibility>1</visibility>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <visible_summary>true</visible_summary>
+        <write_roles/>
+    </item_option_new>
+    <sys_translated_text action="delete_multiple" query="documentkey=e2ec5d771be485d08c5143f3cc4bcb85"/>
+    <fx_price action="delete_multiple" query="id=e2ec5d771be485d08c5143f3cc4bcb85"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>price_if_checked</field>
+        <id>e2ec5d771be485d08c5143f3cc4bcb85</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-12-27 14:37:38</sys_created_on>
+        <sys_id>a2ec5d771be485d08c5143f3cc4bcb88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-12-27 14:37:38</sys_updated_on>
+        <table>item_option_new</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_price_if_checked</field>
+        <id>e2ec5d771be485d08c5143f3cc4bcb85</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-12-27 14:37:38</sys_created_on>
+        <sys_id>6aec5d771be485d08c5143f3cc4bcb87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-12-27 14:37:38</sys_updated_on>
+        <table>item_option_new</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description>This fixes a bug in Rome where flows have duplicate steps that break flows.</description>
+        <name>Fix Orphaned Flow Steps</name>
+        <record_for_rollback>false</record_for_rollback>
+        <script><![CDATA[function findAndRemoveOrphans(flowSysId) {
+	var compGr = new GlideRecord('sys_hub_flow_component');
+	compGr.addQuery('flow', flowSysId);
+	compGr.query();
+	var uiIdMap = {};
+	var currUiId = '';
+	var orphans = ["---- Deleted orphaned instances ----"];
+	while (compGr.next()) {
+		currUiId = compGr.getValue('ui_id');
+		uiIdMap[currUiId] = currUiId;
+	}
+
+	compGr.query();
+	while (compGr.next()) {
+		currUiId = compGr.getValue('ui_id');
+		var parentUiId = compGr.getValue('parent_ui_id');
+		if (parentUiId && !uiIdMap[parentUiId]) {
+			orphans.push('order: ' + compGr.getValue('order') + ', ui id: ' + currUiId);
+			compGr.deleteRecord();
+		}
+	}
+
+	return orphans;
+}
+
+function fixOrphanedFlowInstances(flowSysId) {
+	var mainFlowSysId = '';
+	var flowSnapshotGR = new GlideRecord('sys_hub_flow');
+	flowSnapshotGR.addQuery('sys_id', flowSysId);
+	flowSnapshotGR.query();
+	if (flowSnapshotGR.next()) {
+		mainFlowSysId = flowSnapshotGR.getValue('master_snapshot');
+	}
+
+	findAndRemoveOrphans(flowSysId);
+	var orphans = findAndRemoveOrphans(mainFlowSysId);
+
+	gs.info(orphans.join('\n'));
+}
+
+var flowGr = new GlideRecord('sys_hub_flow');
+flowGr.addEncodedQuery('active=true^status=published');
+flowGr.query();
+while(flowGr.next()){
+	fixOrphanedFlowInstances(flowGr.sys_id.toString());
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-05-26 16:11:07</sys_created_on>
+        <sys_id>5640960c1b3b499062e50ed2cd4bcb33</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Fix Orphaned Flow Steps</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_script_fix_5640960c1b3b499062e50ed2cd4bcb33</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-26 16:16:04</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

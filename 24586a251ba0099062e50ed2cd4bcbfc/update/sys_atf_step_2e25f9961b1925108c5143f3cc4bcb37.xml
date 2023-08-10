@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from display_value="Add/Subtract from current date/time">32ce01d61b1d251062e50ed2cd4bcb73</copied_from>
+        <description>This ATF step generates the current date/time and adds or subtracts a specified duration from it. The operation input determines whether to add or subtract from the current date/time. The duration input should be in the format 'x[d|h|m|s] y[d|h|m|s] ...', where 'x', 'y', etc. are the number of days, hours, minutes, or seconds to add or subtract from the current date/time. The output of this step is the new date/time as a string.</description>
+        <display_name>Add/Subtract from current date/time</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>4</order>
+        <step_config display_value="Add/Subtract from current date/time">5cd0cf711b95a11062e50ed2cd4bcbc6</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-02 23:42:06</sys_created_on>
+        <sys_id>2e25f9961b1925108c5143f3cc4bcb37</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Add/Subtract from current date/time</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_atf_step_2e25f9961b1925108c5143f3cc4bcb37</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-02 23:44:47</sys_updated_on>
+        <table/>
+        <test display_value="TC - 323 - SEC17 - Due date hit no response - IT">da25f5561b1925108c5143f3cc4bcb82</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=2e25f9961b1925108c5143f3cc4bcb37"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>2e25f9961b1925108c5143f3cc4bcb37</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-02 23:42:06</sys_created_on>
+        <sys_id>6225f9961b1925108c5143f3cc4bcb39</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-02 23:44:47</sys_updated_on>
+        <value>subtract</value>
+        <variable display_value="Operation">4a788bbd1b95a11062e50ed2cd4bcb23</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>2e25f9961b1925108c5143f3cc4bcb37</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-02 23:42:06</sys_created_on>
+        <sys_id>ae25f9961b1925108c5143f3cc4bcb38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-02 23:42:06</sys_updated_on>
+        <value>1970-01-03 00:00:00</value>
+        <variable display_value="Duration">ea5887bd1b95a11062e50ed2cd4bcb89</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_5cd0cf711b95a11062e50ed2cd4bcbc6^id=2e25f9961b1925108c5143f3cc4bcb37"/>
+</record_update>

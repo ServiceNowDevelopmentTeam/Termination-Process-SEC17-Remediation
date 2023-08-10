@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test">
+    <sys_atf_test action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from display_value="TC - 323 - SEC17 - Active, no access need - IT">3ece4d961b1d251062e50ed2cd4bcb19</copied_from>
+        <description/>
+        <enable_parameterized_testing>false</enable_parameterized_testing>
+        <fail_on_server_error>true</fail_on_server_error>
+        <name>TC - 324 - SEC17 - Wrong Manager - IT</name>
+        <parameters/>
+        <remember/>
+        <sys_class_name>sys_atf_test</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-03-15 18:53:28</sys_created_on>
+        <sys_id>e5cfeb561b61a19062e50ed2cd4bcb8f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>TC - 324 - SEC17 - Wrong Manager - IT</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_atf_test_e5cfeb561b61a19062e50ed2cd4bcb8f</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-15 18:53:41</sys_updated_on>
+    </sys_atf_test>
+    <sys_variable_value action="delete_multiple" query="document_key=e5cfeb561b61a19062e50ed2cd4bcb8f"/>
+</record_update>

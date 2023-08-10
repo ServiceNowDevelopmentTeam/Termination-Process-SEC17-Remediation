@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="SEC17 Review Deprovisioning">bcec9df31be485d08c5143f3cc4bcb1b</catalog_item>
+        <catalog_variable>IO:59ecd9771be485d08c5143f3cc4bcbb9</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-12-27 14:37:52</sys_created_on>
+        <sys_id>c2fc91b71be485d08c5143f3cc4bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>legal_first_name</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_c2fc91b71be485d08c5143f3cc4bcbd1</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-12-27 14:37:52</sys_updated_on>
+        <table/>
+        <ui_policy display_value="User Not found">71fc91b71be485d08c5143f3cc4bcbb3</ui_policy>
+        <variable>legal_first_name</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

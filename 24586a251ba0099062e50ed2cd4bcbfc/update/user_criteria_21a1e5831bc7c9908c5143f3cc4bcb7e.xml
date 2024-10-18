@@ -10,6 +10,7 @@
         <name>Role: Admin</name>
         <role name="admin">2831a114c611228501d4ea6c309d626d</role>
         <script/>
+        <short_description/>
         <sys_class_name>user_criteria</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-28 13:40:16</sys_created_on>

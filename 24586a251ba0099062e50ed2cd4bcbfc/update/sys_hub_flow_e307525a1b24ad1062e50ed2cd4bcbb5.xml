@@ -4,6 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -29,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e307525a1b24ad1062e50ed2cd4bcbb5</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>SEC17 - Stale User Ingest</sys_name>
         <sys_overrides/>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
@@ -37,7 +38,7 @@
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_update_name>sys_hub_flow_e307525a1b24ad1062e50ed2cd4bcbb5</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-01-24 20:44:00</sys_updated_on>
+        <sys_updated_on>2023-02-03 22:27:17</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=e307525a1b24ad1062e50ed2cd4bcbb5"/>
@@ -211,6 +212,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1727529a1b24ad1062e50ed2cd4bcb4e"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -294,6 +296,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1b27529a1b24ad1062e50ed2cd4bcb51"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -380,6 +383,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d327529a1b24ad1062e50ed2cd4bcb4a"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -463,6 +467,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d327969a1b24ad1062e50ed2cd4bcb0b"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -546,6 +551,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d727969a1b24ad1062e50ed2cd4bcb0e"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -629,6 +635,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=db27969a1b24ad1062e50ed2cd4bcb11"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -712,6 +719,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=df27969a1b24ad1062e50ed2cd4bcb14"/>
     <sys_hub_flow_output action="delete_multiple" query="model=e307525a1b24ad1062e50ed2cd4bcbb5"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=e307525a1b24ad1062e50ed2cd4bcbb5"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=e307525a1b24ad1062e50ed2cd4bcbb5^sys_idNOT IN39e8621a1ba4ad1062e50ed2cd4bcba0,5384ea9e1b64ad1062e50ed2cd4bcbb7,5784ea9e1b64ad1062e50ed2cd4bcbbb,5784ea9e1b64ad1062e50ed2cd4bcbc8,61e8621a1ba4ad1062e50ed2cd4bcb37,f2e0e25a1b64ad1062e50ed2cd4bcb77,f4a22eda1b64ad1062e50ed2cd4bcb75"/>
@@ -720,6 +728,7 @@
         <action_inputs/>
         <action_type display_value="Copy Attachment">30fe6cdb0f973300dfd3694e68767e5a</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment>Copy attachment to data import record</comment>
         <display_text/>
         <flow display_value="SEC17 - Stale User Ingest">e307525a1b24ad1062e50ed2cd4bcbb5</flow>
@@ -807,6 +816,7 @@
         <action_inputs/>
         <action_type display_value="Get Current DateTime">80f2ffcb1b5ec5d062e50ed2cd4bcba4</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="SEC17 - Stale User Ingest">e307525a1b24ad1062e50ed2cd4bcbb5</flow>
@@ -830,6 +840,7 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment>Activate import in 20 seconds</comment>
         <display_text/>
         <flow display_value="SEC17 - Stale User Ingest">e307525a1b24ad1062e50ed2cd4bcbb5</flow>
@@ -904,6 +915,7 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment>Deactivate import</comment>
         <display_text/>
         <flow display_value="SEC17 - Stale User Ingest">e307525a1b24ad1062e50ed2cd4bcbb5</flow>
@@ -992,6 +1004,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Email Attachments">2dbeaf29c7322300f4eba1425a976340</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="SEC17 - Stale User Ingest">e307525a1b24ad1062e50ed2cd4bcbb5</flow>
@@ -1027,6 +1040,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment>Look up data import record</comment>
         <display_text/>
         <flow display_value="SEC17 - Stale User Ingest">e307525a1b24ad1062e50ed2cd4bcbb5</flow>
@@ -1079,6 +1093,7 @@
         <action_inputs/>
         <action_type display_value="Delete Attachment">bdc2a0170f973300dfd3694e68767e47</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment>Delete existing SEC17 attachments on data source</comment>
         <display_text/>
         <flow display_value="SEC17 - Stale User Ingest">e307525a1b24ad1062e50ed2cd4bcbb5</flow>
@@ -1178,6 +1193,7 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=f4a22eda1b64ad1062e50ed2cd4bcb75"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=e307525a1b24ad1062e50ed2cd4bcbb5^sys_idNOT IN59e42ade1b64ad1062e50ed2cd4bcb01"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="SEC17 - Stale User Ingest">e307525a1b24ad1062e50ed2cd4bcbb5</flow>
@@ -1289,18 +1305,6 @@
         <table>var__m_sys_hub_flow_input_11a0eddb1b5c49508c5143f3cc4bcbe4</table>
         <value/>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>59e42ade1b64ad1062e50ed2cd4bcb01</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2023-01-24 20:23:32</sys_created_on>
-        <sys_id>51e42ade1b64ad1062e50ed2cd4bcb21</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-01-24 20:23:32</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_59e42ade1b64ad1062e50ed2cd4bcb01</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_59e42ade1b64ad1062e50ed2cd4bcb01^id=59e42ade1b64ad1062e50ed2cd4bcb01"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=59e42ade1b64ad1062e50ed2cd4bcb01^sys_idNOT IN11e42ade1b64ad1062e50ed2cd4bcb03"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -1389,6 +1393,7 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=59e42ade1b64ad1062e50ed2cd4bcb01"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=e307525a1b24ad1062e50ed2cd4bcbb5^sys_idNOT IN15e4e6de1b64ad1062e50ed2cd4bcbfd,35e8621a1ba4ad1062e50ed2cd4bcb3d,49e4e6de1b64ad1062e50ed2cd4bcbd8,5384ea9e1b64ad1062e50ed2cd4bcbbe,6de8621a1ba4ad1062e50ed2cd4bcb39"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">5de4e6de1b64ad1062e50ed2cd4bcbfc</block>
         <comment/>
         <connected_to/>
@@ -1450,6 +1455,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=15e4e6de1b64ad1062e50ed2cd4bcbfd"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=15e4e6de1b64ad1062e50ed2cd4bcbfd"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">7de8621a1ba4ad1062e50ed2cd4bcb3c</block>
         <comment/>
         <connected_to/>
@@ -1522,6 +1528,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=35e8621a1ba4ad1062e50ed2cd4bcb3d"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=35e8621a1ba4ad1062e50ed2cd4bcb3d"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">8de4e6de1b64ad1062e50ed2cd4bcbd7</block>
         <comment/>
         <connected_to/>
@@ -1554,6 +1561,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=49e4e6de1b64ad1062e50ed2cd4bcbd8"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=49e4e6de1b64ad1062e50ed2cd4bcbd8"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">9b84ea9e1b64ad1062e50ed2cd4bcbbd</block>
         <comment/>
         <connected_to/>
@@ -1615,6 +1623,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5384ea9e1b64ad1062e50ed2cd4bcbbe"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=5384ea9e1b64ad1062e50ed2cd4bcbbe"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">a1e8621a1ba4ad1062e50ed2cd4bcb39</block>
         <comment>For each email attachment</comment>
         <connected_to/>
@@ -1744,11 +1753,11 @@
         <sys_created_on>2023-01-24 19:23:36</sys_created_on>
         <sys_id>1327969a1b24ad1062e50ed2cd4bcb14</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Target Record</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e307525a1b24ad1062e50ed2cd4bcbb5_target_record_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-01-24 19:23:36</sys_updated_on>
         <url/>
@@ -1767,11 +1776,11 @@
         <sys_created_on>2023-01-24 19:23:36</sys_created_on>
         <sys_id>1727969a1b24ad1062e50ed2cd4bcb0a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Body Text</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e307525a1b24ad1062e50ed2cd4bcbb5_body_text_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-01-24 19:23:36</sys_updated_on>
         <url/>
@@ -1790,11 +1799,11 @@
         <sys_created_on>2023-01-24 19:23:36</sys_created_on>
         <sys_id>1727969a1b24ad1062e50ed2cd4bcb17</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>From address</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e307525a1b24ad1062e50ed2cd4bcbb5_from_address_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-01-24 19:23:36</sys_updated_on>
         <url/>
@@ -1813,11 +1822,11 @@
         <sys_created_on>2023-01-24 19:23:36</sys_created_on>
         <sys_id>1b27969a1b24ad1062e50ed2cd4bcb0d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Subject</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e307525a1b24ad1062e50ed2cd4bcbb5_subject_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-01-24 19:23:36</sys_updated_on>
         <url/>
@@ -1836,11 +1845,11 @@
         <sys_created_on>2023-01-24 19:23:36</sys_created_on>
         <sys_id>1f27969a1b24ad1062e50ed2cd4bcb10</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>User</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e307525a1b24ad1062e50ed2cd4bcbb5_user_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-01-24 19:23:36</sys_updated_on>
         <url/>
@@ -1859,11 +1868,11 @@
         <sys_created_on>2023-01-24 19:23:36</sys_created_on>
         <sys_id>5727529a1b24ad1062e50ed2cd4bcb4d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Inbound Email</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e307525a1b24ad1062e50ed2cd4bcbb5_inbound_email_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-01-24 19:23:36</sys_updated_on>
         <url/>
@@ -1882,11 +1891,11 @@
         <sys_created_on>2023-01-24 19:23:36</sys_created_on>
         <sys_id>5b27529a1b24ad1062e50ed2cd4bcb50</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Target Table</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e307525a1b24ad1062e50ed2cd4bcbb5_target_table_name_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-01-24 19:23:36</sys_updated_on>
         <url/>
@@ -1895,30 +1904,12 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e307525a1b24ad1062e50ed2cd4bcbb5"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e307525a1b24ad1062e50ed2cd4bcbb5"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e307525a1b24ad1062e50ed2cd4bcbb5"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e307525a1b24ad1062e50ed2cd4bcbb5^sys_idNOT IN6994ee9e1b64ad1062e50ed2cd4bcb3f"/>
-    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
-        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"6994ee9e1b64ad1062e50ed2cd4bcb3f","name":"plan","plan_signature":null}}</plan>
-        <plan_id>e307525a1b24ad1062e50ed2cd4bcbb5</plan_id>
-        <snapshot>cc942e9e1b64ad1062e50ed2cd4bcbf0</snapshot>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2023-01-24 20:22:11</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
-        <sys_id>6994ee9e1b64ad1062e50ed2cd4bcb3f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_overrides/>
-        <sys_scope/>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-01-24 20:41:16</sys_updated_on>
-        <trigger display_value="">6194ee9e1b64ad1062e50ed2cd4bcb3f</trigger>
-    </sys_flow_trigger_plan>
-    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e307525a1b24ad1062e50ed2cd4bcbb5"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -2101,6 +2092,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=04942e9e1b64ad1062e50ed2cd4bcbf3"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2184,6 +2176,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=50946e9e1b64ad1062e50ed2cd4bcbc5"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2267,6 +2260,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=98946e9e1b64ad1062e50ed2cd4bcba4"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2350,6 +2344,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9c946e9e1b64ad1062e50ed2cd4bcbbc"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2433,6 +2428,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d4946e9e1b64ad1062e50ed2cd4bcb77"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2519,6 +2515,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d8946e9e1b64ad1062e50ed2cd4bcbac"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2602,6 +2599,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d8946e9e1b64ad1062e50ed2cd4bcbb4"/>
     <sys_hub_flow_output action="delete_multiple" query="model=cc942e9e1b64ad1062e50ed2cd4bcbf0"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=cc942e9e1b64ad1062e50ed2cd4bcbf0"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=cc942e9e1b64ad1062e50ed2cd4bcbf0^sys_idNOT IN2094ae9e1b64ad1062e50ed2cd4bcb13,3894ae9e1b64ad1062e50ed2cd4bcb3c,6fe8261a1ba4ad1062e50ed2cd4bcb2b,7494ae9e1b64ad1062e50ed2cd4bcb36,ac94ae9e1b64ad1062e50ed2cd4bcb03,ebe8261a1ba4ad1062e50ed2cd4bcb1f,f094ae9e1b64ad1062e50ed2cd4bcb42"/>
@@ -2610,6 +2608,7 @@
         <action_inputs/>
         <action_type display_value="Delete Attachment">bdc2a0170f973300dfd3694e68767e47</action_type>
         <action_type_parent display_value="Delete Attachment">6672502a9353130079b5925cf67ffbc6</action_type_parent>
+        <attributes/>
         <comment>Delete existing SEC17 attachments on data source</comment>
         <display_text/>
         <flow display_value="SEC17 - Stale User Ingest">cc942e9e1b64ad1062e50ed2cd4bcbf0</flow>
@@ -2712,6 +2711,7 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment>Activate import in 20 seconds</comment>
         <display_text/>
         <flow display_value="SEC17 - Stale User Ingest">cc942e9e1b64ad1062e50ed2cd4bcbf0</flow>
@@ -2786,6 +2786,7 @@
         <action_inputs/>
         <action_type display_value="Copy Attachment">30fe6cdb0f973300dfd3694e68767e5a</action_type>
         <action_type_parent display_value="Copy Attachment">95849c2a9353130079b5925cf67ffb91</action_type_parent>
+        <attributes/>
         <comment>Copy attachment to data import record</comment>
         <display_text/>
         <flow display_value="SEC17 - Stale User Ingest">cc942e9e1b64ad1062e50ed2cd4bcbf0</flow>
@@ -2873,6 +2874,7 @@
         <action_inputs/>
         <action_type display_value="Get Current DateTime">80f2ffcb1b5ec5d062e50ed2cd4bcba4</action_type>
         <action_type_parent display_value="Get Current DateTime">d9a2f7cb1b5ec5d062e50ed2cd4bcb8d</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="SEC17 - Stale User Ingest">cc942e9e1b64ad1062e50ed2cd4bcbf0</flow>
@@ -2895,6 +2897,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
         <comment>Look up data import record</comment>
         <display_text/>
         <flow display_value="SEC17 - Stale User Ingest">cc942e9e1b64ad1062e50ed2cd4bcbf0</flow>
@@ -2947,6 +2950,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Email Attachments">2dbeaf29c7322300f4eba1425a976340</action_type>
         <action_type_parent display_value="Look Up Email Attachments">b8bd6765c7322300f4eba1425a9763c8</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="SEC17 - Stale User Ingest">cc942e9e1b64ad1062e50ed2cd4bcbf0</flow>
@@ -2983,6 +2987,7 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment>Deactivate import</comment>
         <display_text/>
         <flow display_value="SEC17 - Stale User Ingest">cc942e9e1b64ad1062e50ed2cd4bcbf0</flow>
@@ -3068,6 +3073,7 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=f094ae9e1b64ad1062e50ed2cd4bcb42"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=cc942e9e1b64ad1062e50ed2cd4bcbf0^sys_idNOT IN7ee4aade1b64ad1062e50ed2cd4bcb26"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="SEC17 - Stale User Ingest">cc942e9e1b64ad1062e50ed2cd4bcbf0</flow>
@@ -3179,18 +3185,6 @@
         <table>var__m_sys_hub_flow_input_11a0eddb1b5c49508c5143f3cc4bcbe4</table>
         <value/>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>7ee4aade1b64ad1062e50ed2cd4bcb26</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2023-01-24 20:23:38</sys_created_on>
-        <sys_id>7ee4aade1b64ad1062e50ed2cd4bcb38</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-01-24 20:23:38</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_7ee4aade1b64ad1062e50ed2cd4bcb26</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_7ee4aade1b64ad1062e50ed2cd4bcb26^id=7ee4aade1b64ad1062e50ed2cd4bcb26"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=7ee4aade1b64ad1062e50ed2cd4bcb26^sys_idNOT IN3ae4aade1b64ad1062e50ed2cd4bcb27"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -3279,6 +3273,7 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=7ee4aade1b64ad1062e50ed2cd4bcb26"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=cc942e9e1b64ad1062e50ed2cd4bcbf0^sys_idNOT IN67e8261a1ba4ad1062e50ed2cd4bcb37,aae4aade1b64ad1062e50ed2cd4bcb06,ac946e9e1b64ad1062e50ed2cd4bcbf3,ebe8261a1ba4ad1062e50ed2cd4bcb3a,f2e4aade1b64ad1062e50ed2cd4bcb23"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">a1e8621a1ba4ad1062e50ed2cd4bcb39</block>
         <comment>For each email attachment</comment>
         <connected_to/>
@@ -3325,6 +3320,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=67e8261a1ba4ad1062e50ed2cd4bcb37"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=67e8261a1ba4ad1062e50ed2cd4bcb37"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">8de4e6de1b64ad1062e50ed2cd4bcbd7</block>
         <comment/>
         <connected_to/>
@@ -3357,6 +3353,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=aae4aade1b64ad1062e50ed2cd4bcb06"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=aae4aade1b64ad1062e50ed2cd4bcb06"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">9b84ea9e1b64ad1062e50ed2cd4bcbbd</block>
         <comment/>
         <connected_to/>
@@ -3418,6 +3415,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ac946e9e1b64ad1062e50ed2cd4bcbf3"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=ac946e9e1b64ad1062e50ed2cd4bcbf3"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">7de8621a1ba4ad1062e50ed2cd4bcb3c</block>
         <comment/>
         <connected_to/>
@@ -3490,6 +3488,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ebe8261a1ba4ad1062e50ed2cd4bcb3a"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=ebe8261a1ba4ad1062e50ed2cd4bcb3a"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">5de4e6de1b64ad1062e50ed2cd4bcbfc</block>
         <comment/>
         <connected_to/>
@@ -3634,11 +3633,11 @@
         <sys_created_on>2023-01-24 20:22:06</sys_created_on>
         <sys_id>18946e9e1b64ad1062e50ed2cd4bcbc1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>User</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_cc942e9e1b64ad1062e50ed2cd4bcbf0_user_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-01-24 20:22:06</sys_updated_on>
         <url/>
@@ -3657,11 +3656,11 @@
         <sys_created_on>2023-01-24 20:22:06</sys_created_on>
         <sys_id>1c946e9e1b64ad1062e50ed2cd4bcb7b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Target Table</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_cc942e9e1b64ad1062e50ed2cd4bcbf0_target_table_name_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-01-24 20:22:06</sys_updated_on>
         <url/>
@@ -3680,11 +3679,11 @@
         <sys_created_on>2023-01-24 20:22:06</sys_created_on>
         <sys_id>54946e9e1b64ad1062e50ed2cd4bcbb9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>From address</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_cc942e9e1b64ad1062e50ed2cd4bcbf0_from_address_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-01-24 20:22:06</sys_updated_on>
         <url/>
@@ -3703,11 +3702,11 @@
         <sys_created_on>2023-01-24 20:22:07</sys_created_on>
         <sys_id>6c946e9e1b64ad1062e50ed2cd4bcbc9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Target Record</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_cc942e9e1b64ad1062e50ed2cd4bcbf0_target_record_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-01-24 20:22:07</sys_updated_on>
         <url/>
@@ -3726,11 +3725,11 @@
         <sys_created_on>2023-01-24 20:22:06</sys_created_on>
         <sys_id>90946e9e1b64ad1062e50ed2cd4bcba9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Subject</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_cc942e9e1b64ad1062e50ed2cd4bcbf0_subject_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-01-24 20:22:06</sys_updated_on>
         <url/>
@@ -3749,11 +3748,11 @@
         <sys_created_on>2023-01-24 20:22:06</sys_created_on>
         <sys_id>90946e9e1b64ad1062e50ed2cd4bcbb1</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
+        <sys_name>Inbound Email</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_cc942e9e1b64ad1062e50ed2cd4bcbf0_inbound_email_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-01-24 20:23:38</sys_updated_on>
         <url/>
@@ -3772,11 +3771,11 @@
         <sys_created_on>2023-01-24 20:22:06</sys_created_on>
         <sys_id>9c946e9e1b64ad1062e50ed2cd4bcb73</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Body Text</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_cc942e9e1b64ad1062e50ed2cd4bcbf0_body_text_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-01-24 20:22:06</sys_updated_on>
         <url/>
@@ -3790,4 +3789,23 @@
         <latest_snapshot>cc942e9e1b64ad1062e50ed2cd4bcbf0</latest_snapshot>
         <compiler_build>glide-tokyo-07-08-2022__patch4-11-23-2022_12-05-2022_2132.zip</compiler_build>
     </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e307525a1b24ad1062e50ed2cd4bcbb5^sys_idNOT IN6994ee9e1b64ad1062e50ed2cd4bcb3f"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"6994ee9e1b64ad1062e50ed2cd4bcb3f","name":"plan","plan_signature":null}}</plan>
+        <plan_id>e307525a1b24ad1062e50ed2cd4bcbb5</plan_id>
+        <snapshot>cc942e9e1b64ad1062e50ed2cd4bcbf0</snapshot>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-01-24 20:22:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6994ee9e1b64ad1062e50ed2cd4bcb3f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-01-24 20:41:16</sys_updated_on>
+        <trigger display_value="">6194ee9e1b64ad1062e50ed2cd4bcb3f</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e307525a1b24ad1062e50ed2cd4bcbb5"/>
 </record_update>

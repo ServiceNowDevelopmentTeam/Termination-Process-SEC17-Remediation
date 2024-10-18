@@ -38,7 +38,7 @@
         <label>Response Received</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SEC17 - Review Process">87ab9fd31b7fdd508c5143f3cc4bcbf1</model>
+        <model display_value="">87ab9fd31b7fdd508c5143f3cc4bcbf1</model>
         <model_id>87ab9fd31b7fdd508c5143f3cc4bcbf1</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_87ab9fd31b7fdd508c5143f3cc4bcbf1</name>
@@ -59,6 +59,7 @@
         <sys_class_name>sys_hub_flow_variable</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-12-21 20:09:42</sys_created_on>
+        <sys_id>9babdfd31b7fdd508c5143f3cc4bcb26</sys_id>
         <sys_name>Response Received</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>

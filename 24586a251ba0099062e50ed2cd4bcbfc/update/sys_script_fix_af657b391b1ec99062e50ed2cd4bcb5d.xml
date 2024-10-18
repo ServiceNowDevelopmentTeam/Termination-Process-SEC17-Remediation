@@ -18,9 +18,9 @@
 
 			var inputs = {};
 			inputs['employee_email'] = importGR.getValue('u_userprincipalname'); // String
-			inputs['due_date'] = '2023-06-30 23:00:00'; // Date/Time 
-			inputs['remind_date'] = '2023-06-26 01:00:00'; // Date/Time 
-			inputs['remind_date_2'] = '2023-06-29 01:00:00'; // Date/Time 
+			inputs['due_date'] = '2023-12-01 23:00:00'; // Date/Time 
+			inputs['remind_date'] = '2023-11-27 01:00:00'; // Date/Time 
+			inputs['remind_date_2'] = '2023-11-29 01:00:00'; // Date/Time 
 			inputs['azure_last_login'] = cleanUpDate(importGR.getValue('u_aadlastsignindatetime')); // String 
 			inputs['ad_last_login'] = cleanUpDate(importGR.getValue('u_adlastlogondate')); // String 
 			var adLoginDate = cleanUpDate(importGR.u_adlastlogondate.toString());
@@ -180,14 +180,14 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-18 20:26:01</sys_created_on>
         <sys_id>af657b391b1ec99062e50ed2cd4bcb5d</sys_id>
-        <sys_mod_count>76</sys_mod_count>
+        <sys_mod_count>82</sys_mod_count>
         <sys_name>Generate SEC17 Employee Review Requests</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_update_name>sys_script_fix_af657b391b1ec99062e50ed2cd4bcb5d</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-06-21 19:16:43</sys_updated_on>
+        <sys_updated_on>2023-11-20 14:53:22</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>

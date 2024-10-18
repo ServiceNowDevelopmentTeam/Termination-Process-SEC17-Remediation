@@ -35,7 +35,7 @@
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_86eeeb491baf81508c5143f3cc4bcb17</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-23 13:55:15</sys_updated_on>
+        <sys_updated_on>2022-10-31 18:39:00</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1180,6 +1180,29 @@
     </sys_hub_action_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6bb17f411bef81508c5143f3cc4bcb77"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=6bb17f411bef81508c5143f3cc4bcb77"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD85b0bf8d5daf81501d29529bfda6b328</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>24586a251ba0099062e50ed2cd4bcbfc</scope_name>
+        <serialized_content>{"FlowDesigner:FD85b0bf8d5daf81501d29529bfda6b328":{},"FlowDesigner:FD85b0bf8d5daf81501d29529bfda6b328.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"f08c2b2f-6a4a-4e89-8bbc-3a5516b1a794\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD85b0bf8d5daf81501d29529bfda6b328\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-05-17 15:28:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>49b0bf8d1baf81508c5143f3cc4bcb28</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>FD85b0bf8d5daf81501d29529bfda6b328</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_complex_object_49b0bf8d1baf81508c5143f3cc4bcb28</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-17 15:29:50</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1668,7 +1691,7 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Delegate OneDrive Access">86eeeb491baf81508c5143f3cc4bcb17</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"9dc1b3811bef81508c5143f3cc4bcb6e","name":"plan","plan_signature":null}}</plan>
-        <snapshot>6d6233051bef81508c5143f3cc4bcb66</snapshot>
+        <snapshot>e9fb0426871cadd06b4c21b9cebb3598</snapshot>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-05-17 15:33:03</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -2771,6 +2794,29 @@
     </sys_hub_action_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1cc1ff411bef81508c5143f3cc4bcb3a"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=1cc1ff411bef81508c5143f3cc4bcb3a"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD84c1bf41a0ef8150ece6ec0db47375d4</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>24586a251ba0099062e50ed2cd4bcbfc</scope_name>
+        <serialized_content>{"FlowDesigner:FD84c1bf41a0ef8150ece6ec0db47375d4":{},"FlowDesigner:FD84c1bf41a0ef8150ece6ec0db47375d4.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"f08c2b2f-6a4a-4e89-8bbc-3a5516b1a794\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD84c1bf41a0ef8150ece6ec0db47375d4\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-05-17 15:32:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>48c1bf411bef81508c5143f3cc4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD84c1bf41a0ef8150ece6ec0db47375d4</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_complex_object_48c1bf411bef81508c5143f3cc4bcbd4</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-17 15:32:59</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -3345,6 +3391,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>86eeeb491baf81508c5143f3cc4bcb17</sys_id>
         <latest_snapshot>b7b17f411bef81508c5143f3cc4bcbff</latest_snapshot>
-        <compiler_build>glide-rome-06-23-2021__patch9a-06-15-2022_07-15-2022_1637.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch3-10-26-2022_11-03-2022_2313.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

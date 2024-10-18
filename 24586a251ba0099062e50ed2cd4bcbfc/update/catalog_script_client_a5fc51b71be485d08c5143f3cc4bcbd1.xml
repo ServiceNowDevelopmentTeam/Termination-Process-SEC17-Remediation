@@ -17,6 +17,7 @@
         <messages/>
         <name>Auto-Fill First/Last Name</name>
         <order>100</order>
+        <published_ref/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
     var first = g_form.getElement('legal_first_name');
     var last = g_form.getElement('legal_last_name');
@@ -55,6 +56,7 @@
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
+        <va_supported>false</va_supported>
         <variable_set/>
         <view/>
     </catalog_script_client>

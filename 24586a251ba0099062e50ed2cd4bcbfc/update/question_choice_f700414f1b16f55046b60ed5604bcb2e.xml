@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>1100</order>
+        <published_ref/>
+        <question display_value="Response">04c0de611b12c59062e50ed2cd4bcb1c</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-11-08 16:59:55</sys_created_on>
+        <sys_id>f700414f1b16f55046b60ed5604bcb2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>No manager response - Password reset</sys_name>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>question_choice_f700414f1b16f55046b60ed5604bcb2e</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-11-08 16:59:55</sys_updated_on>
+        <text>No manager response - Password reset</text>
+        <value>no_manager_response</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=f700414f1b16f55046b60ed5604bcb2e"/>
+</record_update>

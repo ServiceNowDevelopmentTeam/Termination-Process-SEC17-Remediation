@@ -38,7 +38,7 @@
         <label>Employee First Name</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
         <model_id>cf63fb351b1ec99062e50ed2cd4bcb5b</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_cf63fb351b1ec99062e50ed2cd4bcb5b</name>
@@ -59,6 +59,7 @@
         <sys_class_name>sys_hub_flow_variable</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-18 20:17:14</sys_created_on>
+        <sys_id>0b63fb351b1ec99062e50ed2cd4bcb63</sys_id>
         <sys_name>Employee First Name</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>

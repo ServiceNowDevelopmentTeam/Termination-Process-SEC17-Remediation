@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1e5d56ed1bd2c59062e50ed2cd4bcb0a</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Get System Property</sys_name>
         <sys_overrides/>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_1e5d56ed1bd2c59062e50ed2cd4bcb0a</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-11-01 14:44:22</sys_updated_on>
+        <sys_updated_on>2023-01-04 22:02:23</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -162,18 +162,6 @@ outputs.system_property_value = gs.getProperty(inputs.system_property_name.toStr
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=52dd9e611b16c59062e50ed2cd4bcbde"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>52dd9e611b16c59062e50ed2cd4bcbde</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-11-01 14:44:20</sys_created_on>
-        <sys_id>29b13cdf1b76591062e50ed2cd4bcb4e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-11-01 14:44:20</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>system_property_name</field>
         <id>52dd9e611b16c59062e50ed2cd4bcbde</id>
@@ -371,7 +359,7 @@ outputs.system_property_value = gs.getProperty(inputs.system_property_name.toStr
         <sys_created_on>2022-03-17 19:24:53</sys_created_on>
         <sys_id>eedd9e611b16c59062e50ed2cd4bcbf2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>system_property_value</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
@@ -754,7 +742,7 @@ outputs.system_property_value = gs.getProperty(inputs.system_property_name.toStr
         <sys_created_on>2022-03-17 19:24:53</sys_created_on>
         <sys_id>dadd9e611b16c59062e50ed2cd4bcbdb</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>System Property Name</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
@@ -779,11 +767,11 @@ outputs.system_property_value = gs.getProperty(inputs.system_property_name.toStr
         <sys_created_on>2022-11-01 14:44:20</sys_created_on>
         <sys_id>21b13cdf1b76591062e50ed2cd4bcb7c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_1e5d56ed1bd2c59062e50ed2cd4bcb0a___action_status___en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-11-01 14:44:20</sys_updated_on>
         <url/>
@@ -802,11 +790,11 @@ outputs.system_property_value = gs.getProperty(inputs.system_property_name.toStr
         <sys_created_on>2022-11-01 14:44:20</sys_created_on>
         <sys_id>adb13cdf1b76591062e50ed2cd4bcb81</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_1e5d56ed1bd2c59062e50ed2cd4bcb0a___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-11-01 14:44:20</sys_updated_on>
         <url/>
@@ -825,7 +813,7 @@ outputs.system_property_value = gs.getProperty(inputs.system_property_name.toStr
         <sys_created_on>2022-03-17 19:24:54</sys_created_on>
         <sys_id>eaddde611b16c59062e50ed2cd4bcb0f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Property Value</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
@@ -1012,18 +1000,6 @@ outputs.system_property_value = gs.getProperty(inputs.system_property_name.toStr
         <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=baddde611b16c59062e50ed2cd4bcb90"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>baddde611b16c59062e50ed2cd4bcb90</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-11-01 14:44:22</sys_created_on>
-        <sys_id>06b13cdf1b76591062e50ed2cd4bcbf5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-11-01 14:44:22</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>system_property_name</field>
         <id>baddde611b16c59062e50ed2cd4bcb90</id>
@@ -1221,7 +1197,7 @@ outputs.system_property_value = gs.getProperty(inputs.system_property_name.toStr
         <sys_created_on>2022-03-17 19:24:55</sys_created_on>
         <sys_id>76ddde611b16c59062e50ed2cd4bcba1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>system_property_value</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
@@ -1491,6 +1467,29 @@ outputs.system_property_value = gs.getProperty(inputs.system_property_name.toStr
     </sys_hub_action_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=baddde611b16c59062e50ed2cd4bcbab"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=baddde611b16c59062e50ed2cd4bcbab"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDbeddde61cc16c5905427e8d0aeac0ca8</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>24586a251ba0099062e50ed2cd4bcbfc</scope_name>
+        <serialized_content>{"FlowDesigner:FDbeddde61cc16c5905427e8d0aeac0ca8":{},"FlowDesigner:FDbeddde61cc16c5905427e8d0aeac0ca8.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"76f145b1-90d2-40c9-ac20-9aa517a3ed6b\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDbeddde61cc16c5905427e8d0aeac0ca8\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-17 19:24:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>72ddde611b16c59062e50ed2cd4bcba9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>FDbeddde61cc16c5905427e8d0aeac0ca8</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_complex_object_72ddde611b16c59062e50ed2cd4bcba9</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-11-01 14:44:22</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1604,7 +1603,7 @@ outputs.system_property_value = gs.getProperty(inputs.system_property_name.toStr
         <sys_created_on>2022-03-17 19:24:54</sys_created_on>
         <sys_id>76ddde611b16c59062e50ed2cd4bcb8e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>System Property Name</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
@@ -1629,7 +1628,7 @@ outputs.system_property_value = gs.getProperty(inputs.system_property_name.toStr
         <sys_created_on>2022-03-17 19:24:55</sys_created_on>
         <sys_id>f2ddde611b16c59062e50ed2cd4bcbb2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Property Value</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
@@ -1652,7 +1651,7 @@ outputs.system_property_value = gs.getProperty(inputs.system_property_name.toStr
         <sys_created_on>2022-03-17 19:24:55</sys_created_on>
         <sys_id>f6ddde611b16c59062e50ed2cd4bcbd2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
@@ -1675,7 +1674,7 @@ outputs.system_property_value = gs.getProperty(inputs.system_property_name.toStr
         <sys_created_on>2022-03-17 19:24:55</sys_created_on>
         <sys_id>faddde611b16c59062e50ed2cd4bcbb9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
@@ -1689,6 +1688,6 @@ outputs.system_property_value = gs.getProperty(inputs.system_property_name.toStr
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>1e5d56ed1bd2c59062e50ed2cd4bcb0a</sys_id>
         <latest_snapshot>eaddde611b16c59062e50ed2cd4bcb83</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch2-09-29-2022_10-07-2022_1443.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch3-10-26-2022_11-03-2022_2313.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

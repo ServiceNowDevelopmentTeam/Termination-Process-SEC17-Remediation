@@ -38,7 +38,7 @@
         <label>Skip Validation</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SEC17 - Review Process">418895cf1b7b119062e50ed2cd4bcb46</model>
+        <model display_value="">418895cf1b7b119062e50ed2cd4bcb46</model>
         <model_id>418895cf1b7b119062e50ed2cd4bcb46</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_418895cf1b7b119062e50ed2cd4bcb46</name>
@@ -59,6 +59,7 @@
         <sys_class_name>sys_hub_flow_variable</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-12-20 15:58:12</sys_created_on>
+        <sys_id>998895cf1b7b119062e50ed2cd4bcbc5</sys_id>
         <sys_name>Skip Validation</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>

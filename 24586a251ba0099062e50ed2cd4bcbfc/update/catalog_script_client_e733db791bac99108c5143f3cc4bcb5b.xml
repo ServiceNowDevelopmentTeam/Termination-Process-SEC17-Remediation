@@ -17,6 +17,7 @@
         <messages/>
         <name>Show Person Leaving Email</name>
         <order>0</order>
+        <published_ref/>
         <script><![CDATA[function onLoad() {
    //Type appropriate comment here, and begin script below
    var personLeavingId = g_form.getValue('Person_Leaving');
@@ -44,6 +45,7 @@
         <table/>
         <type>onLoad</type>
         <ui_type>0</ui_type>
+        <va_supported>true</va_supported>
         <variable_set/>
         <view/>
     </catalog_script_client>

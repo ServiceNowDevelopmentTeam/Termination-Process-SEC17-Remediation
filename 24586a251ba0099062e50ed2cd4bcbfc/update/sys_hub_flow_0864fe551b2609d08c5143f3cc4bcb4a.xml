@@ -4,6 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -37,7 +38,7 @@
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_update_name>sys_hub_flow_0864fe551b2609d08c5143f3cc4bcb4a</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-23 13:55:25</sys_updated_on>
+        <sys_updated_on>2023-05-24 16:24:32</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=0864fe551b2609d08c5143f3cc4bcb4a"/>
@@ -141,6 +142,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7926be591b2609d08c5143f3cc4bcb8a"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -224,6 +226,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ce26be591b2609d08c5143f3cc4bcbaa"/>
     <sys_hub_flow_output action="delete_multiple" query="model=0864fe551b2609d08c5143f3cc4bcb4a"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=0864fe551b2609d08c5143f3cc4bcb4a"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=0864fe551b2609d08c5143f3cc4bcb4a^sys_idNOT IN2626fe591b2609d08c5143f3cc4bcbc1,8a26be591b2609d08c5143f3cc4bcbe9,aa26fe591b2609d08c5143f3cc4bcbe5"/>
@@ -232,6 +235,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</flow>
@@ -241,10 +245,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-29 12:48:20</sys_created_on>
         <sys_id>2626fe591b2609d08c5143f3cc4bcbc1</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-05-11 19:26:30</sys_updated_on>
+        <sys_updated_on>2023-11-20 14:56:10</sys_updated_on>
         <ui_id>f47e5245-784f-4202-aea2-a87e3961c9e5</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2626fe591b2609d08c5143f3cc4bcbc1"/>
@@ -293,6 +297,7 @@
         <action_inputs/>
         <action_type display_value="Get Current DateTime">80f2ffcb1b5ec5d062e50ed2cd4bcba4</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</flow>
@@ -302,10 +307,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-29 12:48:19</sys_created_on>
         <sys_id>8a26be591b2609d08c5143f3cc4bcbe9</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-05-11 19:26:30</sys_updated_on>
+        <sys_updated_on>2023-11-20 14:56:10</sys_updated_on>
         <ui_id>c781e705-3214-4be1-b31d-c9f2fefd7955</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8a26be591b2609d08c5143f3cc4bcbe9"/>
@@ -316,6 +321,7 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</flow>
@@ -325,10 +331,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-29 12:48:20</sys_created_on>
         <sys_id>aa26fe591b2609d08c5143f3cc4bcbe5</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-05-11 19:26:30</sys_updated_on>
+        <sys_updated_on>2023-11-20 14:56:10</sys_updated_on>
         <ui_id>d2352d90-6921-47bb-b68d-dc1e569c55e6</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=aa26fe591b2609d08c5143f3cc4bcbe5"/>
@@ -402,6 +408,7 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=0864fe551b2609d08c5143f3cc4bcb4a"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=0864fe551b2609d08c5143f3cc4bcb4a^sys_idNOT IN0626be591b2609d08c5143f3cc4bcbd3,2a26fe591b2609d08c5143f3cc4bcbe8,a226fe591b2609d08c5143f3cc4bcbc4,c226be591b2609d08c5143f3cc4bcbeb,d037761d1b2609d08c5143f3cc4bcb18,da26fe591b2609d08c5143f3cc4bcba5,de26fe591b2609d08c5143f3cc4bcba9"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">4a26be591b2609d08c5143f3cc4bcbd2</block>
         <comment/>
         <connected_to/>
@@ -475,6 +482,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=0626be591b2609d08c5143f3cc4bcbd3"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=0626be591b2609d08c5143f3cc4bcbd3"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">6226fe591b2609d08c5143f3cc4bcbe8</block>
         <comment/>
         <connected_to/>
@@ -551,6 +559,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2a26fe591b2609d08c5143f3cc4bcbe8"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=2a26fe591b2609d08c5143f3cc4bcbe8"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">ea26fe591b2609d08c5143f3cc4bcbc3</block>
         <comment/>
         <connected_to/>
@@ -598,6 +607,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a226fe591b2609d08c5143f3cc4bcbc4"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=a226fe591b2609d08c5143f3cc4bcbc4"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">0e26be591b2609d08c5143f3cc4bcbea</block>
         <comment>Has Due Date Passed?</comment>
         <connected_to/>
@@ -894,6 +904,7 @@
     </sys_hub_flow_logic_ext_input>
     <sys_hub_input_scripts action="delete_multiple" query="instance=c226be591b2609d08c5143f3cc4bcbeb"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">1c37761d1b2609d08c5143f3cc4bcb17</block>
         <comment/>
         <connected_to/>
@@ -927,6 +938,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d037761d1b2609d08c5143f3cc4bcb18"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=d037761d1b2609d08c5143f3cc4bcb18"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">1626fe591b2609d08c5143f3cc4bcba5</block>
         <comment/>
         <connected_to/>
@@ -1000,6 +1012,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=da26fe591b2609d08c5143f3cc4bcba5"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=da26fe591b2609d08c5143f3cc4bcba5"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">1a26fe591b2609d08c5143f3cc4bcba9</block>
         <comment>Due date passed = true</comment>
         <connected_to/>
@@ -1181,28 +1194,12 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_0864fe551b2609d08c5143f3cc4bcb4a"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_0864fe551b2609d08c5143f3cc4bcb4a"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_0864fe551b2609d08c5143f3cc4bcb4a"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=0864fe551b2609d08c5143f3cc4bcb4a"/>
-    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=0864fe551b2609d08c5143f3cc4bcb4a^sys_idNOT IN8c36b2991b2609d08c5143f3cc4bcb5d"/>
-    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"8c36b2991b2609d08c5143f3cc4bcb5d","name":"plan","plan_signature":null}}</plan>
-        <plan_id display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</plan_id>
-        <snapshot>89f955b01b7ea51062e50ed2cd4bcbb0</snapshot>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-03-29 12:48:26</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
-        <sys_id>8c36b2991b2609d08c5143f3cc4bcb5d</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_overrides/>
-        <sys_scope/>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-05-19 21:14:55</sys_updated_on>
-    </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -1338,6 +1335,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=532672991b2609d08c5143f3cc4bcb0d"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1421,6 +1419,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=872632991b2609d08c5143f3cc4bcbd3"/>
     <sys_hub_flow_output action="delete_multiple" query="model=4f2632991b2609d08c5143f3cc4bcbd0"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=4f2632991b2609d08c5143f3cc4bcbd0"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=4f2632991b2609d08c5143f3cc4bcbd0^sys_idNOT IN2b2672991b2609d08c5143f3cc4bcb90,672672991b2609d08c5143f3cc4bcbbd,e32672991b2609d08c5143f3cc4bcb88"/>
@@ -1429,6 +1428,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="SEC17 - Open Task Closer">4f2632991b2609d08c5143f3cc4bcbd0</flow>
@@ -1491,6 +1491,7 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="SEC17 - Open Task Closer">4f2632991b2609d08c5143f3cc4bcbd0</flow>
@@ -1578,6 +1579,7 @@
         <action_inputs/>
         <action_type display_value="Get Current DateTime">80f2ffcb1b5ec5d062e50ed2cd4bcba4</action_type>
         <action_type_parent display_value="Get Current DateTime">d9a2f7cb1b5ec5d062e50ed2cd4bcb8d</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="SEC17 - Open Task Closer">4f2632991b2609d08c5143f3cc4bcbd0</flow>
@@ -1599,6 +1601,7 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=4f2632991b2609d08c5143f3cc4bcbd0"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=4f2632991b2609d08c5143f3cc4bcbd0^sys_idNOT IN2b2672991b2609d08c5143f3cc4bcb6e,572672991b2609d08c5143f3cc4bcb41,5b2672991b2609d08c5143f3cc4bcb45,672672991b2609d08c5143f3cc4bcb67,7d37f61d1b2609d08c5143f3cc4bcb28,a72672991b2609d08c5143f3cc4bcb63,e32672991b2609d08c5143f3cc4bcb6b"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">6226fe591b2609d08c5143f3cc4bcbe8</block>
         <comment/>
         <connected_to/>
@@ -1675,6 +1678,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2b2672991b2609d08c5143f3cc4bcb6e"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=2b2672991b2609d08c5143f3cc4bcb6e"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">4a26be591b2609d08c5143f3cc4bcbd2</block>
         <comment/>
         <connected_to/>
@@ -1748,6 +1752,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=572672991b2609d08c5143f3cc4bcb41"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=572672991b2609d08c5143f3cc4bcb41"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">0e26be591b2609d08c5143f3cc4bcbea</block>
         <comment>Has Due Date Passed?</comment>
         <connected_to/>
@@ -2044,6 +2049,7 @@
     </sys_hub_flow_logic_ext_input>
     <sys_hub_input_scripts action="delete_multiple" query="instance=5b2672991b2609d08c5143f3cc4bcb45"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">1a26fe591b2609d08c5143f3cc4bcba9</block>
         <comment>Due date passed = true</comment>
         <connected_to/>
@@ -2091,6 +2097,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=672672991b2609d08c5143f3cc4bcb67"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=672672991b2609d08c5143f3cc4bcb67"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">1c37761d1b2609d08c5143f3cc4bcb17</block>
         <comment/>
         <connected_to/>
@@ -2124,6 +2131,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7d37f61d1b2609d08c5143f3cc4bcb28"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=7d37f61d1b2609d08c5143f3cc4bcb28"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">1626fe591b2609d08c5143f3cc4bcba5</block>
         <comment/>
         <connected_to/>
@@ -2197,6 +2205,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a72672991b2609d08c5143f3cc4bcb63"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=a72672991b2609d08c5143f3cc4bcb63"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">ea26fe591b2609d08c5143f3cc4bcbc3</block>
         <comment/>
         <connected_to/>
@@ -2381,6 +2390,23 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>0864fe551b2609d08c5143f3cc4bcb4a</sys_id>
         <latest_snapshot>4f2632991b2609d08c5143f3cc4bcbd0</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch7a-03-27-2023_04-04-2023_1511.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch10-hotfix1a-09-18-2023_10-06-2023_1603.zip</compiler_build>
     </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=0864fe551b2609d08c5143f3cc4bcb4a"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=0864fe551b2609d08c5143f3cc4bcb4a^sys_idNOT IN8c36b2991b2609d08c5143f3cc4bcb5d"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"8c36b2991b2609d08c5143f3cc4bcb5d","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="SEC17 - Open Task Closer">0864fe551b2609d08c5143f3cc4bcb4a</plan_id>
+        <snapshot>aee696721b6ab1108db03375cc4bcbeb</snapshot>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-29 12:48:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8c36b2991b2609d08c5143f3cc4bcb5d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:14:55</sys_updated_on>
+    </sys_flow_subflow_plan>
 </record_update>

@@ -35,7 +35,7 @@
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_d9a2f7cb1b5ec5d062e50ed2cd4bcb8d</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-23 13:55:16</sys_updated_on>
+        <sys_updated_on>2022-10-31 18:39:01</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -733,6 +733,29 @@ dateTime.add(date);
     </sys_hub_action_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1cf2ffcb1b5ec5d062e50ed2cd4bcbc7"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=1cf2ffcb1b5ec5d062e50ed2cd4bcbc7"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD98f2ffcbf55ec5d02870c3c3b36f1bc4</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>24586a251ba0099062e50ed2cd4bcbfc</scope_name>
+        <serialized_content>{"FlowDesigner:FD98f2ffcbf55ec5d02870c3c3b36f1bc4":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD98f2ffcbf55ec5d02870c3c3b36f1bc4.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD98f2ffcbf55ec5d02870c3c3b36f1bc4\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":null,\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"-1\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-22 17:27:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5cf2ffcb1b5ec5d062e50ed2cd4bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD98f2ffcbf55ec5d02870c3c3b36f1bc4</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
+        <sys_update_name>sys_complex_object_5cf2ffcb1b5ec5d062e50ed2cd4bcbc4</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-22 17:27:32</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -995,6 +1018,6 @@ dateTime.add(date);
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>d9a2f7cb1b5ec5d062e50ed2cd4bcb8d</sys_id>
         <latest_snapshot>80f2ffcb1b5ec5d062e50ed2cd4bcba4</latest_snapshot>
-        <compiler_build>glide-rome-06-23-2021__patch9a-06-15-2022_07-15-2022_1637.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch0-07-19-2022_07-26-2022_2149.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

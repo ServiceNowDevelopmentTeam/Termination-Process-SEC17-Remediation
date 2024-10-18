@@ -15,7 +15,7 @@
         <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
         <flow_designer_flow display_value="SEC17 - Response">7563d2b61b1ec1d062e50ed2cd4bcb10</flow_designer_flow>
-        <fulfillment_automation_level>unspecified</fulfillment_automation_level>
+        <fulfillment_automation_level/>
         <group/>
         <hide_sp>false</hide_sp>
         <icon/>
@@ -43,7 +43,7 @@
         <omit_price>false</omit_price>
         <order>0</order>
         <ordered_item_link/>
-        <owner display_value="">548c98a01be7a490346ffd951a4bcbfa</owner>
+        <owner display_value="Terry Lillo">b4bad8641be3a010e7004229bc4bcb57</owner>
         <picture/>
         <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=cafefd761bd6c1d062e50ed2cd4bcb3b&amp;sysparm_preview=true", "summary");</preview>
         <price>0</price>
@@ -109,6 +109,7 @@
         <u_variables/>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
+        <version/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>

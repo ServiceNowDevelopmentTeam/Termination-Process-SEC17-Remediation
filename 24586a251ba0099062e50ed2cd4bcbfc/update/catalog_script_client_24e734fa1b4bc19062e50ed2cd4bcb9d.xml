@@ -17,6 +17,7 @@
         <messages/>
         <name>Show email under person leaving.</name>
         <order>0</order>
+        <published_ref/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
 	g_form.getReference('person_leaving',showMessage);
 	
@@ -43,6 +44,7 @@
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
+        <va_supported>true</va_supported>
         <variable_set/>
         <view/>
     </catalog_script_client>

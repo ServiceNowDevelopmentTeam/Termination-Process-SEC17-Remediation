@@ -4,6 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -37,7 +38,7 @@
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_update_name>sys_hub_flow_1f859ab91b12899062e50ed2cd4bcb22</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-23 13:55:35</sys_updated_on>
+        <sys_updated_on>2023-05-24 16:24:34</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=1f859ab91b12899062e50ed2cd4bcb22"/>
@@ -141,6 +142,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=06d55abd1b12899062e50ed2cd4bcb64"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -224,6 +226,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=92ee92711b16899062e50ed2cd4bcbc3"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -307,6 +310,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9aee92711b16899062e50ed2cd4bcbab"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -390,6 +394,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ced55abd1b12899062e50ed2cd4bcb5c"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -473,6 +478,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=daee92711b16899062e50ed2cd4bcba4"/>
     <sys_hub_flow_output action="delete_multiple" query="model=1f859ab91b12899062e50ed2cd4bcb22"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=1f859ab91b12899062e50ed2cd4bcb22"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=1f859ab91b12899062e50ed2cd4bcb22^sys_idNOT INd927eeb51b96899062e50ed2cd4bcb5b"/>
@@ -481,6 +487,7 @@
         <action_inputs/>
         <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment>Get response</comment>
         <display_text/>
         <flow display_value="SEC17 - Remind On Reminder Date">1f859ab91b12899062e50ed2cd4bcb22</flow>
@@ -490,10 +497,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-18 14:43:58</sys_created_on>
         <sys_id>d927eeb51b96899062e50ed2cd4bcb5b</sys_id>
-        <sys_mod_count>54</sys_mod_count>
+        <sys_mod_count>68</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-05-11 19:28:53</sys_updated_on>
+        <sys_updated_on>2023-11-20 14:56:59</sys_updated_on>
         <ui_id>1db9dd13-6d9e-43dc-a685-577389102ae8</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d927eeb51b96899062e50ed2cd4bcb5b"/>
@@ -567,6 +574,7 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=1f859ab91b12899062e50ed2cd4bcb22"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=1f859ab91b12899062e50ed2cd4bcb22^sys_idNOT IN5127eeb51b96899062e50ed2cd4bcb63,8ed55abd1b12899062e50ed2cd4bcba4,9d27eeb51b96899062e50ed2cd4bcb5f,eaeed2711b16899062e50ed2cd4bcb04"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">d927eeb51b96899062e50ed2cd4bcb62</block>
         <comment>If there is no response and due date has not been met</comment>
         <connected_to/>
@@ -614,6 +622,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5127eeb51b96899062e50ed2cd4bcb63"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=5127eeb51b96899062e50ed2cd4bcb63"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">86d55abd1b12899062e50ed2cd4bcb8b</block>
         <comment>Wait for reminder date</comment>
         <connected_to/>
@@ -727,6 +736,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8ed55abd1b12899062e50ed2cd4bcba4"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=8ed55abd1b12899062e50ed2cd4bcba4"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">1527eeb51b96899062e50ed2cd4bcb5f</block>
         <comment>Set Date/Time Now</comment>
         <connected_to/>
@@ -773,6 +783,7 @@
         <sys_updated_on>2022-03-18 14:43:59</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">62eed2711b16899062e50ed2cd4bcb04</block>
         <comment>Send Reminder</comment>
         <connected_to/>
@@ -1550,28 +1561,12 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_1f859ab91b12899062e50ed2cd4bcb22"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_1f859ab91b12899062e50ed2cd4bcb22"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_1f859ab91b12899062e50ed2cd4bcb22"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=1f859ab91b12899062e50ed2cd4bcb22"/>
-    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=1f859ab91b12899062e50ed2cd4bcb22^sys_idNOT IN7feed6711b16899062e50ed2cd4bcb0d"/>
-    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"7feed6711b16899062e50ed2cd4bcb0d","name":"plan","plan_signature":null}}</plan>
-        <plan_id display_value="SEC17 - Remind On Reminder Date">1f859ab91b12899062e50ed2cd4bcb22</plan_id>
-        <snapshot>f37ad1341b7ea51062e50ed2cd4bcbbd</snapshot>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-03-18 14:08:06</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
-        <sys_id>7feed6711b16899062e50ed2cd4bcb0d</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_overrides/>
-        <sys_scope/>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-05-19 21:12:14</sys_updated_on>
-    </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -1707,6 +1702,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1bee56711b16899062e50ed2cd4bcb50"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1790,6 +1786,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=47ee16711b16899062e50ed2cd4bcbbe"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1873,6 +1870,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8bee56711b16899062e50ed2cd4bcb01"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1956,6 +1954,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=97ee56711b16899062e50ed2cd4bcb19"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2039,6 +2038,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c7ee16711b16899062e50ed2cd4bcb7e"/>
     <sys_hub_flow_output action="delete_multiple" query="model=43ee16711b16899062e50ed2cd4bcb7c"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=43ee16711b16899062e50ed2cd4bcb7c"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=43ee16711b16899062e50ed2cd4bcb7c^sys_idNOT IN7737e6f51b96899062e50ed2cd4bcb6b"/>
@@ -2047,6 +2047,7 @@
         <action_inputs/>
         <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
         <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
         <comment>Get response</comment>
         <display_text/>
         <flow display_value="SEC17 - Remind On Reminder Date">43ee16711b16899062e50ed2cd4bcb7c</flow>
@@ -2133,6 +2134,7 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=43ee16711b16899062e50ed2cd4bcb7c"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=43ee16711b16899062e50ed2cd4bcb7c^sys_idNOT IN5bee56711b16899062e50ed2cd4bcba4,8c47e6f51b96899062e50ed2cd4bcbb0,8c47e6f51b96899062e50ed2cd4bcbcc,97ee56711b16899062e50ed2cd4bcbac"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">86d55abd1b12899062e50ed2cd4bcb8b</block>
         <comment>Wait for reminder date</comment>
         <connected_to/>
@@ -2246,6 +2248,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5bee56711b16899062e50ed2cd4bcba4"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=5bee56711b16899062e50ed2cd4bcba4"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">1527eeb51b96899062e50ed2cd4bcb5f</block>
         <comment>Set Date/Time Now</comment>
         <connected_to/>
@@ -2292,6 +2295,7 @@
         <sys_updated_on>2022-03-18 14:44:26</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">d927eeb51b96899062e50ed2cd4bcb62</block>
         <comment>If there is no response and due date has not been met</comment>
         <connected_to/>
@@ -2339,6 +2343,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8c47e6f51b96899062e50ed2cd4bcbcc"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=8c47e6f51b96899062e50ed2cd4bcbcc"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">62eed2711b16899062e50ed2cd4bcb04</block>
         <comment>Send Reminder</comment>
         <connected_to/>
@@ -3119,6 +3124,23 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>1f859ab91b12899062e50ed2cd4bcb22</sys_id>
         <latest_snapshot>43ee16711b16899062e50ed2cd4bcb7c</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch7a-03-27-2023_04-04-2023_1511.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch10-hotfix1a-09-18-2023_10-06-2023_1603.zip</compiler_build>
     </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=1f859ab91b12899062e50ed2cd4bcb22"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=1f859ab91b12899062e50ed2cd4bcb22^sys_idNOT IN7feed6711b16899062e50ed2cd4bcb0d"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"7feed6711b16899062e50ed2cd4bcb0d","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="SEC17 - Remind On Reminder Date">1f859ab91b12899062e50ed2cd4bcb22</plan_id>
+        <snapshot>a2171e361b6ab1108db03375cc4bcb91</snapshot>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-18 14:08:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7feed6711b16899062e50ed2cd4bcb0d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:12:14</sys_updated_on>
+    </sys_flow_subflow_plan>
 </record_update>

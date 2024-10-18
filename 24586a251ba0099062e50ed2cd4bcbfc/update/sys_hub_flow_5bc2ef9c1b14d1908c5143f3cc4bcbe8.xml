@@ -4,6 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -37,7 +38,7 @@
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_update_name>sys_hub_flow_5bc2ef9c1b14d1908c5143f3cc4bcbe8</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-23 13:56:00</sys_updated_on>
+        <sys_updated_on>2023-05-24 16:25:00</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=5bc2ef9c1b14d1908c5143f3cc4bcbe8"/>
@@ -142,6 +143,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fc032bdc1b14d1908c5143f3cc4bcbe2"/>
     <sys_hub_flow_output action="delete_multiple" query="model=5bc2ef9c1b14d1908c5143f3cc4bcbe8^sys_idNOT IN08cceb9c1b1cd91062e50ed2cd4bcb2f,b0036fdc1b14d1908c5143f3cc4bcbcb"/>
     <sys_hub_flow_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -226,6 +228,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=08cceb9c1b1cd91062e50ed2cd4bcb2f"/>
     <sys_hub_flow_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -309,6 +312,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b0036fdc1b14d1908c5143f3cc4bcbcb"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=5bc2ef9c1b14d1908c5143f3cc4bcbe8"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=5bc2ef9c1b14d1908c5143f3cc4bcbe8^sys_idNOT IN577f63d41b5cd91062e50ed2cd4bcb1a"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
@@ -316,6 +320,7 @@
         <action_inputs/>
         <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="SEC17 - Build Email Body">5bc2ef9c1b14d1908c5143f3cc4bcbe8</flow>
@@ -325,10 +330,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-06-21 14:14:45</sys_created_on>
         <sys_id>577f63d41b5cd91062e50ed2cd4bcb1a</sys_id>
-        <sys_mod_count>56</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-05-11 19:28:57</sys_updated_on>
+        <sys_updated_on>2023-11-20 14:57:05</sys_updated_on>
         <ui_id>b029bf59-5c7c-4a14-8a55-69dd287b2e83</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=577f63d41b5cd91062e50ed2cd4bcb1a"/>
@@ -402,6 +407,7 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=5bc2ef9c1b14d1908c5143f3cc4bcbe8"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=5bc2ef9c1b14d1908c5143f3cc4bcbe8^sys_idNOT IN26dafbd41b101d1062e50ed2cd4bcb76,3e3ee7d01b5cd91062e50ed2cd4bcbcd,9f7f63d41b5cd91062e50ed2cd4bcb1d,ec6af7941b101d1062e50ed2cd4bcb01,f4fde7901b5cd91062e50ed2cd4bcb90"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">6edafbd41b101d1062e50ed2cd4bcb75</block>
         <comment>Set 90 day email body</comment>
         <connected_to/>
@@ -485,6 +491,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=26dafbd41b101d1062e50ed2cd4bcb76"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=26dafbd41b101d1062e50ed2cd4bcb76"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">763ee7d01b5cd91062e50ed2cd4bcbcd</block>
         <comment>Is user a reactivated SEC17 term?</comment>
         <connected_to/>
@@ -658,6 +665,7 @@
     </sys_hub_flow_logic_ext_input>
     <sys_hub_input_scripts action="delete_multiple" query="instance=3e3ee7d01b5cd91062e50ed2cd4bcbcd"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">d77f63d41b5cd91062e50ed2cd4bcb1d</block>
         <comment>Set default email body</comment>
         <connected_to/>
@@ -723,6 +731,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9f7f63d41b5cd91062e50ed2cd4bcb1d"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=9f7f63d41b5cd91062e50ed2cd4bcb1d"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">246af7941b101d1062e50ed2cd4bcb01</block>
         <comment/>
         <connected_to/>
@@ -796,6 +805,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ec6af7941b101d1062e50ed2cd4bcb01"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=ec6af7941b101d1062e50ed2cd4bcb01"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">3cfde7901b5cd91062e50ed2cd4bcb8f</block>
         <comment>Is it 90 day or 30 day review?</comment>
         <connected_to/>
@@ -1111,28 +1121,12 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5bc2ef9c1b14d1908c5143f3cc4bcbe8"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=5bc2ef9c1b14d1908c5143f3cc4bcbe8"/>
-    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=5bc2ef9c1b14d1908c5143f3cc4bcbe8^sys_idNOT IN0f6388e41b901d1062e50ed2cd4bcb90"/>
-    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"0f6388e41b901d1062e50ed2cd4bcb90","name":"plan","plan_signature":null}}</plan>
-        <plan_id display_value="SEC17 - Build Email Body">5bc2ef9c1b14d1908c5143f3cc4bcbe8</plan_id>
-        <snapshot>ac8a55341b7ea51062e50ed2cd4bcb5e</snapshot>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-06-21 15:41:50</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
-        <sys_id>0f6388e41b901d1062e50ed2cd4bcb90</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_overrides/>
-        <sys_scope/>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-06-30 17:45:38</sys_updated_on>
-    </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -1269,6 +1263,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9e6348e41b901d1062e50ed2cd4bcbdc"/>
     <sys_hub_flow_output action="delete_multiple" query="model=de6348e41b901d1062e50ed2cd4bcbcd^sys_idNOT IN226348e41b901d1062e50ed2cd4bcbf6,226388e41b901d1062e50ed2cd4bcb08"/>
     <sys_hub_flow_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1353,6 +1348,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=226348e41b901d1062e50ed2cd4bcbf6"/>
     <sys_hub_flow_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1436,6 +1432,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=226388e41b901d1062e50ed2cd4bcb08"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=de6348e41b901d1062e50ed2cd4bcbcd"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=de6348e41b901d1062e50ed2cd4bcbcd^sys_idNOT INfa6388e41b901d1062e50ed2cd4bcb65"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
@@ -1443,6 +1440,7 @@
         <action_inputs/>
         <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
         <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="SEC17 - Build Email Body">de6348e41b901d1062e50ed2cd4bcbcd</flow>
@@ -1529,6 +1527,7 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=de6348e41b901d1062e50ed2cd4bcbcd"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=de6348e41b901d1062e50ed2cd4bcbcd^sys_idNOT IN6a6388e41b901d1062e50ed2cd4bcb27,7a6388e41b901d1062e50ed2cd4bcb58,b26388e41b901d1062e50ed2cd4bcb3f,f66388e41b901d1062e50ed2cd4bcb54,fe6388e41b901d1062e50ed2cd4bcb5c"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">3cfde7901b5cd91062e50ed2cd4bcb8f</block>
         <comment>Is it 90 day or 30 day review?</comment>
         <connected_to/>
@@ -1702,6 +1701,7 @@
     </sys_hub_flow_logic_ext_input>
     <sys_hub_input_scripts action="delete_multiple" query="instance=6a6388e41b901d1062e50ed2cd4bcb27"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">246af7941b101d1062e50ed2cd4bcb01</block>
         <comment/>
         <connected_to/>
@@ -1775,6 +1775,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7a6388e41b901d1062e50ed2cd4bcb58"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=7a6388e41b901d1062e50ed2cd4bcb58"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">763ee7d01b5cd91062e50ed2cd4bcbcd</block>
         <comment>Is user a reactivated SEC17 term?</comment>
         <connected_to/>
@@ -1948,6 +1949,7 @@
     </sys_hub_flow_logic_ext_input>
     <sys_hub_input_scripts action="delete_multiple" query="instance=b26388e41b901d1062e50ed2cd4bcb3f"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">d77f63d41b5cd91062e50ed2cd4bcb1d</block>
         <comment>Set default email body</comment>
         <connected_to/>
@@ -2013,6 +2015,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f66388e41b901d1062e50ed2cd4bcb54"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=f66388e41b901d1062e50ed2cd4bcb54"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">6edafbd41b101d1062e50ed2cd4bcb75</block>
         <comment>Set 90 day email body</comment>
         <connected_to/>
@@ -2241,6 +2244,23 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>5bc2ef9c1b14d1908c5143f3cc4bcbe8</sys_id>
         <latest_snapshot>de6348e41b901d1062e50ed2cd4bcbcd</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch7a-03-27-2023_04-04-2023_1511.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch10-hotfix1a-09-18-2023_10-06-2023_1603.zip</compiler_build>
     </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=5bc2ef9c1b14d1908c5143f3cc4bcbe8"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=5bc2ef9c1b14d1908c5143f3cc4bcbe8^sys_idNOT IN0f6388e41b901d1062e50ed2cd4bcb90"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"0f6388e41b901d1062e50ed2cd4bcb90","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="SEC17 - Build Email Body">5bc2ef9c1b14d1908c5143f3cc4bcbe8</plan_id>
+        <snapshot>442792761b6ab1108db03375cc4bcb6d</snapshot>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-21 15:41:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0f6388e41b901d1062e50ed2cd4bcb90</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-30 17:45:38</sys_updated_on>
+    </sys_flow_subflow_plan>
 </record_update>

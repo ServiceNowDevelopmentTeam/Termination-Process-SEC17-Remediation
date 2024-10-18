@@ -4,6 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -37,7 +38,7 @@
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_update_name>sys_hub_flow_0ae46a8b1b4b0d908c5143f3cc4bcbda</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-23 13:55:27</sys_updated_on>
+        <sys_updated_on>2022-10-31 18:39:10</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=0ae46a8b1b4b0d908c5143f3cc4bcbda"/>
@@ -66,6 +67,7 @@
         <action_inputs/>
         <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment>Get person leaving</comment>
         <display_text/>
         <flow display_value="SEC17 - Fix AG on Assign Manager Tasks">0ae46a8b1b4b0d908c5143f3cc4bcbda</flow>
@@ -154,6 +156,7 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment>Set Assignment Group</comment>
         <display_text/>
         <flow display_value="SEC17 - Fix AG on Assign Manager Tasks">0ae46a8b1b4b0d908c5143f3cc4bcbda</flow>
@@ -241,6 +244,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment>Look up records to reassign</comment>
         <display_text/>
         <flow display_value="SEC17 - Fix AG on Assign Manager Tasks">0ae46a8b1b4b0d908c5143f3cc4bcbda</flow>
@@ -291,6 +295,7 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=0ae46a8b1b4b0d908c5143f3cc4bcbda"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=0ae46a8b1b4b0d908c5143f3cc4bcbda^sys_idNOT IN33ca22071bcb0d908c5143f3cc4bcb0d,47e5a28f1b4b0d908c5143f3cc4bcbcc,5be5e28f1b4b0d908c5143f3cc4bcb21"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">f7caeec31bcb0d908c5143f3cc4bcbf3</block>
         <comment>Get Assignment Group</comment>
         <connected_to/>
@@ -559,6 +564,7 @@
     </sys_hub_flow_logic_ext_input>
     <sys_hub_input_scripts action="delete_multiple" query="instance=33ca22071bcb0d908c5143f3cc4bcb0d"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">8be5a28f1b4b0d908c5143f3cc4bcbcb</block>
         <comment/>
         <connected_to/>
@@ -606,6 +612,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=47e5a28f1b4b0d908c5143f3cc4bcbcc"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=47e5a28f1b4b0d908c5143f3cc4bcbcc"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">93e5e28f1b4b0d908c5143f3cc4bcb21</block>
         <comment/>
         <connected_to/>
@@ -767,28 +774,12 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_0ae46a8b1b4b0d908c5143f3cc4bcbda"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_0ae46a8b1b4b0d908c5143f3cc4bcbda"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_0ae46a8b1b4b0d908c5143f3cc4bcbda"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=0ae46a8b1b4b0d908c5143f3cc4bcbda"/>
-    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=0ae46a8b1b4b0d908c5143f3cc4bcbda^sys_idNOT IN63066a8f1b4b0d908c5143f3cc4bcb82"/>
-    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@4ec72f</plan>
-        <plan_id display_value="SEC17 - Fix AG on Assign Manager Tasks">0ae46a8b1b4b0d908c5143f3cc4bcbda</plan_id>
-        <snapshot>5f062a8f1b4b0d908c5143f3cc4bcbfc</snapshot>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-04-28 18:38:43</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
-        <sys_id>63066a8f1b4b0d908c5143f3cc4bcb82</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_overrides/>
-        <sys_scope/>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-05-19 21:08:22</sys_updated_on>
-    </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -849,6 +840,7 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment>Set Assignment Group</comment>
         <display_text/>
         <flow display_value="SEC17 - Fix AG on Assign Manager Tasks">5f062a8f1b4b0d908c5143f3cc4bcbfc</flow>
@@ -922,6 +914,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
         <comment>Look up records to reassign</comment>
         <display_text/>
         <flow display_value="SEC17 - Fix AG on Assign Manager Tasks">5f062a8f1b4b0d908c5143f3cc4bcbfc</flow>
@@ -974,6 +967,7 @@
         <action_inputs/>
         <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
         <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
         <comment>Get person leaving</comment>
         <display_text/>
         <flow display_value="SEC17 - Fix AG on Assign Manager Tasks">5f062a8f1b4b0d908c5143f3cc4bcbfc</flow>
@@ -1060,6 +1054,7 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=5f062a8f1b4b0d908c5143f3cc4bcbfc"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=5f062a8f1b4b0d908c5143f3cc4bcbfc^sys_idNOT IN33daaa071bcb0d908c5143f3cc4bcbe6,97066a8f1b4b0d908c5143f3cc4bcb01,9b066a8f1b4b0d908c5143f3cc4bcb04"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">f7caeec31bcb0d908c5143f3cc4bcbf3</block>
         <comment>Get Assignment Group</comment>
         <connected_to/>
@@ -1328,6 +1323,7 @@
     </sys_hub_flow_logic_ext_input>
     <sys_hub_input_scripts action="delete_multiple" query="instance=33daaa071bcb0d908c5143f3cc4bcbe6"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">8be5a28f1b4b0d908c5143f3cc4bcbcb</block>
         <comment/>
         <connected_to/>
@@ -1375,6 +1371,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=97066a8f1b4b0d908c5143f3cc4bcb01"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=97066a8f1b4b0d908c5143f3cc4bcb01"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">93e5e28f1b4b0d908c5143f3cc4bcb21</block>
         <comment/>
         <connected_to/>
@@ -1541,4 +1538,21 @@
         <latest_snapshot>5f062a8f1b4b0d908c5143f3cc4bcbfc</latest_snapshot>
         <compiler_build/>
     </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=0ae46a8b1b4b0d908c5143f3cc4bcbda"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=0ae46a8b1b4b0d908c5143f3cc4bcbda^sys_idNOT IN63066a8f1b4b0d908c5143f3cc4bcb82"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@4ec72f</plan>
+        <plan_id display_value="SEC17 - Fix AG on Assign Manager Tasks">0ae46a8b1b4b0d908c5143f3cc4bcbda</plan_id>
+        <snapshot>5f062a8f1b4b0d908c5143f3cc4bcbfc</snapshot>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-04-28 18:38:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>63066a8f1b4b0d908c5143f3cc4bcb82</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:08:22</sys_updated_on>
+    </sys_flow_subflow_plan>
 </record_update>

@@ -4,6 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>4f1b15b31be485d08c5143f3cc4bcbb0</copied_from>
@@ -12,7 +13,7 @@
         <internal_name>sec05_inactive_employee_review_process__generate_catalog_item_submissions</internal_name>
         <label_cache>[{"name":"subflow.remind_date_2","label":"Input➛Remind Date 2","reference":"","reference_display":"","type":"glide_date_time","base_type":"glide_date_time","column_name":"","attributes":{"uiType":"glide_date_time","uiTypeLabel":"Date/Time","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"0dbda910-1518-427d-8a1b-3ce3d2047e16","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.last_login","label":"Flow Variables➛Last Login","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"13c19ebd-55d2-4f23-957e-4287f3a919e9"}},{"name":"c7e2f5a3-1c09-4ea1-bf1e-c5130c2ab1a3.due_date_met","label":"3➛Date A Before Date B","reference_display":"Date A Before Date B","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c5a90f02-ac33-46cb-a73c-2dfa3fe477c3"}},{"name":"c7e2f5a3-1c09-4ea1-bf1e-c5130c2ab1a3.context","label":"3➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"subflow.ad_last_login","label":"Input➛AD Last Login","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f5839fd0-cd6b-410c-b0ea-8e6ca4029ed3","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.created","label":"Input➛Created","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"68c8519e-bc81-4e56-a485-79aa2f5bc517","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"992f36f8-96c8-4128-b2c4-56eeadd4a13c.__dont_treat_as_error__","label":"16➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"992f36f8-96c8-4128-b2c4-56eeadd4a13c.__action_status__","label":"16➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"992f36f8-96c8-4128-b2c4-56eeadd4a13c.error_message","label":"16➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7cf3e70c-55c1-42c4-811a-c6b7ec1692b9"}},{"name":"992f36f8-96c8-4128-b2c4-56eeadd4a13c.requested_item","label":"16➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"992f36f8-96c8-4128-b2c4-56eeadd4a13c.status","label":"16➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eacb2914-9214-441b-ac02-5703c4d8b6ee"}},{"name":"subflow.due_date","label":"Input➛Due Date","reference":"","reference_display":"","type":"glide_date_time","base_type":"glide_date_time","column_name":"","attributes":{"uiType":"glide_date_time","uiTypeLabel":"Date/Time","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"17c34671-5815-4a8d-9861-f688597729f6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.datetimenow","label":"Flow Variables➛dateTimeNow","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"47813367-cf82-4fea-a0e3-126a4026f248"}},{"name":"8649c91a-ad83-43ca-8766-6b0b34af0d85.__status__.code","label":"19➛Error Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"8649c91a-ad83-43ca-8766-6b0b34af0d85.__status__.message","label":"19➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"52648e67-e4f3-44bf-99f9-e78fa4ad786d.context","label":"19➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"65111069-6609-4468-af49-c14552aabc2a.__dont_treat_as_error__","label":"9➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"bd0da1fb-c5ea-4e6b-a556-bf84d3555053"}},{"name":"65111069-6609-4468-af49-c14552aabc2a.__action_status__","label":"9➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"3bc6167b-1119-4185-bd2f-8af9e84acd59"}},{"name":"8649c91a-ad83-43ca-8766-6b0b34af0d85.__status__","label":"19➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5ea634e6-51da-48fb-8d8e-ad9986d5374e.__dont_treat_as_error__","label":"18➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"bd0da1fb-c5ea-4e6b-a556-bf84d3555053"}},{"name":"5ea634e6-51da-48fb-8d8e-ad9986d5374e.__action_status__","label":"18➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"3bc6167b-1119-4185-bd2f-8af9e84acd59"}},{"name":"e995d8c2-9b71-42a4-b67d-3acbddee9df0.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e995d8c2-9b71-42a4-b67d-3acbddee9df0.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e995d8c2-9b71-42a4-b67d-3acbddee9df0.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"e995d8c2-9b71-42a4-b67d-3acbddee9df0.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"e995d8c2-9b71-42a4-b67d-3acbddee9df0.Table","label":"2➛User Table","reference":"sys_user","reference_display":"User","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e995d8c2-9b71-42a4-b67d-3acbddee9df0.Record","label":"2➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.manager_email","label":"Input➛Manager Email","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"81233c14-cd41-45ef-87b9-359fd2bf8ac2","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"9c866177-83a4-4b0d-bbcf-260b1973f729.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c866177-83a4-4b0d-bbcf-260b1973f729.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c866177-83a4-4b0d-bbcf-260b1973f729.Table","label":"6➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c866177-83a4-4b0d-bbcf-260b1973f729.Record","label":"6➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e4a47c4-4f4c-43de-bbe0-7fac10540216.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e4a47c4-4f4c-43de-bbe0-7fac10540216.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e4a47c4-4f4c-43de-bbe0-7fac10540216.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7cf3e70c-55c1-42c4-811a-c6b7ec1692b9"}},{"name":"2e4a47c4-4f4c-43de-bbe0-7fac10540216.requested_item","label":"3➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"2e4a47c4-4f4c-43de-bbe0-7fac10540216.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eacb2914-9214-441b-ac02-5703c4d8b6ee"}},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.Record","label":"1➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.Table","label":"1➛User Table","reference":"sys_user","reference_display":"User","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2f855329-3850-452d-923c-b45a5c76824a.Record","label":"5➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2f855329-3850-452d-923c-b45a5c76824a.Table","label":"5➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2f855329-3850-452d-923c-b45a5c76824a.status","label":"5➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"2f855329-3850-452d-923c-b45a5c76824a.error_message","label":"5➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"2f855329-3850-452d-923c-b45a5c76824a.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2f855329-3850-452d-923c-b45a5c76824a.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.Record.first_name","label":"1➛User Record➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.Record.u_last_assigned","label":"1➛User Record➛Last assigned","reference":"","reference_display":"Last assigned","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"sys_user","column_name":"u_last_assigned"},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.Record.last_name","label":"1➛User Record➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name"},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.Record.company","label":"1➛User Record➛Company","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"company"},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.Record.location","label":"1➛User Record➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"location"},{"name":"subflow.employee_email","label":"Input➛Employee Email","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"63f59695-7ac4-4773-9372-f1744af6bb95","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"2e0a3c60-3dde-4ed0-bdf3-7702956e1dd7.record","label":"4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e0a3c60-3dde-4ed0-bdf3-7702956e1dd7.table_name","label":"4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e0a3c60-3dde-4ed0-bdf3-7702956e1dd7.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2e0a3c60-3dde-4ed0-bdf3-7702956e1dd7.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"c62a80db-6dbf-4872-9c09-d09e99882518.Record","label":"8➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c62a80db-6dbf-4872-9c09-d09e99882518.Table","label":"8➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c62a80db-6dbf-4872-9c09-d09e99882518.__action_status__","label":"8➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c62a80db-6dbf-4872-9c09-d09e99882518.__dont_treat_as_error__","label":"8➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"413c6a76-6450-4fe7-8b36-6fe32b85dccc.Record","label":"3➛Company Record","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"413c6a76-6450-4fe7-8b36-6fe32b85dccc.Table","label":"3➛Company Table","reference":"core_company","reference_display":"Company","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"413c6a76-6450-4fe7-8b36-6fe32b85dccc.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"413c6a76-6450-4fe7-8b36-6fe32b85dccc.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"413c6a76-6450-4fe7-8b36-6fe32b85dccc.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"413c6a76-6450-4fe7-8b36-6fe32b85dccc.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.company_name","label":"Input➛Company Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"717cb76d-d48f-40d0-9c07-3abe4b5dc50f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"2920a861-2fef-4102-8d65-daf7054bf6f0.status","label":"4➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eacb2914-9214-441b-ac02-5703c4d8b6ee"}},{"name":"2920a861-2fef-4102-8d65-daf7054bf6f0.requested_item","label":"4➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"2920a861-2fef-4102-8d65-daf7054bf6f0.error_message","label":"4➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7cf3e70c-55c1-42c4-811a-c6b7ec1692b9"}},{"name":"2920a861-2fef-4102-8d65-daf7054bf6f0.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2920a861-2fef-4102-8d65-daf7054bf6f0.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.employee_full_name","label":"Input➛Employee Full Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3059c287-82b2-41ff-8d7e-1300374178a7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.employee_first_name","label":"Flow Variables➛Employee First Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7a522c99-aa4b-4f35-8d2c-9fe8db2114cc"}},{"name":"flow_variable.employee_last_name","label":"Flow Variables➛Employee Last Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"dd94f0e4-0a76-4dbf-bea7-9e34c2faa4db"}},{"name":"d093c52b-070f-4a7d-8c42-688b4676a4bc.status","label":"11➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eacb2914-9214-441b-ac02-5703c4d8b6ee"}},{"name":"d093c52b-070f-4a7d-8c42-688b4676a4bc.requested_item","label":"11➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"d093c52b-070f-4a7d-8c42-688b4676a4bc.error_message","label":"11➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7cf3e70c-55c1-42c4-811a-c6b7ec1692b9"}},{"name":"d093c52b-070f-4a7d-8c42-688b4676a4bc.__action_status__","label":"11➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d093c52b-070f-4a7d-8c42-688b4676a4bc.__dont_treat_as_error__","label":"11➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4a836478-510e-4acf-a826-3b809a35ed9d.status","label":"9➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eacb2914-9214-441b-ac02-5703c4d8b6ee"}},{"name":"4a836478-510e-4acf-a826-3b809a35ed9d.requested_item","label":"9➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"4a836478-510e-4acf-a826-3b809a35ed9d.error_message","label":"9➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7cf3e70c-55c1-42c4-811a-c6b7ec1692b9"}},{"name":"4a836478-510e-4acf-a826-3b809a35ed9d.__action_status__","label":"9➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4a836478-510e-4acf-a826-3b809a35ed9d.__dont_treat_as_error__","label":"9➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.azure_last_login","label":"Input➛Azure Last Login","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c5384b66-a9c5-4665-b944-aecd6ad4fe64","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"50b27daf-b9a7-4a42-b8d2-18acd304760b.status","label":"16➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eacb2914-9214-441b-ac02-5703c4d8b6ee"}},{"name":"50b27daf-b9a7-4a42-b8d2-18acd304760b.requested_item","label":"16➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"50b27daf-b9a7-4a42-b8d2-18acd304760b.error_message","label":"16➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7cf3e70c-55c1-42c4-811a-c6b7ec1692b9"}},{"name":"50b27daf-b9a7-4a42-b8d2-18acd304760b.__action_status__","label":"16➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50b27daf-b9a7-4a42-b8d2-18acd304760b.__dont_treat_as_error__","label":"16➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.remind_date","label":"Input➛Remind Date","reference":"","reference_display":"","type":"glide_date_time","base_type":"glide_date_time","column_name":"","attributes":{"uiType":"glide_date_time","uiTypeLabel":"Date/Time","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"97fece11-44e9-4cef-b6ae-ba0e90ab6dac","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master_snapshot>a55573bd1b1ec99062e50ed2cd4bcbd2</master_snapshot>
-        <name>SEC17 - Generate Review</name>
+        <name>SEC17 - Generate Catalog Item Submissions</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
@@ -30,14 +31,14 @@
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cf63fb351b1ec99062e50ed2cd4bcb5b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>SEC17 - Generate Review</sys_name>
+        <sys_name>SEC17 - Generate Catalog Item Submissions</sys_name>
         <sys_overrides/>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_update_name>sys_hub_flow_cf63fb351b1ec99062e50ed2cd4bcb5b</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-23 13:56:20</sys_updated_on>
+        <sys_updated_on>2024-10-18 20:19:50</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=cf63fb351b1ec99062e50ed2cd4bcb5b"/>
@@ -98,7 +99,7 @@
         <label>AD Last Login</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
         <model_id>cf63fb351b1ec99062e50ed2cd4bcb5b</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_cf63fb351b1ec99062e50ed2cd4bcb5b</name>
@@ -141,6 +142,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2a4917031b56c5d062e50ed2cd4bcb77"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -181,7 +183,7 @@
         <label>Remind Date</label>
         <mandatory>true</mandatory>
         <max_length>40</max_length>
-        <model display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
         <model_id>cf63fb351b1ec99062e50ed2cd4bcb5b</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_cf63fb351b1ec99062e50ed2cd4bcb5b</name>
@@ -224,6 +226,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=374b93b21b1a05d062e50ed2cd4bcb3f"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -264,7 +267,7 @@
         <label>Remind Date 2</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
         <model_id>cf63fb351b1ec99062e50ed2cd4bcb5b</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_cf63fb351b1ec99062e50ed2cd4bcb5b</name>
@@ -307,6 +310,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3be10a7d1b2f895062e50ed2cd4bcb98"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -347,7 +351,7 @@
         <label>Employee Email</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
         <model_id>cf63fb351b1ec99062e50ed2cd4bcb5b</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_cf63fb351b1ec99062e50ed2cd4bcb5b</name>
@@ -390,6 +394,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4f63fb351b1ec99062e50ed2cd4bcb84"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -430,7 +435,7 @@
         <label>Due Date</label>
         <mandatory>true</mandatory>
         <max_length>40</max_length>
-        <model display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
         <model_id>cf63fb351b1ec99062e50ed2cd4bcb5b</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_cf63fb351b1ec99062e50ed2cd4bcb5b</name>
@@ -473,6 +478,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bf4b93b21b1a05d062e50ed2cd4bcb35"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -513,7 +519,7 @@
         <label>Azure Last Login</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
         <model_id>cf63fb351b1ec99062e50ed2cd4bcb5b</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_cf63fb351b1ec99062e50ed2cd4bcb5b</name>
@@ -556,6 +562,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e24917031b56c5d062e50ed2cd4bcb64"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -596,7 +603,7 @@
         <label>Created</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
         <model_id>cf63fb351b1ec99062e50ed2cd4bcb5b</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_cf63fb351b1ec99062e50ed2cd4bcb5b</name>
@@ -639,6 +646,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f6f7df4b1b16c5d062e50ed2cd4bcb22"/>
     <sys_hub_flow_output action="delete_multiple" query="model=cf63fb351b1ec99062e50ed2cd4bcb5b"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=cf63fb351b1ec99062e50ed2cd4bcb5b"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=cf63fb351b1ec99062e50ed2cd4bcb5b^sys_idNOT IN13633f351b1ec99062e50ed2cd4bcb00,23633f351b1ec99062e50ed2cd4bcb33,80f14a7d1b2f895062e50ed2cd4bcb63"/>
@@ -647,19 +655,20 @@
         <action_inputs/>
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
         <comment>Look up person leaving</comment>
         <display_text/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-18 20:17:16</sys_created_on>
         <sys_id>13633f351b1ec99062e50ed2cd4bcb00</sys_id>
-        <sys_mod_count>104</sys_mod_count>
+        <sys_mod_count>76</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-05-11 19:26:24</sys_updated_on>
+        <sys_updated_on>2022-06-13 19:22:06</sys_updated_on>
         <ui_id>61ddb111-60c2-429a-ab37-4da212e53bf4</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=13633f351b1ec99062e50ed2cd4bcb00"/>
@@ -734,19 +743,20 @@
         <action_inputs/>
         <action_type display_value="Throw Error">d9c569571b9c49508c5143f3cc4bcb4d</action_type>
         <action_type_parent display_value="Throw Error">3c35a5171b9c49508c5143f3cc4bcb15</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <order>18</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-18 20:17:16</sys_created_on>
         <sys_id>23633f351b1ec99062e50ed2cd4bcb33</sys_id>
-        <sys_mod_count>104</sys_mod_count>
+        <sys_mod_count>76</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-05-11 19:26:24</sys_updated_on>
+        <sys_updated_on>2022-06-13 19:22:06</sys_updated_on>
         <ui_id>5ea634e6-51da-48fb-8d8e-ad9986d5374e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=23633f351b1ec99062e50ed2cd4bcb33"/>
@@ -786,19 +796,20 @@
         <action_inputs/>
         <action_type display_value="Submit Catalog Item Request">c7a04c607312001098e194596bf6a72a</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <order>16</order>
         <parent_ui_id>f7871563-e177-4643-96ce-be983d4a7ff6</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-05-19 15:19:54</sys_created_on>
         <sys_id>80f14a7d1b2f895062e50ed2cd4bcb63</sys_id>
-        <sys_mod_count>52</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-05-11 19:26:24</sys_updated_on>
+        <sys_updated_on>2022-06-13 19:22:06</sys_updated_on>
         <ui_id>50b27daf-b9a7-4a42-b8d2-18acd304760b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=80f14a7d1b2f895062e50ed2cd4bcb63"/>
@@ -898,6 +909,7 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=cf63fb351b1ec99062e50ed2cd4bcb5b"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=cf63fb351b1ec99062e50ed2cd4bcb5b^sys_idNOT IN38bad3c31b56c5d062e50ed2cd4bcbc9,4dbad3c31b56c5d062e50ed2cd4bcbd0,4dbad3c31b56c5d062e50ed2cd4bcbe3,4dbad3c31b56c5d062e50ed2cd4bcbe9,5f63fb351b1ec99062e50ed2cd4bcba6,5f63fb351b1ec99062e50ed2cd4bcbab,78bad3c31b56c5d062e50ed2cd4bcb84,8005fff91b1ec99062e50ed2cd4bcbcc,b8bad3c31b56c5d062e50ed2cd4bcb88,b8bad3c31b56c5d062e50ed2cd4bcbc2,b8bad3c31b56c5d062e50ed2cd4bcbcc,cdbad3c31b56c5d062e50ed2cd4bcbd3,cdbad3c31b56c5d062e50ed2cd4bcbe6,f4bad3c31b56c5d062e50ed2cd4bcbc6,fcbad3c31b56c5d062e50ed2cd4bcbbe"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">70bad3c31b56c5d062e50ed2cd4bcbc9</block>
         <comment>Last Login = Azure Last Login</comment>
         <connected_to/>
@@ -905,7 +917,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>last_login</flow_variables_assigned>
@@ -919,10 +931,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:38</sys_created_on>
         <sys_id>38bad3c31b56c5d062e50ed2cd4bcbc9</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:37</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:28</sys_updated_on>
         <ui_id>e0331097-561b-4133-b4b0-bc35e96715c7</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -944,6 +956,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=38bad3c31b56c5d062e50ed2cd4bcbc9"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=38bad3c31b56c5d062e50ed2cd4bcbc9"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">85bad3c31b56c5d062e50ed2cd4bcbd0</block>
         <comment>Last Login = Azure Last Login</comment>
         <connected_to/>
@@ -951,7 +964,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>last_login</flow_variables_assigned>
@@ -965,10 +978,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:38</sys_created_on>
         <sys_id>4dbad3c31b56c5d062e50ed2cd4bcbd0</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:37</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:28</sys_updated_on>
         <ui_id>7986524d-91c5-4302-89f3-73ebf4cf7187</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -990,6 +1003,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4dbad3c31b56c5d062e50ed2cd4bcbd0"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=4dbad3c31b56c5d062e50ed2cd4bcbd0"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">85bad3c31b56c5d062e50ed2cd4bcbe3</block>
         <comment>Last Login = AD Last Login</comment>
         <connected_to/>
@@ -997,7 +1011,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>last_login</flow_variables_assigned>
@@ -1011,10 +1025,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:38</sys_created_on>
         <sys_id>4dbad3c31b56c5d062e50ed2cd4bcbe3</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:37</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:28</sys_updated_on>
         <ui_id>c6feafbf-f71f-4a92-86f6-55211a77a81d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1036,6 +1050,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4dbad3c31b56c5d062e50ed2cd4bcbe3"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=4dbad3c31b56c5d062e50ed2cd4bcbe3"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">85bad3c31b56c5d062e50ed2cd4bcbe9</block>
         <comment>Last Login = Blank</comment>
         <connected_to/>
@@ -1043,7 +1058,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <flow_variable/>
         <flow_variables_assigned>last_login</flow_variables_assigned>
         <inputs/>
@@ -1056,10 +1071,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:38</sys_created_on>
         <sys_id>4dbad3c31b56c5d062e50ed2cd4bcbe9</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:38</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:28</sys_updated_on>
         <ui_id>08d8fa40-e53a-48a4-acff-3bb5f92d2026</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1069,6 +1084,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4dbad3c31b56c5d062e50ed2cd4bcbe9"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=4dbad3c31b56c5d062e50ed2cd4bcbe9"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">9763fb351b1ec99062e50ed2cd4bcba6</block>
         <comment/>
         <connected_to/>
@@ -1076,7 +1092,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <flow_variable/>
         <flow_variables_assigned>datetimenow</flow_variables_assigned>
         <inputs/>
@@ -1089,10 +1105,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-18 20:17:15</sys_created_on>
         <sys_id>5f63fb351b1ec99062e50ed2cd4bcba6</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:38</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:28</sys_updated_on>
         <ui_id>ad681e54-2862-4c92-94b5-2f80679b90c1</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1141,6 +1157,7 @@
         <sys_updated_on>2022-03-18 20:17:15</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">9763fb351b1ec99062e50ed2cd4bcbab</block>
         <comment/>
         <connected_to/>
@@ -1148,7 +1165,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1162,10 +1179,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-18 20:17:15</sys_created_on>
         <sys_id>5f63fb351b1ec99062e50ed2cd4bcbab</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:38</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:28</sys_updated_on>
         <ui_id>f7871563-e177-4643-96ce-be983d4a7ff6</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1214,6 +1231,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5f63fb351b1ec99062e50ed2cd4bcbab"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=5f63fb351b1ec99062e50ed2cd4bcbab"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">bcbad3c31b56c5d062e50ed2cd4bcb83</block>
         <comment/>
         <connected_to/>
@@ -1221,7 +1239,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1235,10 +1253,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:37</sys_created_on>
         <sys_id>78bad3c31b56c5d062e50ed2cd4bcb84</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:37</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:27</sys_updated_on>
         <ui_id>af98d9a3-d149-4b6d-8d31-6abe966391cd</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1261,6 +1279,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=78bad3c31b56c5d062e50ed2cd4bcb84"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=78bad3c31b56c5d062e50ed2cd4bcb84"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">4805fff91b1ec99062e50ed2cd4bcbb2</block>
         <comment/>
         <connected_to/>
@@ -1268,7 +1287,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1281,10 +1300,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-18 20:24:08</sys_created_on>
         <sys_id>8005fff91b1ec99062e50ed2cd4bcbcc</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:38</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:28</sys_updated_on>
         <ui_id>f6f1b079-2275-48d1-8b78-13a849ba3455</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1294,6 +1313,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8005fff91b1ec99062e50ed2cd4bcbcc"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=8005fff91b1ec99062e50ed2cd4bcbcc"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">f0bad3c31b56c5d062e50ed2cd4bcb88</block>
         <comment>Was Azure Last Login Before AD Last Login?</comment>
         <connected_to/>
@@ -1302,7 +1322,7 @@
         <display_text/>
         <extended_inputs/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1315,10 +1335,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:38</sys_created_on>
         <sys_id>b8bad3c31b56c5d062e50ed2cd4bcb88</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:37</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:27</sys_updated_on>
         <ui_id>c7e2f5a3-1c09-4ea1-bf1e-c5130c2ab1a3</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1590,6 +1610,7 @@
     </sys_hub_flow_logic_ext_input>
     <sys_hub_input_scripts action="delete_multiple" query="instance=b8bad3c31b56c5d062e50ed2cd4bcb88"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">f0bad3c31b56c5d062e50ed2cd4bcbc2</block>
         <comment>Last Login = AD Last Login</comment>
         <connected_to/>
@@ -1597,7 +1618,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>last_login</flow_variables_assigned>
@@ -1611,10 +1632,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:38</sys_created_on>
         <sys_id>b8bad3c31b56c5d062e50ed2cd4bcbc2</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:37</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:27</sys_updated_on>
         <ui_id>7fde2f09-cc45-4b3b-8df5-03a7b6ae61ee</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1636,6 +1657,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b8bad3c31b56c5d062e50ed2cd4bcbc2"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=b8bad3c31b56c5d062e50ed2cd4bcbc2"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">f0bad3c31b56c5d062e50ed2cd4bcbcc</block>
         <comment/>
         <connected_to>af98d9a3-d149-4b6d-8d31-6abe966391cd</connected_to>
@@ -1643,7 +1665,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1657,10 +1679,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:38</sys_created_on>
         <sys_id>b8bad3c31b56c5d062e50ed2cd4bcbcc</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:37</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:28</sys_updated_on>
         <ui_id>cbd1cb2a-26af-4039-a2cc-4e55d7c623f6</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1683,6 +1705,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b8bad3c31b56c5d062e50ed2cd4bcbcc"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=b8bad3c31b56c5d062e50ed2cd4bcbcc"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">09bad3c31b56c5d062e50ed2cd4bcbd3</block>
         <comment/>
         <connected_to>af98d9a3-d149-4b6d-8d31-6abe966391cd</connected_to>
@@ -1690,7 +1713,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1704,10 +1727,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:38</sys_created_on>
         <sys_id>cdbad3c31b56c5d062e50ed2cd4bcbd3</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:37</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:28</sys_updated_on>
         <ui_id>b30702be-716e-42db-a8b9-0d005eccb8cb</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1730,6 +1753,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=cdbad3c31b56c5d062e50ed2cd4bcbd3"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=cdbad3c31b56c5d062e50ed2cd4bcbd3"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">09bad3c31b56c5d062e50ed2cd4bcbe6</block>
         <comment/>
         <connected_to>af98d9a3-d149-4b6d-8d31-6abe966391cd</connected_to>
@@ -1737,7 +1761,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1750,10 +1774,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:38</sys_created_on>
         <sys_id>cdbad3c31b56c5d062e50ed2cd4bcbe6</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:38</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:28</sys_updated_on>
         <ui_id>6cd9eff1-efd0-45e0-b302-9caacef093a4</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1763,6 +1787,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=cdbad3c31b56c5d062e50ed2cd4bcbe6"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=cdbad3c31b56c5d062e50ed2cd4bcbe6"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">30bad3c31b56c5d062e50ed2cd4bcbc6</block>
         <comment/>
         <connected_to>d931aee4-6cc9-4b00-bc7f-c68568acf6ce</connected_to>
@@ -1770,7 +1795,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1783,10 +1808,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:38</sys_created_on>
         <sys_id>f4bad3c31b56c5d062e50ed2cd4bcbc6</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:37</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:28</sys_updated_on>
         <ui_id>0b11265c-5ed7-495c-8648-fafbd5121c91</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1796,6 +1821,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f4bad3c31b56c5d062e50ed2cd4bcbc6"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=f4bad3c31b56c5d062e50ed2cd4bcbc6"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">38bad3c31b56c5d062e50ed2cd4bcbbe</block>
         <comment/>
         <connected_to/>
@@ -1803,7 +1829,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1817,10 +1843,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:38</sys_created_on>
         <sys_id>fcbad3c31b56c5d062e50ed2cd4bcbbe</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:37</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:27</sys_updated_on>
         <ui_id>d931aee4-6cc9-4b00-bc7f-c68568acf6ce</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1952,7 +1978,7 @@
         <label>dateTimeNow</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
         <model_id>cf63fb351b1ec99062e50ed2cd4bcb5b</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_cf63fb351b1ec99062e50ed2cd4bcb5b</name>
@@ -2035,7 +2061,7 @@
         <label>Employee First Name</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
         <model_id>cf63fb351b1ec99062e50ed2cd4bcb5b</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_cf63fb351b1ec99062e50ed2cd4bcb5b</name>
@@ -2118,7 +2144,7 @@
         <label>Last Login</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
         <model_id>cf63fb351b1ec99062e50ed2cd4bcb5b</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_cf63fb351b1ec99062e50ed2cd4bcb5b</name>
@@ -2201,7 +2227,7 @@
         <label>Employee Last Name</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</model>
         <model_id>cf63fb351b1ec99062e50ed2cd4bcb5b</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_cf63fb351b1ec99062e50ed2cd4bcb5b</name>
@@ -2409,28 +2435,12 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_cf63fb351b1ec99062e50ed2cd4bcb5b"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_cf63fb351b1ec99062e50ed2cd4bcb5b"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_cf63fb351b1ec99062e50ed2cd4bcb5b"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=cf63fb351b1ec99062e50ed2cd4bcb5b"/>
-    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=cf63fb351b1ec99062e50ed2cd4bcb5b^sys_idNOT IN5655f3bd1b1ec99062e50ed2cd4bcbaf"/>
-    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"5655f3bd1b1ec99062e50ed2cd4bcbaf","name":"plan","plan_signature":null}}</plan>
-        <plan_id display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</plan_id>
-        <snapshot>d7e9d1b01b7ea51062e50ed2cd4bcb2b</snapshot>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-03-18 20:25:40</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
-        <sys_id>5655f3bd1b1ec99062e50ed2cd4bcbaf</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_overrides/>
-        <sys_scope/>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:36</sys_updated_on>
-    </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -2439,10 +2449,10 @@
         <internal_name>sec05_inactive_employee_review_process__generate_catalog_item_submissions</internal_name>
         <label_cache>[{"name":"subflow.remind_date_2","label":"Input➛Remind Date 2","reference":"","reference_display":"","type":"glide_date_time","base_type":"glide_date_time","column_name":"","attributes":{"uiType":"glide_date_time","uiTypeLabel":"Date/Time","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"0dbda910-1518-427d-8a1b-3ce3d2047e16","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.last_login","label":"Flow Variables➛Last Login","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"13c19ebd-55d2-4f23-957e-4287f3a919e9"}},{"name":"c7e2f5a3-1c09-4ea1-bf1e-c5130c2ab1a3.due_date_met","label":"3➛Date A Before Date B","reference_display":"Date A Before Date B","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c5a90f02-ac33-46cb-a73c-2dfa3fe477c3"}},{"name":"c7e2f5a3-1c09-4ea1-bf1e-c5130c2ab1a3.context","label":"3➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"subflow.ad_last_login","label":"Input➛AD Last Login","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f5839fd0-cd6b-410c-b0ea-8e6ca4029ed3","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.created","label":"Input➛Created","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"68c8519e-bc81-4e56-a485-79aa2f5bc517","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"992f36f8-96c8-4128-b2c4-56eeadd4a13c.__dont_treat_as_error__","label":"16➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"992f36f8-96c8-4128-b2c4-56eeadd4a13c.__action_status__","label":"16➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"992f36f8-96c8-4128-b2c4-56eeadd4a13c.error_message","label":"16➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7cf3e70c-55c1-42c4-811a-c6b7ec1692b9"}},{"name":"992f36f8-96c8-4128-b2c4-56eeadd4a13c.requested_item","label":"16➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"992f36f8-96c8-4128-b2c4-56eeadd4a13c.status","label":"16➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eacb2914-9214-441b-ac02-5703c4d8b6ee"}},{"name":"subflow.due_date","label":"Input➛Due Date","reference":"","reference_display":"","type":"glide_date_time","base_type":"glide_date_time","column_name":"","attributes":{"uiType":"glide_date_time","uiTypeLabel":"Date/Time","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"17c34671-5815-4a8d-9861-f688597729f6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.datetimenow","label":"Flow Variables➛dateTimeNow","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"47813367-cf82-4fea-a0e3-126a4026f248"}},{"name":"8649c91a-ad83-43ca-8766-6b0b34af0d85.__status__.code","label":"19➛Error Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"8649c91a-ad83-43ca-8766-6b0b34af0d85.__status__.message","label":"19➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"52648e67-e4f3-44bf-99f9-e78fa4ad786d.context","label":"19➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"65111069-6609-4468-af49-c14552aabc2a.__dont_treat_as_error__","label":"9➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"bd0da1fb-c5ea-4e6b-a556-bf84d3555053"}},{"name":"65111069-6609-4468-af49-c14552aabc2a.__action_status__","label":"9➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"3bc6167b-1119-4185-bd2f-8af9e84acd59"}},{"name":"8649c91a-ad83-43ca-8766-6b0b34af0d85.__status__","label":"19➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5ea634e6-51da-48fb-8d8e-ad9986d5374e.__dont_treat_as_error__","label":"18➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"bd0da1fb-c5ea-4e6b-a556-bf84d3555053"}},{"name":"5ea634e6-51da-48fb-8d8e-ad9986d5374e.__action_status__","label":"18➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"3bc6167b-1119-4185-bd2f-8af9e84acd59"}},{"name":"e995d8c2-9b71-42a4-b67d-3acbddee9df0.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e995d8c2-9b71-42a4-b67d-3acbddee9df0.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e995d8c2-9b71-42a4-b67d-3acbddee9df0.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"e995d8c2-9b71-42a4-b67d-3acbddee9df0.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"e995d8c2-9b71-42a4-b67d-3acbddee9df0.Table","label":"2➛User Table","reference":"sys_user","reference_display":"User","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e995d8c2-9b71-42a4-b67d-3acbddee9df0.Record","label":"2➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.manager_email","label":"Input➛Manager Email","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"81233c14-cd41-45ef-87b9-359fd2bf8ac2","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"9c866177-83a4-4b0d-bbcf-260b1973f729.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c866177-83a4-4b0d-bbcf-260b1973f729.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c866177-83a4-4b0d-bbcf-260b1973f729.Table","label":"6➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c866177-83a4-4b0d-bbcf-260b1973f729.Record","label":"6➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e4a47c4-4f4c-43de-bbe0-7fac10540216.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e4a47c4-4f4c-43de-bbe0-7fac10540216.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e4a47c4-4f4c-43de-bbe0-7fac10540216.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7cf3e70c-55c1-42c4-811a-c6b7ec1692b9"}},{"name":"2e4a47c4-4f4c-43de-bbe0-7fac10540216.requested_item","label":"3➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"2e4a47c4-4f4c-43de-bbe0-7fac10540216.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eacb2914-9214-441b-ac02-5703c4d8b6ee"}},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.Record","label":"1➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.Table","label":"1➛User Table","reference":"sys_user","reference_display":"User","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2f855329-3850-452d-923c-b45a5c76824a.Record","label":"5➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2f855329-3850-452d-923c-b45a5c76824a.Table","label":"5➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2f855329-3850-452d-923c-b45a5c76824a.status","label":"5➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"2f855329-3850-452d-923c-b45a5c76824a.error_message","label":"5➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"2f855329-3850-452d-923c-b45a5c76824a.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2f855329-3850-452d-923c-b45a5c76824a.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.Record.first_name","label":"1➛User Record➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.Record.u_last_assigned","label":"1➛User Record➛Last assigned","reference":"","reference_display":"Last assigned","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"sys_user","column_name":"u_last_assigned"},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.Record.last_name","label":"1➛User Record➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name"},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.Record.company","label":"1➛User Record➛Company","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"company"},{"name":"61ddb111-60c2-429a-ab37-4da212e53bf4.Record.location","label":"1➛User Record➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"location"},{"name":"subflow.employee_email","label":"Input➛Employee Email","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"63f59695-7ac4-4773-9372-f1744af6bb95","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"2e0a3c60-3dde-4ed0-bdf3-7702956e1dd7.record","label":"4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e0a3c60-3dde-4ed0-bdf3-7702956e1dd7.table_name","label":"4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e0a3c60-3dde-4ed0-bdf3-7702956e1dd7.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2e0a3c60-3dde-4ed0-bdf3-7702956e1dd7.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"c62a80db-6dbf-4872-9c09-d09e99882518.Record","label":"8➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c62a80db-6dbf-4872-9c09-d09e99882518.Table","label":"8➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c62a80db-6dbf-4872-9c09-d09e99882518.__action_status__","label":"8➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c62a80db-6dbf-4872-9c09-d09e99882518.__dont_treat_as_error__","label":"8➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"413c6a76-6450-4fe7-8b36-6fe32b85dccc.Record","label":"3➛Company Record","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"413c6a76-6450-4fe7-8b36-6fe32b85dccc.Table","label":"3➛Company Table","reference":"core_company","reference_display":"Company","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"413c6a76-6450-4fe7-8b36-6fe32b85dccc.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"413c6a76-6450-4fe7-8b36-6fe32b85dccc.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"413c6a76-6450-4fe7-8b36-6fe32b85dccc.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"413c6a76-6450-4fe7-8b36-6fe32b85dccc.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.company_name","label":"Input➛Company Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"717cb76d-d48f-40d0-9c07-3abe4b5dc50f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"2920a861-2fef-4102-8d65-daf7054bf6f0.status","label":"4➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eacb2914-9214-441b-ac02-5703c4d8b6ee"}},{"name":"2920a861-2fef-4102-8d65-daf7054bf6f0.requested_item","label":"4➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"2920a861-2fef-4102-8d65-daf7054bf6f0.error_message","label":"4➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7cf3e70c-55c1-42c4-811a-c6b7ec1692b9"}},{"name":"2920a861-2fef-4102-8d65-daf7054bf6f0.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2920a861-2fef-4102-8d65-daf7054bf6f0.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.employee_full_name","label":"Input➛Employee Full Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3059c287-82b2-41ff-8d7e-1300374178a7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.employee_first_name","label":"Flow Variables➛Employee First Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7a522c99-aa4b-4f35-8d2c-9fe8db2114cc"}},{"name":"flow_variable.employee_last_name","label":"Flow Variables➛Employee Last Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"dd94f0e4-0a76-4dbf-bea7-9e34c2faa4db"}},{"name":"d093c52b-070f-4a7d-8c42-688b4676a4bc.status","label":"11➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eacb2914-9214-441b-ac02-5703c4d8b6ee"}},{"name":"d093c52b-070f-4a7d-8c42-688b4676a4bc.requested_item","label":"11➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"d093c52b-070f-4a7d-8c42-688b4676a4bc.error_message","label":"11➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7cf3e70c-55c1-42c4-811a-c6b7ec1692b9"}},{"name":"d093c52b-070f-4a7d-8c42-688b4676a4bc.__action_status__","label":"11➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d093c52b-070f-4a7d-8c42-688b4676a4bc.__dont_treat_as_error__","label":"11➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4a836478-510e-4acf-a826-3b809a35ed9d.status","label":"9➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eacb2914-9214-441b-ac02-5703c4d8b6ee"}},{"name":"4a836478-510e-4acf-a826-3b809a35ed9d.requested_item","label":"9➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"4a836478-510e-4acf-a826-3b809a35ed9d.error_message","label":"9➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7cf3e70c-55c1-42c4-811a-c6b7ec1692b9"}},{"name":"4a836478-510e-4acf-a826-3b809a35ed9d.__action_status__","label":"9➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4a836478-510e-4acf-a826-3b809a35ed9d.__dont_treat_as_error__","label":"9➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.azure_last_login","label":"Input➛Azure Last Login","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c5384b66-a9c5-4665-b944-aecd6ad4fe64","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"50b27daf-b9a7-4a42-b8d2-18acd304760b.status","label":"16➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eacb2914-9214-441b-ac02-5703c4d8b6ee"}},{"name":"50b27daf-b9a7-4a42-b8d2-18acd304760b.requested_item","label":"16➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"50b27daf-b9a7-4a42-b8d2-18acd304760b.error_message","label":"16➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7cf3e70c-55c1-42c4-811a-c6b7ec1692b9"}},{"name":"50b27daf-b9a7-4a42-b8d2-18acd304760b.__action_status__","label":"16➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"50b27daf-b9a7-4a42-b8d2-18acd304760b.__dont_treat_as_error__","label":"16➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.remind_date","label":"Input➛Remind Date","reference":"","reference_display":"","type":"glide_date_time","base_type":"glide_date_time","column_name":"","attributes":{"uiType":"glide_date_time","uiTypeLabel":"Date/Time","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"97fece11-44e9-4cef-b6ae-ba0e90ab6dac","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master>true</master>
-        <name>SEC17 - Generate Review</name>
+        <name>SEC17 - Generate Catalog Item Submissions</name>
         <natlang/>
         <outputs/>
-        <parent_flow display_value="SEC17 - Generate Review">cf63fb351b1ec99062e50ed2cd4bcb5b</parent_flow>
+        <parent_flow display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</parent_flow>
         <remote_trigger_id/>
         <run_as>system</run_as>
         <run_with_roles/>
@@ -2454,7 +2464,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a55573bd1b1ec99062e50ed2cd4bcbd2</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2462,7 +2472,7 @@
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:34</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:24</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=a55573bd1b1ec99062e50ed2cd4bcbd2"/>
@@ -2523,7 +2533,7 @@
         <label>Due Date</label>
         <mandatory>true</mandatory>
         <max_length>40</max_length>
-        <model display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
         <model_id>a55573bd1b1ec99062e50ed2cd4bcbd2</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_a55573bd1b1ec99062e50ed2cd4bcbd2</name>
@@ -2566,6 +2576,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=115b17b21b1a05d062e50ed2cd4bcbff"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2606,7 +2617,7 @@
         <label>Remind Date</label>
         <mandatory>true</mandatory>
         <max_length>40</max_length>
-        <model display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
         <model_id>a55573bd1b1ec99062e50ed2cd4bcbd2</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_a55573bd1b1ec99062e50ed2cd4bcbd2</name>
@@ -2649,6 +2660,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=555b57b21b1a05d062e50ed2cd4bcb23"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2689,7 +2701,7 @@
         <label>Azure Last Login</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
         <model_id>a55573bd1b1ec99062e50ed2cd4bcbd2</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_a55573bd1b1ec99062e50ed2cd4bcbd2</name>
@@ -2732,6 +2744,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=774997031b56c5d062e50ed2cd4bcbbe"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2772,7 +2785,7 @@
         <label>Created</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
         <model_id>a55573bd1b1ec99062e50ed2cd4bcbd2</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_a55573bd1b1ec99062e50ed2cd4bcbd2</name>
@@ -2815,6 +2828,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8408538b1b16c5d062e50ed2cd4bcb67"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2855,7 +2869,7 @@
         <label>Employee Email</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
         <model_id>a55573bd1b1ec99062e50ed2cd4bcbd2</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_a55573bd1b1ec99062e50ed2cd4bcbd2</name>
@@ -2898,6 +2912,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a55573bd1b1ec99062e50ed2cd4bcbd4"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2938,7 +2953,7 @@
         <label>Remind Date 2</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
         <model_id>a55573bd1b1ec99062e50ed2cd4bcbd2</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_a55573bd1b1ec99062e50ed2cd4bcbd2</name>
@@ -2981,6 +2996,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e2720ebd1b2f895062e50ed2cd4bcb87"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -3021,7 +3037,7 @@
         <label>AD Last Login</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
         <model_id>a55573bd1b1ec99062e50ed2cd4bcbd2</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_a55573bd1b1ec99062e50ed2cd4bcbd2</name>
@@ -3064,6 +3080,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f74997031b56c5d062e50ed2cd4bcbd6"/>
     <sys_hub_flow_output action="delete_multiple" query="model=a55573bd1b1ec99062e50ed2cd4bcbd2"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=a55573bd1b1ec99062e50ed2cd4bcbd2"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=a55573bd1b1ec99062e50ed2cd4bcbd2^sys_idNOT IN4e55b3bd1b1ec99062e50ed2cd4bcba8,ba720ebd1b2f895062e50ed2cd4bcbad,f555b3bd1b1ec99062e50ed2cd4bcb6e"/>
@@ -3071,19 +3088,20 @@
         <action_inputs/>
         <action_type display_value="Throw Error">d9c569571b9c49508c5143f3cc4bcb4d</action_type>
         <action_type_parent display_value="Throw Error">3c35a5171b9c49508c5143f3cc4bcb15</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <order>18</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-18 20:25:38</sys_created_on>
         <sys_id>4e55b3bd1b1ec99062e50ed2cd4bcba8</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:34</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:24</sys_updated_on>
         <ui_id>5ea634e6-51da-48fb-8d8e-ad9986d5374e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4e55b3bd1b1ec99062e50ed2cd4bcba8"/>
@@ -3123,19 +3141,20 @@
         <action_inputs/>
         <action_type display_value="Submit Catalog Item Request">c7a04c607312001098e194596bf6a72a</action_type>
         <action_type_parent display_value="Submit Catalog Item Request">bfb5ea807312001098e194596bf6a707</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <order>16</order>
         <parent_ui_id>f7871563-e177-4643-96ce-be983d4a7ff6</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-05-19 15:22:16</sys_created_on>
         <sys_id>ba720ebd1b2f895062e50ed2cd4bcbad</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:34</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:24</sys_updated_on>
         <ui_id>50b27daf-b9a7-4a42-b8d2-18acd304760b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ba720ebd1b2f895062e50ed2cd4bcbad"/>
@@ -3237,19 +3256,20 @@
         <action_inputs/>
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
         <comment>Look up person leaving</comment>
         <display_text/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-18 20:25:38</sys_created_on>
         <sys_id>f555b3bd1b1ec99062e50ed2cd4bcb6e</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:33</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:23</sys_updated_on>
         <ui_id>61ddb111-60c2-429a-ab37-4da212e53bf4</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f555b3bd1b1ec99062e50ed2cd4bcb6e"/>
@@ -3323,6 +3343,7 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=a55573bd1b1ec99062e50ed2cd4bcbd2"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=a55573bd1b1ec99062e50ed2cd4bcbd2^sys_idNOT IN3555b3bd1b1ec99062e50ed2cd4bcb3e,62ba97c31b56c5d062e50ed2cd4bcbae,66ba97c31b56c5d062e50ed2cd4bcb49,66ba97c31b56c5d062e50ed2cd4bcbcb,6aba97c31b56c5d062e50ed2cd4bcb45,6eba97c31b56c5d062e50ed2cd4bcbc0,6eba97c31b56c5d062e50ed2cd4bcbc7,76ba97c31b56c5d062e50ed2cd4bcbea,7955b3bd1b1ec99062e50ed2cd4bcb41,a6ba97c31b56c5d062e50ed2cd4bcbe7,aaba97c31b56c5d062e50ed2cd4bcbc4,b955b3bd1b1ec99062e50ed2cd4bcb45,e2ba97c31b56c5d062e50ed2cd4bcbaa,e2ba97c31b56c5d062e50ed2cd4bcbb1,e6ba97c31b56c5d062e50ed2cd4bcba6"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">9763fb351b1ec99062e50ed2cd4bcba6</block>
         <comment/>
         <connected_to/>
@@ -3330,7 +3351,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <flow_variable/>
         <flow_variables_assigned>datetimenow</flow_variables_assigned>
         <inputs/>
@@ -3343,10 +3364,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-18 20:25:37</sys_created_on>
         <sys_id>3555b3bd1b1ec99062e50ed2cd4bcb3e</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:34</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:24</sys_updated_on>
         <ui_id>ad681e54-2862-4c92-94b5-2f80679b90c1</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3369,6 +3390,7 @@
         <sys_updated_on>2022-03-18 20:25:37</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">30bad3c31b56c5d062e50ed2cd4bcbc6</block>
         <comment/>
         <connected_to>d931aee4-6cc9-4b00-bc7f-c68568acf6ce</connected_to>
@@ -3376,7 +3398,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -3389,10 +3411,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:45</sys_created_on>
         <sys_id>62ba97c31b56c5d062e50ed2cd4bcbae</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:34</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:23</sys_updated_on>
         <ui_id>0b11265c-5ed7-495c-8648-fafbd5121c91</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3402,6 +3424,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=62ba97c31b56c5d062e50ed2cd4bcbae"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=62ba97c31b56c5d062e50ed2cd4bcbae"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">f0bad3c31b56c5d062e50ed2cd4bcb88</block>
         <comment>Was Azure Last Login Before AD Last Login?</comment>
         <connected_to/>
@@ -3410,7 +3433,7 @@
         <display_text/>
         <extended_inputs/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -3423,10 +3446,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:45</sys_created_on>
         <sys_id>66ba97c31b56c5d062e50ed2cd4bcb49</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:33</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:23</sys_updated_on>
         <ui_id>c7e2f5a3-1c09-4ea1-bf1e-c5130c2ab1a3</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3698,6 +3721,7 @@
     </sys_hub_flow_logic_ext_input>
     <sys_hub_input_scripts action="delete_multiple" query="instance=66ba97c31b56c5d062e50ed2cd4bcb49"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">85bad3c31b56c5d062e50ed2cd4bcbe3</block>
         <comment>Last Login = AD Last Login</comment>
         <connected_to/>
@@ -3705,7 +3729,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>last_login</flow_variables_assigned>
@@ -3719,10 +3743,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:45</sys_created_on>
         <sys_id>66ba97c31b56c5d062e50ed2cd4bcbcb</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:34</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:24</sys_updated_on>
         <ui_id>c6feafbf-f71f-4a92-86f6-55211a77a81d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3744,6 +3768,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=66ba97c31b56c5d062e50ed2cd4bcbcb"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=66ba97c31b56c5d062e50ed2cd4bcbcb"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">bcbad3c31b56c5d062e50ed2cd4bcb83</block>
         <comment/>
         <connected_to/>
@@ -3751,7 +3776,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -3765,10 +3790,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:45</sys_created_on>
         <sys_id>6aba97c31b56c5d062e50ed2cd4bcb45</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:33</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:23</sys_updated_on>
         <ui_id>af98d9a3-d149-4b6d-8d31-6abe966391cd</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3791,6 +3816,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6aba97c31b56c5d062e50ed2cd4bcb45"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=6aba97c31b56c5d062e50ed2cd4bcb45"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">f0bad3c31b56c5d062e50ed2cd4bcbcc</block>
         <comment/>
         <connected_to>af98d9a3-d149-4b6d-8d31-6abe966391cd</connected_to>
@@ -3798,7 +3824,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -3812,10 +3838,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:45</sys_created_on>
         <sys_id>6eba97c31b56c5d062e50ed2cd4bcbc0</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:34</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:23</sys_updated_on>
         <ui_id>cbd1cb2a-26af-4039-a2cc-4e55d7c623f6</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3838,6 +3864,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6eba97c31b56c5d062e50ed2cd4bcbc0"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=6eba97c31b56c5d062e50ed2cd4bcbc0"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">09bad3c31b56c5d062e50ed2cd4bcbd3</block>
         <comment/>
         <connected_to>af98d9a3-d149-4b6d-8d31-6abe966391cd</connected_to>
@@ -3845,7 +3872,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -3859,10 +3886,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:45</sys_created_on>
         <sys_id>6eba97c31b56c5d062e50ed2cd4bcbc7</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:34</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:24</sys_updated_on>
         <ui_id>b30702be-716e-42db-a8b9-0d005eccb8cb</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3885,6 +3912,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6eba97c31b56c5d062e50ed2cd4bcbc7"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=6eba97c31b56c5d062e50ed2cd4bcbc7"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">85bad3c31b56c5d062e50ed2cd4bcbe9</block>
         <comment>Last Login = Blank</comment>
         <connected_to/>
@@ -3892,7 +3920,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <flow_variable/>
         <flow_variables_assigned>last_login</flow_variables_assigned>
         <inputs/>
@@ -3905,10 +3933,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:45</sys_created_on>
         <sys_id>76ba97c31b56c5d062e50ed2cd4bcbea</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:34</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:24</sys_updated_on>
         <ui_id>08d8fa40-e53a-48a4-acff-3bb5f92d2026</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3918,6 +3946,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=76ba97c31b56c5d062e50ed2cd4bcbea"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=76ba97c31b56c5d062e50ed2cd4bcbea"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">9763fb351b1ec99062e50ed2cd4bcbab</block>
         <comment/>
         <connected_to/>
@@ -3925,7 +3954,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -3939,10 +3968,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-18 20:25:37</sys_created_on>
         <sys_id>7955b3bd1b1ec99062e50ed2cd4bcb41</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:34</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:24</sys_updated_on>
         <ui_id>f7871563-e177-4643-96ce-be983d4a7ff6</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3991,6 +4020,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7955b3bd1b1ec99062e50ed2cd4bcb41"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=7955b3bd1b1ec99062e50ed2cd4bcb41"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">09bad3c31b56c5d062e50ed2cd4bcbe6</block>
         <comment/>
         <connected_to>af98d9a3-d149-4b6d-8d31-6abe966391cd</connected_to>
@@ -3998,7 +4028,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -4011,10 +4041,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:45</sys_created_on>
         <sys_id>a6ba97c31b56c5d062e50ed2cd4bcbe7</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:34</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:24</sys_updated_on>
         <ui_id>6cd9eff1-efd0-45e0-b302-9caacef093a4</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -4024,6 +4054,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a6ba97c31b56c5d062e50ed2cd4bcbe7"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=a6ba97c31b56c5d062e50ed2cd4bcbe7"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">85bad3c31b56c5d062e50ed2cd4bcbd0</block>
         <comment>Last Login = Azure Last Login</comment>
         <connected_to/>
@@ -4031,7 +4062,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>last_login</flow_variables_assigned>
@@ -4045,10 +4076,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:45</sys_created_on>
         <sys_id>aaba97c31b56c5d062e50ed2cd4bcbc4</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:34</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:23</sys_updated_on>
         <ui_id>7986524d-91c5-4302-89f3-73ebf4cf7187</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -4070,6 +4101,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=aaba97c31b56c5d062e50ed2cd4bcbc4"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=aaba97c31b56c5d062e50ed2cd4bcbc4"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">4805fff91b1ec99062e50ed2cd4bcbb2</block>
         <comment/>
         <connected_to/>
@@ -4077,7 +4109,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -4090,10 +4122,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-18 20:25:37</sys_created_on>
         <sys_id>b955b3bd1b1ec99062e50ed2cd4bcb45</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:34</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:24</sys_updated_on>
         <ui_id>f6f1b079-2275-48d1-8b78-13a849ba3455</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -4103,6 +4135,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b955b3bd1b1ec99062e50ed2cd4bcb45"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=b955b3bd1b1ec99062e50ed2cd4bcb45"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">f0bad3c31b56c5d062e50ed2cd4bcbc2</block>
         <comment>Last Login = AD Last Login</comment>
         <connected_to/>
@@ -4110,7 +4143,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>last_login</flow_variables_assigned>
@@ -4124,10 +4157,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:45</sys_created_on>
         <sys_id>e2ba97c31b56c5d062e50ed2cd4bcbaa</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:34</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:23</sys_updated_on>
         <ui_id>7fde2f09-cc45-4b3b-8df5-03a7b6ae61ee</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -4149,6 +4182,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e2ba97c31b56c5d062e50ed2cd4bcbaa"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=e2ba97c31b56c5d062e50ed2cd4bcbaa"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">70bad3c31b56c5d062e50ed2cd4bcbc9</block>
         <comment>Last Login = Azure Last Login</comment>
         <connected_to/>
@@ -4156,7 +4190,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>last_login</flow_variables_assigned>
@@ -4170,10 +4204,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:45</sys_created_on>
         <sys_id>e2ba97c31b56c5d062e50ed2cd4bcbb1</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:34</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:23</sys_updated_on>
         <ui_id>e0331097-561b-4133-b4b0-bc35e96715c7</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -4195,6 +4229,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e2ba97c31b56c5d062e50ed2cd4bcbb1"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=e2ba97c31b56c5d062e50ed2cd4bcbb1"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">38bad3c31b56c5d062e50ed2cd4bcbbe</block>
         <comment/>
         <connected_to/>
@@ -4202,7 +4237,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
+        <flow display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -4216,10 +4251,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-22 15:41:45</sys_created_on>
         <sys_id>e6ba97c31b56c5d062e50ed2cd4bcba6</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-08-01 13:03:34</sys_updated_on>
+        <sys_updated_on>2022-05-19 21:11:23</sys_updated_on>
         <ui_id>d931aee4-6cc9-4b00-bc7f-c68568acf6ce</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -4351,7 +4386,7 @@
         <label>dateTimeNow</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
         <model_id>a55573bd1b1ec99062e50ed2cd4bcbd2</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_a55573bd1b1ec99062e50ed2cd4bcbd2</name>
@@ -4434,7 +4469,7 @@
         <label>Last Login</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
         <model_id>a55573bd1b1ec99062e50ed2cd4bcbd2</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_a55573bd1b1ec99062e50ed2cd4bcbd2</name>
@@ -4517,7 +4552,7 @@
         <label>Employee First Name</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
         <model_id>a55573bd1b1ec99062e50ed2cd4bcbd2</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_a55573bd1b1ec99062e50ed2cd4bcbd2</name>
@@ -4600,7 +4635,7 @@
         <label>Employee Last Name</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="SEC17 - Generate Review">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
+        <model display_value="SEC17 - Generate Catalog Item Submissions">a55573bd1b1ec99062e50ed2cd4bcbd2</model>
         <model_id>a55573bd1b1ec99062e50ed2cd4bcbd2</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_a55573bd1b1ec99062e50ed2cd4bcbd2</name>
@@ -4811,6 +4846,23 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>cf63fb351b1ec99062e50ed2cd4bcb5b</sys_id>
         <latest_snapshot>a55573bd1b1ec99062e50ed2cd4bcbd2</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch7a-03-27-2023_04-04-2023_1511.zip</compiler_build>
+        <compiler_build>glide-rome-06-23-2021__patch7b-04-19-2022_04-26-2022_2245.zip</compiler_build>
     </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=cf63fb351b1ec99062e50ed2cd4bcb5b"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=cf63fb351b1ec99062e50ed2cd4bcb5b^sys_idNOT IN5655f3bd1b1ec99062e50ed2cd4bcbaf"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"5655f3bd1b1ec99062e50ed2cd4bcbaf","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="SEC17 - Generate Catalog Item Submissions">cf63fb351b1ec99062e50ed2cd4bcb5b</plan_id>
+        <snapshot>0719a3311bc8dd1062e50ed2cd4bcba2</snapshot>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-18 20:25:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5655f3bd1b1ec99062e50ed2cd4bcbaf</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-19 21:11:27</sys_updated_on>
+    </sys_flow_subflow_plan>
 </record_update>

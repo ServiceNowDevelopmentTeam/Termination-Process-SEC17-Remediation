@@ -14,8 +14,8 @@
 		return (current.variables.person_leaving.manager == gs.getUserID() || gs.hasRole('admin') || current.variables.manager == gs.getUserID());
 	};
 
-	if(!payload.sys_id && !(payload.action ==='active_need_access' || payload.action === 'active_no_access_need' || payload.action === 'inactive_need_access' || payload.action === 'inactive_no_access_need' || payload.action === 'reassign')) {
-		gs.info("OAM: Not a valid request");
+	if(!payload.sys_id || !(payload.action ==='active_need_access' || payload.action === 'active_no_access_need' || payload.action === 'inactive_need_access' || payload.action === 'inactive_no_access_need' || payload.action === 'reassign')) {
+		gs.info("OAM: Not a valid approval request");
 		response.setStatus(400);
 		response.setHeader("CARD-ACTION-STATUS", "Not a valid request");
 		return;
@@ -44,19 +44,12 @@
 		return;
 	}
 
-	if(gr.variables.response.toString() !== '') {
-		gs.info("OAM: Response already recorded");
-		response.setStatus(409);
-		response.setHeader("CARD-ACTION-STATUS", "Response already recorded - Please contact support at 651-925-8511 if you need to change your response.");
-		return;
-	}
-
-	if(payload.sys_id && (payload.action ==='active_need_access' || payload.action === 'active_no_access_need' || payload.action === 'inactive_need_access' || payload.action === 'inactive_no_access_need' || payload.action === 'reassign')) {
+	if(payload.sys_id || (payload.action ==='active_need_access' || payload.action === 'active_no_access_need' || payload.action === 'inactive_need_access' || payload.action === 'inactive_no_access_need' || payload.action === 'reassign')) {
 		gr.variables.response = payload.action;
 
 		try {
 			var inputs = {};
-			inputs['title'] = 'Manager responded via SEC17 Inactive Employee actionable email'; // String
+			inputs['title'] = 'Manager responded via SEC05 Inactive Employee actionable email'; // String
 			inputs['body'] = 'Manager Response: ' + payload.action; // HTML 
 			var result = sn_fd.FlowAPI.getRunner().action('global.comment_on_record').inForeground().withInputs(inputs).run();
 			var outputs = result.getOutputs();
@@ -72,33 +65,6 @@
 	}
 	gr.work_notes = '[code]' + html + '[/code]';
 	gr.update();		
-	var dueDate = new GlideDateTime(gr.variables.due_date.toString());
-	var now = new GlideDateTime();
-	var isafter = now.after(dueDate);
-	if (isafter && payload.sys_id && (payload.action === 'active_no_access_need' || payload.action === 'inactive_no_access_need')){
-		var employeeEmail = gr.variables.person_leaving.email.toString();
-		var employeeFullName = gr.variables.person_leaving.name.toString();
-		var managerEmail = gr.variables.manager.email.toString();
-		var companyName = gr.variables.person_leaving.company.name.toString();
-		if(employeeEmail && employeeFullName && managerEmail && companyName && gr){
-			try {
-				var termInputs = {};
-				termInputs['employee_email'] = employeeEmail; // String 
-				termInputs['manager_email'] = managerEmail; // String 
-				termInputs['employee_full_name'] = employeeFullName; // String 
-				termInputs['company_name'] = companyName; // String 
-				termInputs['original_ritm'] = gr; // GlideRecord of table: sc_req_item 
-
-				// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
-				sn_fd.FlowAPI.getRunner().subflow('x_apig_sox_record.generate_term_request_null').inBackground().withInputs(termInputs).run();
-
-				// Current subflow has no outputs defined.		
-			} catch (ex) {
-				var termMessage = ex.getMessage();
-				gs.error(termMessage);
-			}
-		}
-	}
 
 	refreshCard = {
 		"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
@@ -141,13 +107,6 @@
 					{
 						"type": "TextBlock",
 						"text": "Your response has been received.",
-						"weight": "Bolder",
-						"size": "Medium",
-						"wrap": true
-					},
-					{
-						"type": "TextBlock",
-						"text": "Please contact support at 651-925-8511 if you need to change your response.",
 						"weight": "Bolder",
 						"size": "Medium",
 						"wrap": true
@@ -222,14 +181,14 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-17 20:25:23</sys_created_on>
         <sys_id>2fc72ae91bd6c59062e50ed2cd4bcb9a</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Respond</sys_name>
         <sys_package display_value="Termination Process SEC17 Remediation" source="x_apig_sox_record">24586a251ba0099062e50ed2cd4bcbfc</sys_package>
         <sys_policy/>
         <sys_scope display_value="Termination Process SEC17 Remediation">24586a251ba0099062e50ed2cd4bcbfc</sys_scope>
         <sys_update_name>sys_ws_operation_2fc72ae91bd6c59062e50ed2cd4bcb9a</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-03-24 13:23:54</sys_updated_on>
+        <sys_updated_on>2022-04-22 13:41:26</sys_updated_on>
         <web_service_definition display_value="SEC17 Inactive Employee Review Process">1a972ea91bd6c59062e50ed2cd4bcb57</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
